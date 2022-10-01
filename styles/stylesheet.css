@@ -6,8 +6,10 @@ display: -ms-flexbox;
 display flex;
 width: 100%;
 max-width: 1540px;
+margin: -10px -7px -10px -9px;
 margin-right: auto;
 margin-left: auto;
+margin-bottom: auto;
 padding:20px;
 background-color: #e95a85;
 }
@@ -179,4 +181,34 @@ body{
         text-align: justify;
         background-color: #fffce6;
         padding: 51px 50px;
+    }
+
+    .Cart-Container{
+        width: 100%;
+        max-width: 1540px;
+        
+        height: 85%;
+        background-color: #fffce6;
+        border-radius: 0px;
+        
+       }
+
+       .cart-heading-center{
+        position: relative;
+        padding: 80px 30px;
+        border-bottom: 1px solid #e4ebf3;
+        /*background-color: #ffb0bf;*/
+        background-color: #;
+    }
+
+    .cart-table-data{
+        width: 500px;
+        padding: 80px 30px;
+        height:100px;
+        
+    }
+
+    .cart{
+        margin-right: auto;
+        margin-left: auto;
     }
