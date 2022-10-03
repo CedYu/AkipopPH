@@ -44,7 +44,7 @@
             </section>
 
             <div class="cart-activity-option">
-                    <button class="cart-button2">Checkout Deals</button>
+                    <button class="cart-button2"><router-link to="/checkout">Checkout Deals</router-link></button>
                     <a href="index.html"><img src="../assets/brand.jpg" width="40" alt="brand-logo" ></a>
                     <button class="cart-button2">Remove Deals</button>
             </div>
@@ -81,7 +81,10 @@
 
 
 <style>
-    
+
+.Cart{ 
+    color: #2C3E50;
+}
   
 .cart-button {
         background: none;
@@ -170,6 +173,15 @@
     width: 7.5rem;
     font-family: 'Droid Serif',serif;
     border-spacing: 4px;
+    
+}
+
+.cart-button2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Droid Serif',serif;
 }
 
 .cart-activity-option{
