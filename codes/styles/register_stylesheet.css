@@ -75,7 +75,7 @@ h1 {
 body {
 	font-family: arial;
 	background-color: #FFFBEC;
-	background-image: url("spyfambg.png");
+	background-image: url("../spyfambg.png");
 	background-size: cover;
 	color: #3D3B38;
 }

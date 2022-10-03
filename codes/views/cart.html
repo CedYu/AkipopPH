@@ -2,8 +2,9 @@
 <head>
     <title>Cart</title>
     <link rel="stylesheet" href="../styles/stylesheet.css">
-    <link rel="stylesheet" href="../styles/cartheet.css">
+    <link rel="stylesheet" href="../styles/cartsheet.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
 </head>
 
 <body>
@@ -12,7 +13,7 @@
         <div data-animation="default" data collapse="medium" data-duration="400" role="banner" class="navbar-no-shadow-container w-nav">
             <div class="container-regular">
                 <div class="navbar-wrapper">
-                    <a class="brand"><img src="../akipop.jpg" width="96" alt="brand-logo"></a>
+                    <a class="brand"><img src="../brand.jpg" width="96" alt="brand-logo"></a>
                     <a href="index.html" class="nav-link"><strong class="bold-text-2">Home</strong></a>
                     <a href="about.html" class="nav-link"><strong class="bold-text">About</strong></a>
                     <a href="product.html" class="nav-link"><strong class="bold-text-3">Product</strong></a>
@@ -33,8 +34,8 @@
         </div>
 
         <div >
-            
-              <div class="hero-split">
+            <!--CART OPTION 2-->
+            <!--  <div class="hero-split">
     
                 <table class="cart">
                     <tr>
@@ -68,14 +69,120 @@
                         <th class="cart-table-data"><button class="button"><a href="product.html">View other Deals</a></button></th>
                     </tr>
                 </table>
+              </div>-->
+      
+            
+              <!--CART OPTION2-->
+              <div id="app">
+                
+                <section class="products">
+                    <div 
+                    v-for="product in products"
+                    :key="product.id"
+                    class="product"
+                    >
+                    <!--<input type="checkbox" name="select-product">
+                    <h3 class="cart-product-header">Anya Sticker</h3>
+                    <img 
+                        src="../product.jpg" style={{ height="120px" }}  
+                        :alt="product.name" 
+                        class="product-image"
+                    >
+
+                    <p class="cart-product-description">anime sticker</p>
+                    
+                    <div class="cart">
+                        <button class="cart-button">-</button>
+                        <span class="cart-quantity">0</span>
+                        <button class="cart-button">+</button>
+                    </div>
+
+
+                    <input type="checkbox" name="select-product">
+                    <h3 class="cart-product-header">Anya Sticker2</h3>
+                    <img 
+                        src="../product2.jpg" style={{ height="120px" }}  
+                        :alt="product.name" 
+                        class="product-image"
+                    >
+
+                    <p class="cart-product-description">anime sticker2</p>
+                    
+                    <div class="cart">
+                        <button class="cart-button">-</button>
+                        <span class="cart-quantity">5</span>
+                        <button class="cart-button">+</button>
+                    </div>-->
+                    
+                      <!--VUE JS-->
+                      <input type="checkbox" name="select-product">
+                        <h3 class="cart-product-header">{{product.name}}</h3>
+                        <img 
+                            src={{product.image}} style={{ height="120px" }}  
+                            :alt="product.name" 
+                            class="product-image"
+                        >
+
+                        <p class="cart-product-description">{{product.description}}</p>
+                        
+                        <div class="cart">
+                            <button class="cart-button">-</button>
+                            <span class="cart-quantity">{{product.quantity}}</span>
+                            <button class="cart-button">+</button>
+                        </div>
+
+
+
+                        
+
+                    </div>
+
+
+                    <!--SAMPLE DATA IN THE CART-->
+                    <script> 
+                        new Vue({
+                            el: "#app",
+                            data:{
+                                products:[
+                            
+                                {
+                                id:"19708555531",
+                                name: "SPY X FAMILY PILLOW PLUSHIE Anya Yor Loid Anya Heh",
+                                image: "../product.jpg",
+                                description: "High quality pillow with Anya design",
+                                quantity: "15"
+                                },
+                                {
+                                id:"18308562708",
+                                name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
+                                image:"../product2.jpg",
+                                description: "High quality pillow with elegant design",
+                                quantity: "125"
+                                },
+                            ],
+                        
+                            },
+                        })
+                        </script>
+                </section>
+
+                <div class="cart-activity-option">
+                    <button class="cart-button2">Checkout Deals</button>
+                    <a href="index.html"><img src="../brand.jpg" width="40" alt="brand-logo" ></a>
+                    <button class="cart-button2">Remove Deals</button>
+                </div>
+                    
               </div>
-      
-      
-    
+
+              
         </div>
  </div>
 
+ 
+
 </section>
+
+
 
 
 </body>
