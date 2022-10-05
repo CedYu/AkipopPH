@@ -56,6 +56,8 @@
 		background-image: url("../assets/registerbg.png");
         background-size: cover;
 		color: #2C3E50;
+
+		
 	}
 
     h1 {
@@ -63,6 +65,8 @@
 		font-size: 350%;
 		text-align: center;
 		letter-spacing: -3px;
+		animation: shakeX;
+		animation-duration: 3s;
 	}
 
 	form {
@@ -70,6 +74,8 @@
   		margin-left: auto; 
         margin-right: auto;
  		width: 490px;
+		 animation: shakeX;
+		animation-duration: 4s;
 	}
 
 	input {
@@ -95,6 +101,8 @@
         border-radius: 20px;
         border: none;
         width: 200px;
+		animation: wobble;
+		animation-duration: 8s;
 	}
 
 	.reg_submit input[type="submit"]:hover {

@@ -2,16 +2,17 @@
   <div class="about">
     
 
-  <section class="hero-heading-center wf-section">
+
+  <section class="about-section">
     <div class="container-2">
-        <h1 class="centered-heading margin-buttom-32px">WELCOME TO AKIPOP PH</h1>
-        <div class="hero-wrapper">
-            <div hero-split>
-                <p class="margin-bottom-24px"> Hello, we are AKIPOP PH, a handmade craft store made with love just for you and your fandom cravings! Our shop offers product such as High-Quality Prints, Photocards, Stickers , Accessories, and more. You may directly click the button bellow to view and buy our product. Or you may also proceed the other platform provided below such as Shopee, Facebook, Twitter, and Instagram to buy our product!</p>
-                <a href="product.html" class="button-primary w-button">Shop now</a>
+        <h1 class="welcome-header">WELCOME TO AKIPOP PH</h1>
+        <div class="welcome-message">
+            <div split>
+                <p class="about-messages"> Hello, we are AKIPOP PH, a handmade craft store made with love just for you and your fandom cravings! Our shop offers product such as High-Quality Prints, Photocards, Stickers , Accessories, and more. You may directly click the button bellow to view and buy our product. Or you may also proceed the other platform provided below such as Shopee, Facebook, Twitter, and Instagram to buy our product!</p>
+                <a href="product.html" class="shop-button">Shop now</a>
             </div>
-            <div class="hero-split"><img src="../assets/storeBanner.png" width="550" height="339" alt="store-banner" class="shadow-two"></div>
-           <!-- <div class="hero-split"><img src="../storeBanner.png" loading="lazy" scrset="../storeBanner.png 500, ../storeBanner.png 800, ../storeBanner.png 1080" sizes="(maxwidth:497px) 94vw,(maxwidth:767px) 95vw,(maxwidth:991px) 92vw, 43vw" alt="store-banner" class="shadow-two"></div>-->
+            <div class="split"><img src="../assets/storeBanner.png" width="550" height="339" alt="store-banner" class="shadow-two"></div>
+           <!-- <div class="split"><img src="../storeBanner.png" loading="lazy" scrset="../storeBanner.png 500, ../storeBanner.png 800, ../storeBanner.png 1080" sizes="(maxwidth:497px) 94vw,(maxwidth:767px) 95vw,(maxwidth:991px) 92vw, 43vw" alt="store-banner" class="shadow-two"></div>-->
         </div>
     </div>
 
@@ -20,15 +21,17 @@
 </div>
 </template>
 
-<style>
 
-  
-      .hero-heading-center{
+<style>
+      .about-section{
           position: relative;
           padding: -10px 50px;
           border-bottom: 1px solid #e4ebf3;
           /*background-color: #ffb0bf;*/
-          background-color: #ffffff;
+          /*background-color: #ffffff;*/
+
+        background-image: url("../assets/about3.png");
+        background-size: cover;
       }
   
       .container-2{
@@ -36,6 +39,7 @@
           max-width: 940px;
           margin-right: auto;
           margin-left: auto; 
+          
       }
   
       .centered-heading{
@@ -43,13 +47,16 @@
           text-align: center;
       }
   
-      .centered-heading.margin-buttom-32px{
+      .welcome-header{
           margin-bottom: 32px;
           font-family: 'Droid Serif',serif;
           color: #000000;
-      }
+          animation: bounceIn; 
+          animation-duration: 3s; 
+          
+        }
   
-      .hero-wrapper{
+      .welcome-message{
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -63,9 +70,12 @@
           -webkit-align-items:  center;
           -ms-flex-align: center;
           align-items: center;
+
+          animation: bounceIn; 
+          animation-duration: 3s; 
       }
 
-      .button-primary{
+      .shop-button{
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -74,22 +84,23 @@
     -ms-flex-item-align: start;
     align-self: flex-start;
     -webkit-box-ordinal-group: 1;
-    -webkit-order:0;
    /* background-color: #ffb0bf;*/
-    background-color: #ffffff;
+   /* background-color: #ffffff;*/
     color:#000000;
     font-size: 12px;
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
+
+    
     }
 
-  .button-primary:active{
+  .shop-button:active{
     
     background-color: #e95a85;
 }
   
-      .hero-split{
+      .split{
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -115,12 +126,14 @@
           box-shadow: 0 4px 24px 0 rgba(150,163,181,0);
       }
   
-      .margin-bottom-24px{
+      .about-messages{
           margin-bottom: 24px;
           font-family: Georgia, 'Times New Roman', Times, serif;
           color: #000000;
           text-align: justify;
-          background-color: #ffffff;
+          /*background-color: #ffffff;*/
           padding: 51px 50px;
+
+          
       }
 </style>

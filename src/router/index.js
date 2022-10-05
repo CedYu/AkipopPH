@@ -4,6 +4,7 @@ import CartView from '../views/CartView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import LoginView from '../views/LoginView.vue'
 import CheckoutView from '../views/CheckoutView.vue'
+import 'animate.css';
 
 const routes = [
   {

@@ -4,7 +4,7 @@
     
     <div class="Cart-Container">
         <div class="Header">
-            <h1 class="centered-heading margin-buttom-32px">SHOPPING CART</h1> 
+            <h1 class="Shopping-Cart">SHOPPING CART</h1> 
             
         </div>
 
@@ -84,6 +84,11 @@
 
 .Cart{ 
     color: #2C3E50;
+    animation: shakeX;
+    animation-duration: 3s;
+    background-image: url("../assets/cart-bg.png");
+    background-size: cover;
+    
 }
   
 .cart-button {

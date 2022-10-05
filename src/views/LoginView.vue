@@ -77,6 +77,9 @@
         border-radius: 20px;
         border: none;
         width: 200px;
+
+		animation: wobble;
+		animation-duration: 8s;
 	}
 
 	.login_submit input[type="submit"]:hover {
