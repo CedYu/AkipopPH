@@ -5,6 +5,10 @@ import RegisterView from '../views/RegisterView.vue'
 import LoginView from '../views/LoginView.vue'
 import CheckoutView from '../views/CheckoutView.vue'
 import 'animate.css';
+import PlushiesView from '../views/PlushiesView.vue'
+import PrintsView from '../views/PrintsView.vue'
+import StationeryView from '../views/StationeryView.vue'
+import PhotocardsView from '../views/PhotocardsView.vue'
 
 const routes = [
   {
@@ -34,6 +38,26 @@ const routes = [
     path: '/checkout',
     name: 'checkout',
     component: CheckoutView
+  },
+  {
+    path: '/plushies',
+    name: 'plushies',
+    component: PlushiesView
+  },
+  {
+    path: '/prints',
+    name: 'prints',
+    component: PrintsView
+  },
+  {
+    path: '/stationery',
+    name: 'stationery',
+    component: StationeryView
+  },
+  {
+    path: '/photocards',
+    name: 'photocards',
+    component: PhotocardsView
   }
 ]
 

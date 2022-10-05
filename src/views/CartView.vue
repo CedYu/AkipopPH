@@ -4,8 +4,7 @@
     
     <div class="Cart-Container">
         <div class="Header">
-            <h1 class="Shopping-Cart">SHOPPING CART</h1> 
-            
+            <br><br><br><br><h1 class="Shopping-Cart">SHOPPING CART</h1>     
         </div>
 
         <div >

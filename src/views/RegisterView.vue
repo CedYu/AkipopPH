@@ -1,6 +1,6 @@
 <template>
     <div class="register">
-        <br><h1>Register</h1>
+        <br><br><br><br><br><br><br><h1>Register</h1>
 	    <form>
 			<label for="username">Username
 		    <span style="color:red">*</span></label><br>
@@ -33,9 +33,6 @@
       	        <input type = submit value = "Register">
             </div>
 	    </form>
-		<div id = "login">
-		    <p>Click here to <a href="LoginView.vue">log in</a></p>
-	    </div>
 	</div>
 </template>
 
@@ -65,7 +62,7 @@
 		font-size: 350%;
 		text-align: center;
 		letter-spacing: -3px;
-		animation: shakeX;
+		animation: fadeInDown;
 		animation-duration: 3s;
 	}
 
@@ -74,8 +71,6 @@
   		margin-left: auto; 
         margin-right: auto;
  		width: 490px;
-		 animation: shakeX;
-		animation-duration: 4s;
 	}
 
 	input {
@@ -101,8 +96,6 @@
         border-radius: 20px;
         border: none;
         width: 200px;
-		animation: wobble;
-		animation-duration: 8s;
 	}
 
 	.reg_submit input[type="submit"]:hover {
@@ -114,9 +107,5 @@
 		font-size: 82%;
 		text-align: center;
 		font-weight: bold;
-	}
-
-	#login a:link {
-		color: #e95a85;
 	}
 </style>

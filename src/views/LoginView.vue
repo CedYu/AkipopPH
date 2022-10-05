@@ -1,6 +1,6 @@
 <template>
     <div class="login">
-		<br><h1>Log In</h1>
+		<br><br><br><br><br><br><br><br><h1>Log In</h1>
 	    <form>
 			<label for="username">Username</label><br>
 		
@@ -13,10 +13,10 @@
             <div class="login_submit">
       	        <input type = submit value = "Log In">
             </div>
+			<div id="extra">
+				<p>line<br>line<br>line</p>
+			</div>
 	    </form>
-		<div id = "register">
-		    <p>Click here to <a href="RegisterView.vue">create an account</a></p>
-	    </div>
 	</div>
 </template>
 
@@ -45,27 +45,13 @@
 		text-align: center;
 		letter-spacing: -3px;
 		margin: 50px;
+		animation: fadeInDown;
+		animation-duration: 3s;
 	}
 
-	form {
-		text-align: left; 
-  		margin-left: auto; 
-        margin-right: auto;
- 		width: 490px;
-	}
-
-	input {
-		width: 460px;
-    	padding: 13px;
-    	display: block;
-		border-style: solid;
-		border-color: #D8D1C9;
-    	background-color: #FFF9ED;
-		outline: none;
-	}
-
-	input[type=text]:focus {
-  		border: 3px solid pink;
+	#extra {
+		font-size: 100%;
+		color: transparent;
 	}
 
 	.login_submit input[type="submit"] {
@@ -77,9 +63,6 @@
         border-radius: 20px;
         border: none;
         width: 200px;
-
-		animation: wobble;
-		animation-duration: 8s;
 	}
 
 	.login_submit input[type="submit"]:hover {
@@ -91,9 +74,5 @@
 		font-size: 82%;
 		text-align: center;
 		font-weight: bold;
-	}
-
-	#register a:link {
-		color: #e95a85;
 	}
 </style>
