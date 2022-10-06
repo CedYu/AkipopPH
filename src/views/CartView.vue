@@ -4,7 +4,7 @@
     
     <div class="Cart-Container">
         <div class="Header">
-            <br><br><br><br><h1 class="Shopping-Cart">SHOPPING CART</h1>     
+            <br><br><br><br><br><br><br><br><h1 class="Shopping-Cart">SHOPPING CART</h1>     
         </div>
 
         <div >
@@ -18,8 +18,6 @@
                     :key="product.id"
                     class="product"
                     >
-    
-    
                       <!--VUE JS-->
                       <input type="checkbox" name="select-product">
                         <h3 class="cart-product-header">{{product.name}}</h3>
@@ -83,24 +81,20 @@
 
 .Cart{ 
     color: #2C3E50;
-    animation: shakeX;
-    animation-duration: 3s;
-    background-image: url("../assets/cart-bg.png");
-    background-size: cover;
-    
+    background-color: #FFFBEC;
 }
   
 .cart-button {
         background: none;
         border: 0;
-        color: #ffffff;
+        color: white;
         cursor: pointer;
     }
       
       
 .total-quantity {
         align-items: center;
-        background: #ffffff;
+        background: white;
         border-radius: 50%;
         display: flex;
         font-weight: bold;
@@ -141,9 +135,6 @@
         margin-top: 1rem;
 }
     
-
-  
-
 .cart {
     margin-top: 2rem;
     text-align: center;
@@ -190,7 +181,6 @@
 
 .cart-activity-option{
     display: flex;
-    
     justify-content: center;
 }
   

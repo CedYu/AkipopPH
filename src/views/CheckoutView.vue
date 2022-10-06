@@ -107,8 +107,6 @@
 	.checkout {
 		font-family: arial;
 		background-color: #FFFBEC;
-		background-image: url("../assets/checkout-bg.png");
-        background-size: cover;
 		color: #2C3E50;
 	}
 
@@ -167,7 +165,7 @@
 	}
 
     .product{
-        background-color: #FFF9ED;
+        background-color: white;
         padding: 30px 40px;
     }
 </style>

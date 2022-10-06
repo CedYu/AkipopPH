@@ -50,8 +50,8 @@
 	.register {
 		font-family: arial;
 		background-color: #FFFBEC;
-		background-image: url("../assets/registerbg.png");
-        background-size: cover;
+		/*background-image: url("../assets/registerbg.png");
+        background-size: cover;*/
 		color: #2C3E50;
 
 		
@@ -63,7 +63,7 @@
 		text-align: center;
 		letter-spacing: -3px;
 		animation: fadeInDown;
-		animation-duration: 3s;
+		animation-duration: 1s;
 	}
 
 	form {

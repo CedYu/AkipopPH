@@ -34,8 +34,8 @@
 	.login {
 		font-family: arial;
 		background-color: #FFFBEC;
-		background-image: url("../assets/loginbg.png");
-		background-size: cover;
+		/*background-image: url("../assets/loginbg.png");
+		background-size: cover;*/
 		color: #2C3E50;
 	}
 
@@ -46,7 +46,7 @@
 		letter-spacing: -3px;
 		margin: 50px;
 		animation: fadeInDown;
-		animation-duration: 3s;
+		animation-duration: 1s;
 	}
 
 	#extra {
