@@ -8,7 +8,7 @@
             <path d="M1017 68L541 626q-11 12-26 12t-26-12L13 68Q-3 49 6 24.5T39 0h952q24 0 33 24.5t-7 43.5z" fill="#FFF"></path>
         </svg>
         <div class="submenu_product" v-if="isOpen">
-            <router-link to="/product">All &emsp; &emsp; &emsp; &emsp;</router-link>
+            <router-link to="/allproducts">All &emsp; &emsp; &emsp; &emsp;</router-link>
             <br><br><router-link to="/plushies">Plushies &emsp; &emsp; &emsp; &emsp;</router-link>
             <br><router-link to="/prints">Prints &emsp; &emsp; &emsp; &emsp;</router-link>
             <br><br><router-link to="/stationery">Stationery &emsp; &emsp; &emsp; &emsp;</router-link>

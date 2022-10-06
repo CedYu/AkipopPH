@@ -9,6 +9,8 @@ import PlushiesView from '../views/PlushiesView.vue'
 import PrintsView from '../views/PrintsView.vue'
 import StationeryView from '../views/StationeryView.vue'
 import PhotocardsView from '../views/PhotocardsView.vue'
+import ProductView from '../views/ProductView.vue'
+import AllProductView from '../views/AllProductView.vue'
 
 const routes = [
   {
@@ -63,6 +65,16 @@ const routes = [
     path: '/home',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/product',
+    name: 'product',
+    component: ProductView
+  },
+  {
+    path: '/allproducts',
+    name: 'allproducts',
+    component: AllProductView
   }
 ]
 
