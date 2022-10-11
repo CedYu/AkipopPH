@@ -1,6 +1,6 @@
 <template>
     <br><br><br><br><br><br><br><br><br><br>
-    <h1>Sationary</h1>
+    <h1>Stationary</h1>
     
     <!--SAMPLE WITHOUT SCRIPT-->
     <div class="mainProduct">

@@ -1,5 +1,5 @@
 <template>
-    
+    <br><br><br><br><br><br><br><br><br><br>
     <h1>Plushies</h1>
     
     <!--SAMPLE WITHOUT SCRIPT-->
