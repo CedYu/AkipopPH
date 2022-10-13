@@ -6,13 +6,13 @@
             <p class="about-message">
             AKIPOP PH is a handmade craft store made with love just for you
             <br>and your fandom cravings. Just like a refreshing beverage paired
-            <br>with anexciting afternoon of binge-watching your favorite anime.
+            <br>with an exciting afternoon of binge-watching your favorite anime!
 
             <br><br> shop is built on a passion for the love of crafts and merch! Aiming to 
             <br>deliver high qualityand refreshing takes on design and print, AKIPOP PH
             <br>delivers fresh content that's both familiar, yet totally new.
             
-            <br><br>Our shop offers product such as high-quality Prints, photocards, stickers, accessories,
+            <br><br>Our shop offers product such as high-quality prints, photocards, stickers, accessories,
             <br>and more. We also accept custom orders for posters and photocards. You may browse
             <br>through this website to shop our products. We are also active in other platforms
             <br>such as Shopee, Facebook, Twitter, and Instagram so do check us out!
