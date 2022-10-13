@@ -8,7 +8,7 @@
     
       <img src="../assets/product.jpg" alt="Denim Jeans" style="width:100%">
     
-      <h2>{{mainProduct.name}}</h2>
+      <p>{{mainProduct.name}}</p>
       <p class="price">{{mainProduct.price}}</p>
       <p>{{mainProduct.description}}</p>
       <p>{{mainProduct.price}}</p>

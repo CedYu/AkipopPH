@@ -7,7 +7,7 @@
     
       <img src="../assets/product.jpg" alt="Denim Jeans" style="width:100%">
     
-      <h2>Anya Plushies</h2>
+      <p>Anya Plushies</p>
       <p class="price">$64.66</p>
       <p>a very very amazing plushies</p>
       <p>50</p>

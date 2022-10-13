@@ -7,7 +7,7 @@
     
       <img src="../assets/product.jpg" alt="Denim Jeans" style="width:100%">
     
-      <h2>Anya Photocards</h2>
+      <p>Anya Photocards</p>
       <p class="price">$14.66</p>
       <p>a very very amazing card</p>
       <p>50</p>
