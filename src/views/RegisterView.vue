@@ -57,7 +57,7 @@
 		
 	}
 
-    h1 {
+    .register h1 {
 		font-family: lemonmilk;
 		font-size: 350%;
 		text-align: center;

@@ -39,7 +39,7 @@
 		color: #2C3E50;
 	}
 
-    h1 {
+    .login h1 {
 		font-family: lemonmilk;
 		font-size: 350%;
 		text-align: center;

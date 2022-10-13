@@ -8,7 +8,7 @@
             <br>and your fandom cravings. Just like a refreshing beverage paired
             <br>with an exciting afternoon of binge-watching your favorite anime!
 
-            <br><br> shop is built on a passion for the love of crafts and merch! Aiming to 
+            <br><br>Our shop is built on a passion for the love of crafts and merch! Aiming to 
             <br>deliver high qualityand refreshing takes on design and print, AKIPOP PH
             <br>delivers fresh content that's both familiar, yet totally new.
             
@@ -21,22 +21,40 @@
             <br>Shipping through J&T will be on every Wednesday, Saturday and Sunday. </p>
             <a href="product.html" class="shop-button">Shop now</a>
         </section>
+
+        <div class="soda-left">
+            <img v-bind:src="require('../assets/about-left.png')" width="500" height="500" alt="soda-left"/>
+        </div>
+
+        <div class="soda-right">
+            <img v-bind:src="require('../assets/about-right.png')" width="970" height="1020" alt="soda-right"/>
+        </div>
     </div>
 </template>
 
 
 <style>
-    .about{
+    .soda-left {
+        margin-top: -1000px;
+        margin-bottom: -300px;
+        margin-left: -130px;
+        text-align: left;
+    }
+
+    .soda-right {
+        margin-top: -520px;
+        margin-bottom: -300px;
+        text-align: right;
+    }
+
+    .about {
         margin: auto;
         text-align: center;   
         background-color: #FFFBEC;  
-        background-image: url("../assets/beverage.png");
-        background-size: cover;
         width:100%;
-        background-position: fixed;
     }
   
-    .welcome-header{
+    .welcome-header {
         margin-top: 10px;
         margin-bottom: 70px;
         font-family: lemonmilk;
@@ -45,7 +63,7 @@
         animation-duration: 2s; 
     }
   
-    .about-message{
+    .about-message {
         font-family: Arial;
         text-align: center, justify;
         font-size: large;

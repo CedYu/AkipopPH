@@ -7,7 +7,7 @@
     
       <img src="../assets/product.jpg" alt="Denim Jeans" style="width:100%">
     
-      <h2>Anya Stationary</h2>
+      <p>Anya Stationary</p>
       <p class="price">$13.66</p>
       <p>a very very amazing stationary</p>
       <p>10</p>
