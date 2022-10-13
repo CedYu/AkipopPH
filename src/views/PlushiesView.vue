@@ -13,6 +13,9 @@
       <p>50</p>
       <p><button>Add to Cart</button></p>
       <p><button><router-link to="/product">See More Details</router-link></button></p>
+      
+      <!-- <mainProducts></mainProducts> -->
+
     </div>
     
     <!--WITH SCRIPT-->
@@ -30,3 +33,13 @@
       <p><button>See More Details</button></p>
     </div> -->
     </template>
+
+  <!-- <script>
+  import AllProductView from './AllProductView.vue'
+  export default{
+    name: 'mainProduct',
+    mainProducts:{
+      AllProductView
+    }
+  }
+  </script> -->
