@@ -25,7 +25,12 @@
 		    <label for="password">Password
 		    <span style="color:red">*</span></label><br>
 	
-  		    <input type = text name = "password" id = "password" size = 25><br>
+  		    <input type = password name = "password" id = "password" size = 25><br>
+
+			<label for="confirm-password">Confirm Password
+		    <span style="color:red">*</span></label><br>
+	
+  		    <input type = password name = "password" id = "password" size = 25><br>
 
 			<p>By clicking Register, you agree to our Terms, Data Policy and Cookies Policy.</p>
             
