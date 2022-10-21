@@ -14,11 +14,6 @@ import AllProductView from '../views/AllProductView.vue'
 
 const routes = [
   {
-    path: '/',
-    name: '',
-    component: HomeView
-  },
-  {
     path: '/cart',
     name: 'Cart',
     component: CartView
