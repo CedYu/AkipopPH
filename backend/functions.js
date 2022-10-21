@@ -12,3 +12,7 @@ function Login(){
 function Logout(){
     // Delete session key
 }
+
+function Pain(){
+    console.log("test")
+}
