@@ -67,19 +67,19 @@
         <div class="boxed2">
             <h2>CONNECT WITH US</h2>
             <div class = "facebook">
-                <a href="https://www.facebook.com/akipopph"><img v-bind:src="require('../assets/facebook.png')" width="100" height="100" alt="facebook"/></a>
+                <a href="https://www.facebook.com/akipopph" target="_blank"><img v-bind:src="require('../assets/facebook.png')" width="100" height="100" alt="facebook"/></a>
             </div>
 
             <div class = "instagram">
-                <a href="https://www.instagram.com/akipopph/"><img v-bind:src="require('../assets/instagram.png')" width="95" height="95" alt="instagram"/></a>
+                <a href="https://www.instagram.com/akipopph/" target="_blank"><img v-bind:src="require('../assets/instagram.png')" width="95" height="95" alt="instagram"/></a>
             </div>
 
             <div class = "tiktok">
-                <a href="https://www.tiktok.com/@akipopph"><img v-bind:src="require('../assets/tiktok.png')" width="95" height="95" alt="tiktok"/></a>
+                <a href="https://www.tiktok.com/@akipopph" target="_blank"><img v-bind:src="require('../assets/tiktok.png')" width="95" height="95" alt="tiktok"/></a>
             </div>
 
             <div class = "shopee">
-                <a href="https://shopee.ph/akipopph"><img v-bind:src="require('../assets/shopee.png')" width="105" height="105" alt="shopee"/></a>
+                <a href="https://shopee.ph/akipopph" target="_blank"><img v-bind:src="require('../assets/shopee.png')" width="105" height="105" alt="shopee"/></a>
             </div>
         </div>
     </div>
@@ -227,9 +227,10 @@
     }
 
     .facebook {
-        margin-left: 46%;
+        margin-left: 50%;
         margin-top: -130px;
     }
+
 
     .instagram {
         margin-left: 57%;
