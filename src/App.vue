@@ -2,7 +2,7 @@
   <div id="app">
     <nav>
       <div id="logo">
-        <router-link to="/about"><img src="../akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</router-link> 
+        <router-link to="/home"><img src="../akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</router-link> 
       </div>
 
       <div id="navbar">
