@@ -1,9 +1,10 @@
 const userFunc = {
-    func: function(req,res){
+    func: async function(req,res){
+      console.log("End");
       res.send("Hello World");
     },
-    Pain: function (req,res){
-          res.send("FUCK")
+    Pain: async function (req,res){
+      res.send("FUCK")
     },
     Register: async function (req, res){
           // Check if user exists
