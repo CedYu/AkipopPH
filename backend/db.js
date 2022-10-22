@@ -2,10 +2,15 @@ import mongoose from 'mongoose';
 
 const url = process.env.DB_URL || process.env.MONGODB_URI;
 
+//const options = {
+//    useUnifiedTopology: true,
+//    useNewUrlParser: true
+//};
+
 const database = {
 
     connect: function () {
-        mongoose.connect(url, function(error) {
+        mongoose.connect(url, /*options,*/ function(error) {
             if(error) throw error;
             console.log('Connected to: ' + url);
         });
