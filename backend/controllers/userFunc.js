@@ -6,6 +6,9 @@ const userFunc = {
     Pain: async function (req,res){
       res.send("FUCK")
     },
+    test: async function( req, res){
+      res.send("Hello Github");
+    },
     Register: async function (req, res){
           // Check if user exists
           // Add user to database
