@@ -11,5 +11,12 @@
   "type": "module",
   "scripts": {
     "start": "node app.js"
-  }
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
