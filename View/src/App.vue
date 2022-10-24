@@ -6,7 +6,7 @@
       </div>
 
       <div id="navbar">
-        <router-link to="/home">HOME &emsp; &emsp; &emsp; &emsp;</router-link>    
+        <router-link to="/">HOME &emsp; &emsp; &emsp; &emsp;</router-link>    
         <router-link to="/about">ABOUT &emsp; &emsp; &emsp; &emsp;</router-link> 
       </div>
 
