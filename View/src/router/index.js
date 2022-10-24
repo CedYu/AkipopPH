@@ -11,6 +11,10 @@ import StationeryView from '../views/StationeryView.vue'
 import PhotocardsView from '../views/PhotocardsView.vue'
 import ProductView from '../views/ProductView.vue'
 import AllProductView from '../views/AllProductView.vue'
+import AddProductView from '../sellerviews/AddProductView.vue'
+import EditProductView from '../sellerviews/EditProductView.vue'
+import EditHomeBannerView from '../sellerviews/EditHomeBannerView.vue'
+import SellerHomeView from '../sellerviews/SellerHomeView.vue'
 
 const routes = [
   {
@@ -80,6 +84,26 @@ const routes = [
     path: '/allproducts',
     name: 'allproducts',
     component: AllProductView
+  },
+  {
+    path: '/addproduct',
+    name: 'addproduct',
+    component: AddProductView
+  },
+  {
+    path: '/editproduct',
+    name: 'editproduct',
+    component: EditProductView
+  },
+  {
+    path: '/edithomebanner',
+    name: 'edithomebanner',
+    component: EditHomeBannerView
+  },
+  {
+    path: '/sellerhome',
+    name: 'sellerhome',
+    component: SellerHomeView
   }
 ]
 

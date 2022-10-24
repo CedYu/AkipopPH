@@ -67,19 +67,19 @@
         <div class="boxed2">
             <h2>CONNECT WITH US</h2>
             <div class = "facebook">
-                <a href="https://www.facebook.com/akipopph" target="_blank"><img v-bind:src="require('../assets/facebook.png')" width="100" height="100" alt="facebook"/></a>
+                <a href="https://www.facebook.com/akipopph" target="_blank"><img v-bind:src="require('../assets/facebook.png')" width="80" height="80" alt="facebook"/></a>
             </div>
 
             <div class = "instagram">
-                <a href="https://www.instagram.com/akipopph/" target="_blank"><img v-bind:src="require('../assets/instagram.png')" width="95" height="95" alt="instagram"/></a>
+                <a href="https://www.instagram.com/akipopph/" target="_blank"><img v-bind:src="require('../assets/instagram.png')" width="75" height="75" alt="instagram"/></a>
             </div>
 
             <div class = "tiktok">
-                <a href="https://www.tiktok.com/@akipopph" target="_blank"><img v-bind:src="require('../assets/tiktok.png')" width="95" height="95" alt="tiktok"/></a>
+                <a href="https://www.tiktok.com/@akipopph" target="_blank"><img v-bind:src="require('../assets/tiktok.png')" width="75" height="75" alt="tiktok"/></a>
             </div>
 
             <div class = "shopee">
-                <a href="https://shopee.ph/akipopph" target="_blank"><img v-bind:src="require('../assets/shopee.png')" width="105" height="105" alt="shopee"/></a>
+                <a href="https://shopee.ph/akipopph" target="_blank"><img v-bind:src="require('../assets/shopee.png')" width="85" height="85" alt="shopee"/></a>
             </div>
         </div>
     </div>
@@ -213,7 +213,7 @@
         border: 20px solid #2C3E50;
         background-color: #2C3E50;
         width: 100%;
-        height: 120px;
+        height: 80px;
         margin-top: 600px;
     }
 
@@ -221,29 +221,29 @@
         color: white;
         text-align: left;
         margin-left: 5%;
-        margin-top: 40px;
+        margin-top: 20px;
         font-family: Arial;
         letter-spacing: 0.4px;
     }
 
     .facebook {
         margin-left: 50%;
-        margin-top: -130px;
+        margin-top: -120px;
     }
 
 
     .instagram {
-        margin-left: 57%;
-        margin-top: -102px;
+        margin-left: 60%;
+        margin-top: -82px;
     }
 
     .tiktok {
-        margin-left: 68%;
-        margin-top: -98px;
+        margin-left: 70%;
+        margin-top: -78px;
     }
 
     .shopee {
         margin-left: 79%;
-        margin-top: -102px;
+        margin-top: -84px;
     }
 </style>
