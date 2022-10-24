@@ -53,7 +53,7 @@
         background-color: #FFFBEC;  
         width:100%;
     }
-  
+
     .welcome-header {
         margin-top: 10px;
         margin-bottom: 70px;
@@ -62,7 +62,7 @@
         animation: fadeInDown; 
         animation-duration: 2s; 
     }
-  
+
     .about-message {
         font-family: Arial;
         text-align: center, justify;
@@ -70,5 +70,5 @@
         line-height: 40px;
         font-weight: lighter;
         color: #52575c;
-      }
-</style>
+    }
+</style> 
