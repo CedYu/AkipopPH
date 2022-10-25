@@ -1,3 +1,6 @@
+
+ 
+
 <template>
     <div class="about">
         <section class="about-section">
@@ -71,4 +74,4 @@
         font-weight: lighter;
         color: #52575c;
     }
-</style> 
+</style>  
