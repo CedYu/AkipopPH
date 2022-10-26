@@ -10,10 +10,8 @@ router.get('/Pain', userFunc.Pain)
 
 router.post('/register', userFunc.Register)
 
-
 router.post('/a', userFunc.CheckUsername)
 router.post('/b', userFunc.CheckEmail)
-
 
 router.post('/test', testdb.dbConnect)
 
