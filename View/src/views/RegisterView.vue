@@ -20,7 +20,7 @@
 		    <label for="email">Email
 		    <span style="color:red">*</span></label><br>
 
-      		<input type = text name = "email" id = "email" size = 25 v-model="email" required><br>
+      		<input type = email name = "email" id = "email" size = 25 v-model="email" required><br>
 
 		    <label for="password">Password
 		    <span style="color:red">*</span></label><br>
