@@ -81,7 +81,7 @@ const routes = [
     component: ProductView
   },
   {
-    path: '/allproducts',
+    path: '/products',
     name: 'allproducts',
     component: AllProductView
   },
