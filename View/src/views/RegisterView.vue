@@ -30,7 +30,7 @@
 			<label for="confirm-password">Confirm Password
 		    <span style="color:red">*</span></label><br>
 	
-  		    <input type = password2 name = "password2" id = "password2" size = 25 v-model="password2" required><br>
+  		    <input type = password name = "password2" id = "password2" size = 25 v-model="password2" required><br>
 
 			<p>By clicking Register, you agree to our Terms, Data Policy and Cookies Policy.</p>
             <div class="reg_submit">
@@ -41,6 +41,8 @@
 </template>
 
 <script>
+import axios from "axios"
+
 export default{
 	data(){
 		return{
@@ -56,6 +58,17 @@ export default{
 		test(e){
 			console.log(e)
 			console.log(this.firstname)
+			//Not yet fixed.
+			axios.post("http://localhost:3000/register",{
+				username: this.username,
+				firstname: this.firstname,
+				lastname: this.lastname,
+				email: this.email,
+				password: this.password,
+				password2: this.password2
+			})
+			.then(function(response){console.log(response)})
+			.catch(function(error){console.log(error)})
 		}
 	}
 }
