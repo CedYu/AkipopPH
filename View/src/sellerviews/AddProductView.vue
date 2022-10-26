@@ -6,13 +6,13 @@
         <input type = "file" name = "productimage" accept = "image/gif, image/jpeg, image/png" id="productimage">
 
         <p><span style="color:black">*</span>Product Name</p>
-        <input type = "text" name = "productname" id = "productname">
+        <input type = "text" name = "productname" id = "productname" v-model="name">
 
         <p><span style="color:black">*</span>Category</p>
         <input type = "text" name = "productcategory" id = "productcategory">
 
         <p><span style="color:black">*</span>Product Description</p>
-        <input type = "text" name = "productdesc" id = "productdesc">
+        <input type = "text" name = "productdesc" id = "productdesc" v-model="description">
         </div>
 
         <br><br><br>
@@ -37,14 +37,52 @@
         <input type = "text" name = "productSKU" id = "productSKU">
 
         <p><span style="color:black">*</span>Price</p>
-        <input type = "text" name = "productprice" id = "productprice" placeholder="₱">
+        <input type = "text" name = "productprice" id = "productprice" placeholder="₱" v-model="price">
 
         <p><span style="color:black">*</span>Stock</p>
-        <input type = "text" name = "productstock" id = "productstock">
+        <input type = "text" name = "productstock" id = "productstock" v-model="stock">
+        <button @click="addProduct($event)">Add Product</button>
         </div>
         
         <br><br><br>
 </template>
+
+<script>
+import axios from "axios"
+
+export default{
+	data(){
+		return{
+			productID:0,
+			name:'',
+			description:'',
+			price:0,
+			stock:0
+		}
+	},
+	methods: {
+		addProduct(e){
+			console.log(e)
+			console.log(this.productID)
+            console.log(this.name)
+            console.log(this.description)
+            console.log(this.price)
+            console.log(this.stock)
+			axios.post("http://localhost:3000/addproduct",{
+			 	productID: this.productID,
+			 	name: this.name,
+			 	description: this.description,
+			 	price: this.price,
+			 	stock: this.stock
+			})
+			.then(function(response){console.log(response)})
+			.catch(function(error){console.log(error)})
+		}
+	}
+}
+
+
+</script>
 
 <style scoped>
     .topmargin {
@@ -136,6 +174,12 @@
         height: 300px;
         margin: auto;
         box-shadow: 1px 1px 5px #888888;
+    }
+
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
     }
 
     input[name="productSKU"], input[name="productprice"],input[name="productstock"] {
