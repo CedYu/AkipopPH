@@ -33,7 +33,6 @@
   		    <input type = password2 name = "password2" id = "password2" size = 25 v-model="password2" required><br>
 
 			<p>By clicking Register, you agree to our Terms, Data Policy and Cookies Policy.</p>
-            
             <div class="reg_submit">
       	        <input type = submit value = "Register">
             </div>
