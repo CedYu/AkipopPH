@@ -58,7 +58,6 @@ export default{
 		test(e){
 			console.log(e)
 			console.log(this.firstname)
-			//Not yet fixed.
 			axios.post("http://localhost:3000/register",{
 				username: this.username,
 				firstname: this.firstname,
