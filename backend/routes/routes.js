@@ -7,7 +7,10 @@ const router = Router()
 
 router.get('/', userFunc.func)
 router.get('/Pain', userFunc.Pain)
+
 router.post('/register', userFunc.Register)
+
+
 router.post('/a', userFunc.CheckUsername)
 router.post('/b', userFunc.CheckEmail)
 

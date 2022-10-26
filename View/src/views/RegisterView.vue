@@ -1,36 +1,36 @@
 <template>
     <div class="register">
         <br><br><br><br><br><br><br><h1>Register</h1>
-	    <form>
+	    <form @submit.prevent="test($event)">
 			<label for="username">Username
 		    <span style="color:red">*</span></label><br>
 		
-    		<input type = text name = "username" id = "username" size = 25><br>
+    		<input type = text name = "username" id = "username" size = 25 v-model="username" required><br>
 
     		<label for="firstname">First Name
 		    <span style="color:red">*</span></label><br>
 
-      		<input type = text name = "firstname" id = "firstname" size = 25><br>
+      		<input type = text name = "firstname" id = "firstname" size = 25 v-model="firstname" required><br>
 
 		    <label for="lastname">Last Name
 		    <span style="color:red">*</span></label><br>
 
-      		<input type = text name = "lastname" id = "lastname" size = 25><br>
+      		<input type = text name = "lastname" id = "lastname" size = 25 v-model="lastname" required><br>
 
 		    <label for="email">Email
 		    <span style="color:red">*</span></label><br>
 
-      		<input type = text name = "email" id = "email" size = 25><br>
+      		<input type = text name = "email" id = "email" size = 25 v-model="email" required><br>
 
 		    <label for="password">Password
 		    <span style="color:red">*</span></label><br>
 	
-  		    <input type = password name = "password" id = "password" size = 25><br>
+  		    <input type = password name = "password" id = "password" size = 25 v-model="password" required><br>
 
 			<label for="confirm-password">Confirm Password
 		    <span style="color:red">*</span></label><br>
 	
-  		    <input type = password name = "password" id = "password" size = 25><br>
+  		    <input type = password2 name = "password2" id = "password2" size = 25 v-model="password2" required><br>
 
 			<p>By clicking Register, you agree to our Terms, Data Policy and Cookies Policy.</p>
             
@@ -40,6 +40,30 @@
 	    </form>
 	</div>
 </template>
+
+<script>
+export default{
+	data(){
+		return{
+			username:'',
+			firstname:'',
+			lastname:'',
+			email:'',
+			password:'',
+			password2:''
+		}
+	},
+	methods: {
+		test(e){
+			console.log(e)
+			console.log(this.firstname)
+		}
+	}
+}
+
+
+</script>
+
 
 <style>
 	@font-face {
