@@ -1,7 +1,7 @@
 <template>
     <div class="register">
         <br><br><br><br><br><br><br><h1>Register</h1>
-	    <form @submit.prevent="test($event)">
+	    <form @submit="test($event)">
 			<label for="username">Username
 		    <span style="color:red">*</span></label><br>
 		
