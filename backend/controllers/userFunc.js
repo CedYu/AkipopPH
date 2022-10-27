@@ -22,10 +22,10 @@ const userFunc = {
       })
     },
     CheckUsername: async function(req,res){
-      db.findOne(User, {"username":req.body.username}, null, function(result){ res.send("Username already exists!"); result})
+      db.findOne(User, {"username":req.body.username}, null, function(result){ if(result) {res.send("Username is already taken")} else {res.send("Username is available")} })
     },
     CheckEmail: async function(req,res){
-      db.findOne(User, {"email":req.body.email}, null, function(result){ res.send("Email already in use!"); result})
+      db.findOne(User, {"email":req.body.email}, null, function(result){ if(result) {res.send("Email is already in use")} else {res.send("Email is available")} })
     },
     Login: async function(req,res){
       let {username, password} = req.body
