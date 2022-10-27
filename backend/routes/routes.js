@@ -6,15 +6,17 @@ import sellerFunc from "../controllers/sellerFunc.js";
 
 const router = Router()
 
-router.get('/', userFunc.func)
-router.get('/Pain', userFunc.Pain)
+router.get('/', userFunc.running)
 
 router.post('/register', userFunc.Register)
+router.post('/login', userFunc.Login)
+router.post('/logout', userFunc.Logout)
+
 router.post('/addproduct', sellerFunc.AddItem)
 
-router.post('/a', userFunc.CheckUsername)
-router.post('/b', userFunc.CheckEmail)
+router.post('/checkUsername', userFunc.CheckUsername)
+router.post('/checkEmail', userFunc.CheckEmail)
 
-router.post('/test', testdb.dbConnect)
+router.post('/test', testdb.dbConnect) // Playground
 
 export default router

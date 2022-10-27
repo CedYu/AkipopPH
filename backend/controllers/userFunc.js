@@ -3,25 +3,21 @@ import User from "../models/user.js";
 // import Cart from "../models/cart.js";
 
 const userFunc = {
-    func: async function(req,res){
-      console.log("End");
-      res.send("Hello World");
-    },
-    Pain: async function (req,res){
-      res.send("FUCK")
-    },
-    test: async function(req,res){
-      res.send("Hello Github");
+    running: async function(req,res){
+      res.send("Server running")
     },
     Register: async function (req,res){
       let {username, firstname, lastname, email, password, password2} = req.body
-      
+
+      if(!firstname.isAlpha()){ res.send("Invalid first name"); return}
+      if(!lastname.isAlpha()){ res.send("Invalid last name"); return}
       if (password !== password2){ res.send("Passwords do not match"); return }
       if (password.length < 8){ res.send("Password too short"); return }
       if (username.length < 4){ res.send("Invalid Username"); return }
-      
+      if (lastname.length < 2){ res.send("Invalid Last Name"); return }
+
       db.insertOne(User, {"username":username, "firstname":firstname, "lastname":lastname, "email":email, "password":password}, function(result){
-        if(result){res.send("User added"); console.log("User added"); return}
+        if(result){res.send("User added\nUsername:", username); return }
         res.send("Username or Email is invalid!!!"); return // Integrate a checker in front end
       })
     },
