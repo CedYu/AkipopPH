@@ -9,8 +9,8 @@ const userFunc = {
     Register: async function (req,res){
       let {username, firstname, lastname, email, password, password2} = req.body
 
-      if(!firstname.isAlpha()){ res.send("Invalid first name"); return}
-      if(!lastname.isAlpha()){ res.send("Invalid last name"); return}
+      // if(!firstname.isAlpha()){ res.send("Invalid first name"); return}
+      // if(!lastname.isAlpha()){ res.send("Invalid last name"); return}
       if (password !== password2){ res.send("Passwords do not match"); return }
       if (password.length < 8){ res.send("Password too short"); return }
       if (username.length < 4){ res.send("Invalid Username"); return }
