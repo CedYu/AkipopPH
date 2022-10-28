@@ -57,8 +57,7 @@ export default{
 	methods: {
 		test(e){
 			console.log(e)
-			console.log(this.firstname)
-			axios.post("http://localhost:3000/register",{
+			axios.post("http://localhost:3000/register", {
 				username: this.username,
 				firstname: this.firstname,
 				lastname: this.lastname,

@@ -1,7 +1,7 @@
 <template>
     <div class="login">
 		<br><br><br><br><br><br><br><br><h1>Log In</h1>
-	    <form>
+	    <form @submit="test($event)">
 			<label for="username">Username</label><br>
 		
     		<input type = text name = "username" id = "username" size = 25><br>
@@ -19,6 +19,30 @@
 	    </form>
 	</div>
 </template>
+
+<script>
+import axios from "axios"
+
+export default{
+	data(){
+		return{
+			username:'',
+			password:''
+		}
+	},
+	methods: {
+		test(e){
+			console.log("Axios Login", e)
+			axios.post("http://localhost:3000/login", {
+				username: this.username,
+				password: this.password
+			})
+			.then(function(response){console.log(response)})
+			.catch(function(error){console.log(error)})
+		}
+	}
+}
+</script>
 
 <style>
 	@font-face {
