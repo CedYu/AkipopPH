@@ -15,15 +15,14 @@ const userFunc = {
         }
         return words.join(" ")
       }
-
-      function validateEmail(email) {
-        var re = /\S+@\S+\.\S+/;
-        return re.test(email);
-      }
+      
       let {username, firstname, lastname, email, password, password2} = req.body
-
-      if(!/^[a-zA-Z ]+$/.test(firstname)){ res.send("Invalid first name"); return}
-      if(!/^[a-zA-Z ]+$/.test(lastname)){ res.send("Invalid last name"); return}
+      firstname = firstname.trim()
+      lastname = lastname.trim()
+      if(firstname === "") { res.send("First name is required"); return }
+      if(lastname === "") { res.send("Last name is required"); return }
+      if(!/^[a-zA-Z ]+$/.test(firstname)){ res.send("Invalid first name"); return }
+      if(!/^[a-zA-Z ]+$/.test(lastname)){ res.send("Invalid last name"); return }
       if (password !== password2){ res.send("Passwords do not match"); return }
       if (password.length < 8){ res.send("Password too short"); return }
       if (username.length < 4){ res.send("Invalid Username"); return }
