@@ -7,16 +7,29 @@ const userFunc = {
       res.send("Server running")
     },
     Register: async function (req,res){
+      function Capitalize(str){
+        var words = str.toLowerCase().split(" ")
+        words = words.filter(word => word !== "")
+        for (let i = 0; i < words.length; i++){
+          words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1)
+        }
+        return words.join(" ")
+      }
+
+      function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+      }
       let {username, firstname, lastname, email, password, password2} = req.body
 
-      // if(!firstname.isAlpha()){ res.send("Invalid first name"); return}
-      // if(!lastname.isAlpha()){ res.send("Invalid last name"); return}
+      if(!/^[a-zA-Z ]+$/.test(firstname)){ res.send("Invalid first name"); return}
+      if(!/^[a-zA-Z ]+$/.test(lastname)){ res.send("Invalid last name"); return}
       if (password !== password2){ res.send("Passwords do not match"); return }
       if (password.length < 8){ res.send("Password too short"); return }
       if (username.length < 4){ res.send("Invalid Username"); return }
       if (lastname.length < 2){ res.send("Invalid Last Name"); return }
 
-      db.insertOne(User, {"username":username, "firstname":firstname, "lastname":lastname, "email":email, "password":password}, function(result){
+      db.insertOne(User, {"username":username, "firstname":Capitalize(firstname), "lastname":Capitalize(lastname), "email":email, "password":password}, function(result){
         if(result){res.send("User added\nUsername:" + username); return }
         res.send("Username or Email is invalid!!!"); return // Integrate a checker in front end
       })
