@@ -19,12 +19,14 @@ const userFunc = {
       let {username, firstname, lastname, email, password, password2} = req.body
       firstname = firstname.trim()
       lastname = lastname.trim()
+
       if(firstname === "") { res.send("First name is required"); return }
       if(lastname === "") { res.send("Last name is required"); return }
       if(!/^[a-zA-Z ]+$/.test(firstname)){ res.send("Invalid first name"); return }
       if(!/^[a-zA-Z ]+$/.test(lastname)){ res.send("Invalid last name"); return }
       if (password !== password2){ res.send("Passwords do not match"); return }
       if (password.length < 8){ res.send("Password too short"); return }
+      // TODO: Password validator to only allow alphanumeric characters and !@#$%^&*_-+=
       if (username.length < 4){ res.send("Invalid Username"); return }
       if (lastname.length < 2){ res.send("Invalid Last Name"); return }
 
