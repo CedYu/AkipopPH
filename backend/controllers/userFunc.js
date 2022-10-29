@@ -17,7 +17,7 @@ const userFunc = {
       if (lastname.length < 2){ res.send("Invalid Last Name"); return }
 
       db.insertOne(User, {"username":username, "firstname":firstname, "lastname":lastname, "email":email, "password":password}, function(result){
-        if(result){res.send("User added\nUsername:", username); return }
+        if(result){res.send("User added\nUsername:" + username); return }
         res.send("Username or Email is invalid!!!"); return // Integrate a checker in front end
       })
     },
