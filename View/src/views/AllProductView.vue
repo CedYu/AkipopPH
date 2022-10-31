@@ -20,9 +20,9 @@
 
 <script> 
 export default{
-    <!-- name:"AllProducts",
-         props:["products"],
-         -->
+    <!--name:"AllProducts",
+         props:["products"],-->
+         
     data(){
         return{
             mainProducts:[
