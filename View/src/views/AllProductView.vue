@@ -20,9 +20,6 @@
 
 <script> 
 export default{
-    <!--name:"AllProducts",
-         props:["products"],-->
-         
     data(){
         return{
             mainProducts:[
