@@ -21,6 +21,9 @@
         <DropdownMenuAccount title="Account"/> 
       </div>
     </nav>
+  <router-view>
+  :baseURL="baseURL" <!-- http://localhost:8080/ -->
+  :products="products"
   <router-view/>
   </div>
 </template>
@@ -28,12 +31,27 @@
 <script>
   import DropdownMenuAccount from '@/components/DropdownMenuAccount.vue';
   import DropdownMenuProduct from '@/components/DropDownMenuProduct.vue';
+  improt axios from 'axios';
   export default {
   name: 'app',
   components: {
     DropdownMenuAccount,
     DropdownMenuProduct,
-}
+   },
+   data(){
+    return{
+      URL: ""
+      products: []
+     }
+   },
+   methods:{
+     async getProducts() {
+       await axios.get(baseURL + 'allproducts/')
+       .then(res => {
+         this.products = res.data
+       }).catch((error) => console.log(error));
+     }  
+   }
 }
 </script>
 
