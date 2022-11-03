@@ -23,16 +23,15 @@ const userFunc = {
       if(firstname === "") { res.send("First name is required"); return }
       if(lastname === "") { res.send("Last name is required"); return }
       if(!/^[a-zA-Z ]+$/.test(firstname)){ res.send("Invalid first name"); return }
-      if(!/^[a-zA-Z ]+$/.test(lastname)){ res.send("Invalid last name"); return }
+      if(!/^[a-zA-Z ]+$/.test(lastname) || lastname.length < 2){ res.send("Invalid last name"); return }
       if (password !== password2){ res.send("Passwords do not match"); return }
-      if (password.length < 8){ res.send("Password too short"); return }
-      // TODO: Password validator to only allow alphanumeric characters and !@#$%^&*_-+=
+      if (password.length < 8 || password.length > 16){ res.send("Password length should be 8 to 16 characters"); return }
+      if(!/^[a-zA-Z0-9!@#$^&*()-=]+$/.test(password)){ res.send("Invalid password"); return }
       if (username.length < 4){ res.send("Invalid Username"); return }
-      if (lastname.length < 2){ res.send("Invalid Last Name"); return }
 
       db.insertOne(User, {"username":username, "firstname":Capitalize(firstname), "lastname":Capitalize(lastname), "email":email, "password":password}, function(result){
         if(result){res.send("User added\nUsername:" + username); return }
-        res.send("Username or Email is invalid!!!"); return // Integrate a checker in front end
+        res.send("Username or Email is invalid!!!"); return
       })
     },
     CheckUsername: async function(req,res){
