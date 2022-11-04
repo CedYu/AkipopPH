@@ -42,8 +42,12 @@ const userFunc = {
     },
     Login: async function(req,res){
       let {username, password} = req.body
+      if (password !== password2){ res.send("Passwords do not match"); return }
+      if (password.length < 8 || password.length > 16){ res.send("Password length should be 8 to 16 characters"); return }
+      if(!/^[a-zA-Z0-9!@#$^&*()-=]+$/.test(password)){ res.send("Invalid password"); return }
+      if (username.length < 4){ res.send("Invalid Username"); return }
       db.findOne(User, {"username":username, "password":password}, null, function(result){
-        if(!result){res.send("Invalid Username or Password"); return}
+        if(!result){res.send("Invalid Username or Password"); return "Invalid"}
         
         // Create session key and store in database
         res.send("Login Successful"); return // return the session key
@@ -51,7 +55,7 @@ const userFunc = {
     },
     Logout: async function(req,res){
       // Delete session key from database
-      res.send("Logout Successful")
+      res.send("Account Logged Out")
     },
 }
 
