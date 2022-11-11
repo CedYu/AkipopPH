@@ -18,6 +18,12 @@ import SellerHomeView from '../sellerviews/SellerHomeView.vue'
 
 const routes = [
   {
+    path:'',
+    name:'',
+    component:HomeView
+
+  },
+  {
     path: '/',
     name: '',
     component: HomeView
