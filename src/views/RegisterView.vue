@@ -1,7 +1,7 @@
 <template>
     <div class="register">
         <br><br><br><br><br><br><br><h1>Register</h1>
-	    <form @submit="test($event)">
+	    <form>
 			<label for="username">Username
 		    <span style="color:red">*</span></label><br>
 		
@@ -41,7 +41,6 @@
 </template>
 
 <script>
-import axios from "axios"
 
 export default{
 	data(){
@@ -55,19 +54,6 @@ export default{
 		}
 	},
 	methods: {
-		test(e){
-			console.log(e)
-			axios.post("http://localhost:3000/register", {
-				username: this.username,
-				firstname: this.firstname,
-				lastname: this.lastname,
-				email: this.email,
-				password: this.password,
-				password2: this.password2
-			})
-			.then(function(response){console.log(response)})
-			.catch(function(error){console.log(error)})
-		}
 	}
 }
 

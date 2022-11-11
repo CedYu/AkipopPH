@@ -41,14 +41,13 @@
 
         <p><span style="color:black">*</span>Stock</p>
         <input type = "text" name = "productstock" id = "productstock" v-model="stock">
-        <button @click="addProduct($event)">Add Product</button>
+        <!-- <button @click="addProduct($event)">Add Product</button> -->
         </div>
         
         <br><br><br>
 </template>
 
 <script>
-import axios from "axios"
 
 export default{
 	data(){
@@ -61,23 +60,6 @@ export default{
 		}
 	},
 	methods: {
-		addProduct(e){
-			console.log(e)
-			console.log(this.productID)
-            console.log(this.name)
-            console.log(this.description)
-            console.log(this.price)
-            console.log(this.stock)
-			axios.post("http://localhost:3000/addproduct",{
-			 	productID: this.productID,
-			 	name: this.name,
-			 	description: this.description,
-			 	price: this.price,
-			 	stock: this.stock
-			})
-			.then(function(response){console.log(response)})
-			.catch(function(error){console.log(error)})
-		}
 	}
 }
 
