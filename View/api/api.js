@@ -1,8 +1,0 @@
-import axios from "axios"
-
-export const api={
-
-  
-
-}
-export default api
