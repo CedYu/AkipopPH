@@ -1,4 +1,4 @@
-<img src="View\akipop.jpg" alt="Logo" width=200/><br>
+<img src="akipop.jpg" alt="Logo" width=200/><br>
 # Akipop-PH
 ### Links
 1. [Shopee](https://shopee.ph/akipopph) <br>
