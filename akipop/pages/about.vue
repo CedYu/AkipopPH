@@ -1,10 +1,7 @@
-
- 
-
 <template>
     <div class="about">
         <section class="about-section">
-            <br><br><br><br><br><br><br><br><img v-bind:src="require('../assets/logopink.png')" width="350" height="200" alt="logopink"/>
+            <br><br><br><br><br><br><br><br><img src="../assets/img/logopink.png" width="350" height="200" alt="logopink"/>
             <h1 class="welcome-header">WELCOME TO<br>AKIPOP PH</h1>
             <p class="about-message">
             AKIPOP PH is a handmade craft store made with love just for you
@@ -26,15 +23,14 @@
         </section>
 
         <div class="soda-left">
-            <img v-bind:src="require('../assets/about-left.png')" width="500" height="500" alt="soda-left"/>
+            <img src="../assets/img/about-left.png" width="500" height="500" alt="soda-left"/>
         </div>
 
         <div class="soda-right">
-            <img v-bind:src="require('../assets/about-right.png')" width="970" height="1020" alt="soda-right"/>
+            <img src="'../assets/img/about-right.png" width="970" height="1020" alt="soda-right"/>
         </div>
     </div>
 </template>
-
 
 <style>
     .soda-left {
