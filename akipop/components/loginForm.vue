@@ -48,8 +48,6 @@ export default{
 	.login {
 		font-family: arial;
 		background-color: #FFFBEC;
-		/*background-image: url("../assets/loginbg.png");
-		background-size: cover;*/
 		color: #2C3E50;
 	}
 
