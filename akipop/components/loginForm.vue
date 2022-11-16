@@ -1,3 +1,17 @@
+<script>
+export default{
+	data(){
+		return{
+			username:'',
+			password:''
+		}
+	},
+	methods: {
+
+		}
+}
+</script>
+
 <template>
   <div class="login">
 		<br><br><br><br><br><br><br><br><h1>Log In</h1>
@@ -14,27 +28,12 @@
       	        <input type = submit value = "Log In">
             </div>
 			<div id="extra">
-				<p>line<br>line<br>line</p>
 			</div>
 	    </form>
 	</div>
 </template>
 
-<script>
-export default{
-	data(){
-		return{
-			username:'',
-			password:''
-		}
-	},
-	methods: {
-
-		}
-}
-</script>
-
-<style>
+<style scoped>
 	@font-face {
 		font-family: lemonmilk;
     		src: url("../assets/LEMONMILK-Bold.otf");
@@ -53,7 +52,7 @@ export default{
 		color: #2C3E50;
 	}
 
-    .login h1 {
+  .login h1 {
 		font-family: lemonmilk;
 		font-size: 350%;
 		text-align: center;

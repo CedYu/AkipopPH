@@ -27,7 +27,7 @@
         </div>
 
         <div class="soda-right">
-            <img src="'../assets/img/about-right.png" width="970" height="1020" alt="soda-right"/>
+            <img src="../assets/img/about-right.png" width="970" height="1020" alt="soda-right"/>
         </div>
     </div>
 </template>

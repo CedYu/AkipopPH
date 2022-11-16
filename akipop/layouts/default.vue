@@ -1,4 +1,4 @@
 <template>
   <Akinav/>
-  <slot/>
+  <slot />
 </template>
