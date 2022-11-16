@@ -18,8 +18,6 @@
 </template>
 
 <script>
-import { NuxtLink } from '~~/.nuxt/components';
-
 export default {
     name: "product_drop",
     props: ["title"],
@@ -27,8 +25,7 @@ export default {
         return {
             isOpen: false,
         };
-    },
-    components: { NuxtLink }
+    }
 }
 </script>  
 
