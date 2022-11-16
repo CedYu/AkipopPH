@@ -1,5 +1,6 @@
 <script>
 export default{
+	loading:true,
 	data(){
 		return{
 			username:'',
@@ -18,11 +19,11 @@ export default{
 	    <form>
 			<label for="username">Username</label><br>
 		
-    		<input type = text name = "username" id = "username" size = 25><br>
+    		<input type = text name = "username" id = "username" placeholder="Username" size = 25><br>
 
 		    <label for="password">Password</label>
 	
-  		    <input type = password name = "password" id = "password" size = 25><br>
+  		    <input type = password name = "password" id = "password" placeholder="Password" size = 25><br>
 
             <div class="login_submit">
       	        <input type = submit value = "Log In">
@@ -81,6 +82,33 @@ export default{
 	.login_submit input[type="submit"]:hover {
 		background-color: #FFDD62;
 		color: black;
+	}
+
+	p {
+		font-size: 82%;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	form {
+		text-align: left; 
+  		margin-left: auto; 
+        margin-right: auto;
+ 		width: 490px;
+	}
+
+	input {
+		width: 460px;
+    	padding: 13px;
+    	display: block;
+		border-style: solid;
+		border-color: #D8D1C9;
+    	background-color: #FFF9ED;
+		outline: none;
+	}
+
+	input[type=text]:focus {
+  		border: 3px solid pink;
 	}
 
 	p {
