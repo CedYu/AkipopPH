@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
   <header>
   <nav>
     <div id="logo">
@@ -24,9 +24,11 @@
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,10 +36,10 @@
   color: #000000;
   margin: -10px -10px;
 }
+
 nav {
   padding: 20px;
   background-color: #e95a85;
-  margin: -1%;
   position: fixed;
   top: 0;
   width: 110%;

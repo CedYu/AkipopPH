@@ -1,9 +1,9 @@
 <template>
-  <div class="home">
+    <div class="home">
         <br><br><br><br><br><br>
         <h1 class="homeh1">HOME</h1>
         <div class="banner1">
-          <img src="../assets/img/banner1.png" width="1200" height="680" alt="banner1"/>
+            <img v-bind:src="'../banner1.png'" width="1200" height="680" alt="banner1"/>
         </div>
 
         <div class="boxed">
@@ -60,7 +60,7 @@
             <p>a very very amazing stationary</p>
             <p>10</p>
             <p><button>Add to Cart</button></p>
-            <p><button><router-link to="/products">See More Details</router-link></button></p>
+            <p><button><NuxtLink to="/product">See More Details</NuxtLink></button></p>
         </div>
 
         <div class="boxed2">
@@ -82,7 +82,6 @@
             </div>
         </div>
     </div>
-  
 </template>
 
 <script>
@@ -90,6 +89,55 @@
 </script>
 
 <style>
+    .home {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #000000;
+        margin: -10px -10px;
+    }
+    @font-face {
+		font-family: "lemonmilk";
+    	src: url("../assets/LEMONMILK-Bold.otf");
+	}
+
+	@font-face {
+		font-family: "lemonmilkreg";
+		src: url("../assets/LEMONMILK-Regular.otf");
+	}
+    
+    h1 {
+		font-family: "lemonmilk";
+		font-size: 350%;
+		text-align: center;
+		letter-spacing: -3px;
+	}
+    .mainProduct {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 190px;
+      margin: 80px;
+      text-align: center;
+      font-family: arial;
+      float: left;
+      background-color: #FFFBEC;
+      
+    }
+    .price {
+      color: #e95a85;
+      font-size: 22px;
+    }
+    
+    .mainProduct button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #e95a85;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
     body {
         background-color: #FFFBEC; 
         min-width: 100%;
@@ -109,7 +157,6 @@
         border: 20px solid #E86187;
         background-color: #E86187;
         width: 100%;
-        margin: -1%;
         height: 200px;
         margin-top: 50px;
     }
@@ -127,7 +174,7 @@
         margin-top: -50px;
         margin-left: 100px;
         font-size: 150%;
-        font-family: lemonmilk;
+        font-family: "lemonmilk";
         color: white;
     }
 
@@ -155,7 +202,7 @@
         margin-top: -60px;
         margin-left: 108px;
         font-size: 150%;
-        font-family: lemonmilk;
+        font-family: "lemonmilk";
         color: white;
     }
 
@@ -196,13 +243,19 @@
         color: white;
     }
 
+    p{
+		font-size: 82%;
+		text-align: center;
+		font-weight: bold;
+	}
+
     h2 {
         color: #2C3E50;
-        font-family: lemonmilk;
-		  font-size: 300%;
-		  text-align: center;
-		  letter-spacing: -3px;
-		  margin: 50px;
+        font-family: "lemonmilk";
+		font-size: 300%;
+		text-align: center;
+		letter-spacing: -3px;
+		margin: 50px;
     }
 
     .subtext_request a{
@@ -214,7 +267,6 @@
         border: 20px solid #2C3E50;
         background-color: #2C3E50;
         width: 100%;
-        margin:-1%;
         height: 80px;
         margin-top: 600px;
     }
