@@ -9,7 +9,7 @@
             <br>with an exciting afternoon of binge-watching your favorite anime!
 
             <br><br>Our shop is built on a passion for the love of crafts and merch! Aiming to 
-            <br>deliver high qualityand refreshing takes on design and print, AKIPOP PH
+            <br>deliver high quality and refreshing takes on design and print, AKIPOP PH
             <br>delivers fresh content that's both familiar, yet totally new.
             
             <br><br>Our shop offers product such as high-quality prints, photocards, stickers, accessories,

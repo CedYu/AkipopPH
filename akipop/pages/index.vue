@@ -1,9 +1,9 @@
 <template>
-  <div class="home">
+    <div class="home">
         <br><br><br><br><br><br>
         <h1 class="homeh1">HOME</h1>
         <div class="banner1">
-          <img src="../assets/img/banner1.png" width="1200" height="680" alt="banner1"/>
+            <img src="../assets/img/banner1.png" width="1200" height="680" alt="banner1"/>
         </div>
 
         <div class="boxed">
@@ -82,7 +82,6 @@
             </div>
         </div>
     </div>
-  
 </template>
 
 <script>
@@ -199,10 +198,10 @@
     h2 {
         color: #2C3E50;
         font-family: lemonmilk;
-		  font-size: 300%;
-		  text-align: center;
-		  letter-spacing: -3px;
-		  margin: 50px;
+        font-size: 300%;
+        text-align: center;
+        letter-spacing: -3px;
+        margin: 50px;
     }
 
     .subtext_request a{
