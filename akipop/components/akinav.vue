@@ -28,7 +28,13 @@
 </script>
 
 <style scoped>
-
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+  margin: -10px -10px;
+}
 nav {
   padding: 20px;
   background-color: #e95a85;
