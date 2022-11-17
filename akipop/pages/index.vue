@@ -60,7 +60,7 @@
             <p>a very very amazing stationary</p>
             <p>10</p>
             <p><button>Add to Cart</button></p>
-            <p><button><NuxtLink to="/product">See More Details</NuxtLink></button></p>
+            <p><button><NuxtLink to="/products">See More Details</NuxtLink></button></p>
         </div>
 
         <div class="boxed2">
