@@ -1,0 +1,4 @@
+<template>
+  <Akinav/>
+  <slot />
+</template>

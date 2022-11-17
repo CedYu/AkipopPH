@@ -11,7 +11,6 @@
                 <div class="request">
                     <img v-bind:src="require('../assets/request.png')" width="80" height="80" alt="request"/>
                 </div>
-
                 <div class="maintext_request">
                     GOT REQUESTS?
                 </div>
