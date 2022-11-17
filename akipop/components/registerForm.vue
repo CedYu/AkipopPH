@@ -34,14 +34,14 @@
 
 			<p>By clicking Register, you agree to our Terms, Data Policy and Cookies Policy.</p>
             <div class="reg_submit">
-      	        <input type = submit value = "Register">
+      	        <input type=submit value="Register" @click="registerUser($event)">
             </div>
 	    </form>
 	</div>
 </template>
 
 <script>
-
+import supabase from "../config/supabaseClient"
 export default{
 	data(){
 		return{
@@ -50,10 +50,37 @@ export default{
 			lastname:'',
 			email:'',
 			password:'',
-			password2:''
+			password2:'',
+			role: 1
 		}
 	},
 	methods: {
+		async registerUser(e){
+			e.preventDefault()
+			if (!username || !firstname || !lastname || !email || !password || !password2){
+				console.log("There are missing fields! \n")
+				return
+			}
+			console.log("Inside method")
+			console.log("Username:" + this.username + "\n" +
+						"Firstname:" + this.firstname + "\n" +
+						"Lastname:" + this.lastname + "\n" +
+						"Email:" + this.email + "\n" + 	
+						"Password:" + this.password + "\n" +
+						"Password2:" + this.password2 + "\n")
+
+			const {data, error} = await supabase
+			.from('User')
+			.insert([{email:this.email, username:this.username, password:this.password, firstname:this.firstname, lastname:this.lastname, role:this.role}])
+			.select()
+
+			if (error){
+				console.log(error)
+			}
+			if (data){
+				console.log(data)
+			}
+		}
 	}
 }
 
