@@ -61,6 +61,18 @@ export default{
 				console.log("There are missing fields! \n")
 				return
 			}
+			if(this.username.length < 4){
+				console.log('Your username has to be atleast 4 characters long')
+				return
+			}
+			if(this.password.length < 4){
+				console.log('Your password has to be atleast 4 characters long')
+				return
+			}
+			if(this.password!=this.password2){
+				console.log('Please make sure your passwords match')
+				return
+			}
 			console.log("Inside method")
 			console.log("Username:" + this.username + "\n" +
 						"Firstname:" + this.firstname + "\n" +
