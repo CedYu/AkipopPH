@@ -24,10 +24,19 @@ export default {
     data() {
         return {
             isOpen: false,
+            prints:'prints',
         };
+    },
+    methods:{
+        
     }
 }
 </script>  
+
+<script setup>
+console.log("Hello")
+</script>
+
 
 <style>
     .submenu_product {
