@@ -6,7 +6,7 @@
       :key="mainProduct.id" 
       class="mainProduct">
   
-    <img src="../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
+    <img src="../../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
   
     <p>{{mainProduct.name}}</p>
     <p class="price">{{mainProduct.price}}</p>
