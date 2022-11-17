@@ -2,18 +2,18 @@
   <div id="app">
   <header>
   <nav>
+    <div id="navbar">
+      <NuxtLink to="/">HOME &emsp; &emsp; &emsp; &emsp;</NuxtLink>    
+      <NuxtLink to="/about">ABOUT &emsp; &emsp; &emsp; &emsp;</NuxtLink> 
+    </div>
     <div id="logo">
         <NuxtLink to="/"><img src="../assets/img/akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</NuxtLink> 
-    </div>
-    <div id="navbar">
-        <NuxtLink to="/">HOME &emsp; &emsp; &emsp; &emsp;</NuxtLink>    
-        <NuxtLink to="/about">ABOUT &emsp; &emsp; &emsp; &emsp;</NuxtLink> 
     </div>
     <div id="dropdown_product">
       <DropDownMenuProduct title="Product"/>
     </div>       
     <div id="navbar_cart">
-      <NuxtLink to="/cart">CART &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+      <NuxtLink to="/user/cart">CART &emsp; &emsp; &emsp; &emsp;</NuxtLink>
     </div>
     <div id="dropdown_account">
       <DropdownMenuAccount title="Account"/> 

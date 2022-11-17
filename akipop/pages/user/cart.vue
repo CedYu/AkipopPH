@@ -1,41 +1,36 @@
 <template>
-
     <section class="Cart">
-        
         <div class="Cart-Container">
             <div class="Header">
                 <br><br><br><br><br><br><br><br><h1 class="Shopping-Cart">SHOPPING CART</h1>     
             </div>
-    
-            <div >
-    
-                  <!--CART OPTION2-->
-                  <div id="app3">
-                    
+            <div>
+                <!--CART OPTION2-->
+                <div id="app3">
                     <section class="products">
-                        <div 
-                        v-for="product in products"
-                        :key="product.id"
-                        class="product"
-                        >
-                          <!--VUE JS-->
-                          <input type="checkbox" name="select-product">
-                            <h3 class="cart-product-header">{{product.name}}</h3>
+                    <div 
+                    v-for="product in products"
+                    :key="product.id"
+                    class="product"
+                    >
+                        <!--VUE JS-->
+                        <input type="checkbox" name="select-product">
+                        <h3 class="cart-product-header">{{product.name}}</h3>
                             
-                            <!--FOR IMAGE-->
-                            <!-- <img 
-                                src={{product.image}} style={{ height="120px" }}  
-                                :alt="product.name" 
-                                class="product-image"
-                            > -->
+                        <!--FOR IMAGE-->
+                        <!-- <img 
+                            src={{product.image}} style={{ height="120px" }}  
+                            :alt="product.name" 
+                            class="product-image"
+                        > -->
     
-                            <p class="cart-product-description">{{product.description}}</p>
-                            
-                            <div class="cart">
-                                <button class="cart-button">-</button>
-                                <span class="cart-quantity">{{product.quantity}}</span>
-                                <button class="cart-button">+</button>
-                            </div>
+                        <p class="cart-product-description">{{product.description}}</p>
+                        
+                        <div class="cart">
+                            <button class="cart-button">-</button>
+                            <span class="cart-quantity">{{product.quantity}}</span>
+                            <button class="cart-button">+</button>
+                        </div>
     
                 </div>
                 </section>
