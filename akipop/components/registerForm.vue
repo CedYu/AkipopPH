@@ -57,20 +57,20 @@ export default{
 	methods: {
 		async registerUser(e){
 			e.preventDefault()
-			if (!username || !firstname || !lastname || !email || !password || !password2){
-				console.log("There are missing fields! \n")
+			if (this.username == '' || this.firstname == ''|| this.lastname =='' || this.email == '' || this.password == '' || this.password2 == ''){
+				alert("There are missing fields! \n")
 				return
 			}
-			if(this.username.length < 4){
-				console.log('Your username has to be atleast 4 characters long')
+			else if(this.username.length < 4){
+				alert('Your username has to be atleast 4 characters long')
 				return
 			}
-			if(this.password.length < 4){
-				console.log('Your password has to be atleast 4 characters long')
+			else if(this.password.length < 4){
+				alert('Your password has to be atleast 4 characters long')
 				return
 			}
-			if(this.password!=this.password2){
-				console.log('Please make sure your passwords match')
+			else if(this.password!=this.password2){
+				alert('Please make sure your passwords match')
 				return
 			}
 			console.log("Inside method")
