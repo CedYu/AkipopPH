@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ['animate.css/animate.min.css'],
+  modules:['@nuxtjs/supabase'],
   app:{
     head:{
       charset:'utf-8', viewport:'width=500 initial-scale=1',

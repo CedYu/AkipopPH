@@ -1,7 +1,7 @@
 <template>
       <div class="register">
         <br><br><br><br><br><br><br><h1>Register</h1>
-	    <form>
+	    <form @submit="registerUser($event)">
 			<label for="username">Username
 		    <span style="color:red">*</span></label><br>
 		
@@ -34,14 +34,15 @@
 
 			<p>By clicking Register, you agree to our Terms, Data Policy and Cookies Policy.</p>
             <div class="reg_submit">
-      	        <input type=submit value="Register" @click="registerUser($event)">
+      	        <input type=submit value="Register" >
             </div>
 	    </form>
 	</div>
 </template>
 
+
+
 <script>
-import supabase from "../config/supabaseClient"
 export default{
 	data(){
 		return{
@@ -55,8 +56,10 @@ export default{
 		}
 	},
 	methods: {
+		
 		async registerUser(e){
-			e.preventDefault()
+			const supabase = useSupabaseClient()
+			e.preventDefault() //This prevents form clearing when you submit the form.
 			if (this.username == '' || this.firstname == ''|| this.lastname =='' || this.email == '' || this.password == '' || this.password2 == ''){
 				alert("There are missing fields! \n")
 				return
@@ -98,7 +101,6 @@ export default{
 
 
 </script>
-
 
 <style>
 	@font-face {
