@@ -31,7 +31,7 @@
                 </section>
     
                 <div class="cart-activity-option">
-                    <button class="cart-button2"><NuxtLink to="/checkout">Checkout Deals</NuxtLink></button>
+                    <button class="cart-button2"><NuxtLink to="/user/cart/checkout">Checkout Deals</NuxtLink></button>
                     <a href="index.html"><img src="../../assets/img/brand.jpg" width="40" alt="brand-logo" ></a>
                     <button class="cart-button2">Remove Deals</button>
                 </div>
