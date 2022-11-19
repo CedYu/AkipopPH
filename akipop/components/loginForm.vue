@@ -1,29 +1,31 @@
-<script>
-export default{
-	loading:true,
-	data(){
-		return{
-			username:'',
-			password:''
-		}
-	},
-	methods: {
+<script setup>
+const email=ref('')
+const password=ref('')
 
-	}
+const client= useSupabaseClient()
+
+const login = async() =>{
+	console.log(email.value)
+	const {user, error} = await client.auth.signInWithPassword({
+		email: email.value,
+		password: password.value
+	})
+	console.log('user',user)
+	console.log('error',error)
 }
 </script>
 
 <template>
 <div class="login">
 	<br><br><br><br><br><br><br><br><h1>LOGIN</h1>
-	<form>
-		<label for="username">Username</label><br>
+	<form @submit.prevent="login()">
+		<label for="email">Email</label><br>
 	
-		<input type = text name = "username" id = "username" placeholder="Username" size = 25><br>
+		<input type = text name = "email" id = "email" placeholder="Email" v-model="email" size = 25><br>
 
 		<label for="password">Password</label>
 
-		<input type = password name = "password" id = "password" placeholder="Password" size = 25><br>
+		<input type = password name = "password" id = "password" placeholder="Password" v-model="password" size = 25><br>
 
 		<div class="login_submit">
 			<input type = submit value = "Log In">

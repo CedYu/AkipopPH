@@ -18,6 +18,7 @@
         <div id="dropdown_account">
           <DropdownMenuAccount title="Account"/> 
         </div>
+        
       </nav>
     </header>
   </div>

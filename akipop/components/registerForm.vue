@@ -84,17 +84,30 @@ export default{
 						"Password:" + this.password + "\n" +
 						"Password2:" + this.password2 + "\n")
 
-			const {data, error} = await supabase
-			.from('User')
-			.insert([{email:this.email, username:this.username, password:this.password, firstname:this.firstname, lastname:this.lastname, role:this.role}])
-			.select()
+			// const {data, error} = await supabase
+			// .from('User')
+			// .insert([{email:this.email, username:this.username, password:this.password, firstname:this.firstname, lastname:this.lastname, role:this.role}])
+			// .select()
+			console.log(this.email)
+			const {data2, error2} = await supabase.auth.signUp({
+				email:this.email,
+				password:this.password
+			})
+			console.log(error2)
+			console.log(data2)
+			// if (error){
+			// 	console.log(error)
+			// }
+			// if (data){
+			// 	console.log(data)
+			// }
+			if (error2){
+				console.log(error2)
+			}
+			if (data2){
+				console.log(data2)
+			}
 
-			if (error){
-				console.log(error)
-			}
-			if (data){
-				console.log(data)
-			}
 		}
 	}
 }
