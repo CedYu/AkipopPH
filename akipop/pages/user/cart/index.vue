@@ -12,36 +12,31 @@
                         <!--VUE JS-->
                         <input type="checkbox" name="select-product">
                         <h3 class="cart-product-header">{{product.name}}</h3>
-                            
                         <!--FOR IMAGE-->
                         <!-- <img 
                             src={{product.image}} style={{ height="120px" }}  
                             :alt="product.name" 
                             class="product-image"
                         > -->
-    
-                        <p class="cart-product-description">{{product.description}}</p>
-                        
                         <div class="cart">
                             <button class="cart-button">-</button>
                             <span class="cart-quantity">{{product.quantity}}</span>
                             <button class="cart-button">+</button>
                         </div>
+                    </div>
+                    </section>
+        
+                    <div class="cart-activity-option">
+                        <button class="cart-button2"><NuxtLink to="/user/cart/checkout">Checkout Deals</NuxtLink></button>
+                        <a href="index.html"><img src="../../assets/img/brand.jpg" width="40" alt="brand-logo" ></a>
+                        <button class="cart-button2">Remove Deals</button>
+                    </div>
+    
                 </div>
-                </section>
-    
-                <div class="cart-activity-option">
-                    <button class="cart-button2"><NuxtLink to="/user/cart/checkout">Checkout Deals</NuxtLink></button>
-                    <a href="index.html"><img src="../../assets/img/brand.jpg" width="40" alt="brand-logo" ></a>
-                    <button class="cart-button2">Remove Deals</button>
-                </div>
-    
             </div>
-            </div>
-            </div>
-        </section>
-    
-    </template>
+        </div>
+    </section>
+</template>
     
     <script> 
         export default{
@@ -49,12 +44,14 @@
                 return{
                     products:[
                     {
+                        image: "../assets/img/product.jpg",
                         id:"19708555531",
                         name: "SPY X FAMILY PILLOW PLUSHIE Anya Yor Loid Anya Heh",
                         description: "High quality pillow with Anya design",
                         quantity: "15"
                     },
                     {
+                        image: "../assets/img/product2.jpg",
                         id:"18308562708",
                         name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
                         description: "High quality pillow with elegant design",

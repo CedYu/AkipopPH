@@ -1,0 +1,60 @@
+/* This file contains the presets for the images in the spritesheet */
+.akipop-logo {
+    background-position: 0 0;
+    width: 100px;
+    height: 100px;
+}
+
+.fb-logo {
+    background-position: 0 -100px;
+    width: 100px;
+    height: 100px;
+}
+
+.ig-logo {
+    background-position: 0 -200px;
+    width: 100px;
+    height: 100px;
+}
+
+.tiktok-logo {
+    background-position: 0 -300px;
+    width: 100px;
+    height: 100px;
+}
+
+.shopee-logo {
+    background-position: 0 -400px;
+    width: 100px;
+    height: 100px;
+}
+
+.reqs-image {
+    background-position: 0 -500px;
+    width: 100px;
+    height: 100px;
+}
+
+.truck-image {
+    background-position: 0 -600px;
+    width: 100px;
+    height: 100px;
+}
+
+.cart-image {
+    background-position: 0 -700px;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-image {
+    background-position: 0 -800px;
+    width: 100px;
+    height: 100px;
+}
+
+.wishlist-image {
+    background-position: 0 -900px;
+    width: 100px;
+    height: 100px;
+}

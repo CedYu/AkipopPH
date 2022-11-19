@@ -33,11 +33,6 @@ export default {
 }
 </script>  
 
-<script setup>
-console.log("Hello")
-</script>
-
-
 <style>
     .submenu_product {
         font-size: 90%;

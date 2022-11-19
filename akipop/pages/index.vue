@@ -98,7 +98,7 @@
     }
     @font-face {
 		font-family: "lemonmilk";
-    	src: url("../assets/LEMONMILK-Bold.otf");
+        src: url("../assets/LEMONMILK-Bold.otf");
 	}
 
 	@font-face {
