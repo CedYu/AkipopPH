@@ -9,35 +9,35 @@ export default{
 	},
 	methods: {
 
-		}
+	}
 }
 </script>
 
 <template>
-  <div class="login">
-		<br><br><br><br><br><br><br><br><h1>Log In</h1>
-	    <form>
-			<label for="username">Username</label><br>
-		
-    		<input type = text name = "username" id = "username" placeholder="Username" size = 25><br>
-
-		    <label for="password">Password</label>
+<div class="login">
+	<br><br><br><br><br><br><br><br><h1>LOGIN</h1>
+	<form>
+		<label for="username">Username</label><br>
 	
-  		    <input type = password name = "password" id = "password" placeholder="Password" size = 25><br>
+		<input type = text name = "username" id = "username" placeholder="Username" size = 25><br>
 
-            <div class="login_submit">
-      	        <input type = submit value = "Log In">
-            </div>
-			<div id="extra">
-			</div>
-	    </form>
-	</div>
+		<label for="password">Password</label>
+
+		<input type = password name = "password" id = "password" placeholder="Password" size = 25><br>
+
+		<div class="login_submit">
+			<input type = submit value = "Log In">
+		</div>
+		<div id="extra">
+		</div>
+	</form>
+</div>
 </template>
 
 <style scoped>
 	@font-face {
 		font-family: lemonmilk;
-    		src: url("../assets/LEMONMILK-Bold.otf");
+		src: url("../assets/LEMONMILK-Bold.otf");
 	}
 
 	@font-face {
@@ -51,7 +51,7 @@ export default{
 		color: #2C3E50;
 	}
 
-  .login h1 {
+	.login h1 {
 		font-family: lemonmilk;
 		font-size: 350%;
 		text-align: center;
@@ -67,7 +67,7 @@ export default{
 	}
 
 	.login_submit input[type="submit"] {
-		background-color: #8E77F8;
+		background-color: #e95a85;
 		color: white;
 		font-weight: bold;
 		cursor:pointer;
@@ -78,7 +78,7 @@ export default{
 	}
 
 	.login_submit input[type="submit"]:hover {
-		background-color: #FFDD62;
+		background-color: #8E77F8;
 		color: black;
 	}
 
@@ -90,23 +90,24 @@ export default{
 
 	form {
 		text-align: left; 
-  		margin-left: auto; 
-        margin-right: auto;
- 		width: 490px;
+		margin-left: auto; 
+		margin-right: auto;
+		width: 490px;
 	}
 
 	input {
 		width: 460px;
-    	padding: 13px;
-    	display: block;
+		padding: 13px;
+		display: block;
 		border-style: solid;
 		border-color: #D8D1C9;
-    	background-color: #FFF9ED;
+		background-color: #FFF9ED;
 		outline: none;
+		border-radius: 10px;
 	}
 
 	input[type=text]:focus {
-  		border: 3px solid pink;
+		border: 3px solid pink;
 	}
 
 	p {

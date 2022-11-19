@@ -49,33 +49,33 @@ nav a {
   text-decoration: none;
 }
 
-nav a.router-link-exact-active {
+/* nav a.router-link-exact-active {
   color: #f7c7c7;
-}
+} */
 
 #logo {
-  margin: 0 0 0 50px;
+  margin-left: 42.5%;
 }
 
 #navbar {
-  margin:-23px 0 0 260px;
+  margin:-23px 0 0 600px;
   font-size: 110%;
 }
 
 #navbar_cart {
-  margin:-23px 0 0 730px;
+  margin:-23px 0 0 1200px;
   font-size: 110%;
 }
 
 #dropdown_account {
   font-size: 110%;
-  margin: -23px 0 0 870px;
+  margin: -23px 0 0 1300px;
   position: fixed;
 }
 
 #dropdown_product {
   font-size: 110%;
-  margin: -23px 0 0 550px;
+  margin: -23px 0 0 1050px;
   position: fixed;
 }
 </style>

@@ -8,11 +8,7 @@
                 <!--CART OPTION2-->
                 <div id="app3">
                     <section class="products">
-                    <div 
-                    v-for="product in products"
-                    :key="product.id"
-                    class="product"
-                    >
+                    <div v-for="product in products" :key="product.id" class="product">
                         <!--VUE JS-->
                         <input type="checkbox" name="select-product">
                         <h3 class="cart-product-header">{{product.name}}</h3>
@@ -31,14 +27,13 @@
                             <span class="cart-quantity">{{product.quantity}}</span>
                             <button class="cart-button">+</button>
                         </div>
-    
                 </div>
                 </section>
     
                 <div class="cart-activity-option">
-                        <button class="cart-button2"><NuxtLink to="/checkout">Checkout Deals</NuxtLink></button>
-                        <a href="index.html"><img src="../../assets/img/brand.jpg" width="40" alt="brand-logo" ></a>
-                        <button class="cart-button2">Remove Deals</button>
+                    <button class="cart-button2"><NuxtLink to="/checkout">Checkout Deals</NuxtLink></button>
+                    <a href="index.html"><img src="../../assets/img/brand.jpg" width="40" alt="brand-logo" ></a>
+                    <button class="cart-button2">Remove Deals</button>
                 </div>
     
             </div>
