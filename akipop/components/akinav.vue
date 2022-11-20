@@ -82,5 +82,6 @@ nav a {
   font-size: 110%;
   margin: -23px 0 0 1050px;
   position: fixed;
+  
 }
 </style>

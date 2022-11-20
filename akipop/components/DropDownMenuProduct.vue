@@ -45,5 +45,6 @@ export default {
     #thing {
         color: white;
         font-weight: bold;
+        text-decoration: none;
     }
 </style>
