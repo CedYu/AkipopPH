@@ -1,19 +1,8 @@
 <template>
-  <br><br><br><br><br><br><br><br><br><br>
-  <h1>{{category}}</h1>
-    <div v-for="product in products"
-      :key="product.id" 
-      class="mainProduct">
-  
-        <img src="../../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
-    
-        <p>{{product.name}}</p>
-        <p class="price">{{product.price}}</p>
-        <p>{{product.description}}</p>
-        <p>{{product.id}}</p>
-        <p>{{product.quantity}}</p>
-        <p><button>Add to Cart</button></p>
-        <p><button><router-link to="/products">See More Details</router-link></button></p>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1>{{category}}</h1>
+        <p>So ayown yung category nato and2 bahaha</p>
     </div>
 </template>
 

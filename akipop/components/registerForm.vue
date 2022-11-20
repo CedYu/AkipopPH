@@ -36,6 +36,7 @@
 		<div class="reg_submit">
 		<input type=submit value="Register" >
 		</div>
+		<p>Have an account? <NuxtLink to="/account/login"> Log In</NuxtLink></p>
 	</form>
 </div>
 </template>
@@ -171,7 +172,9 @@ export default{
 		background-color: #9ED149;
 		color: black;
 	}
-
+	a{
+		color: #E95A85
+	}
 	p {
 		font-size: 82%;
 		text-align: center;
