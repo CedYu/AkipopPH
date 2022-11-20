@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <nav>
-        <div id="logo">
+        <div id="akipop_logo">
             <NuxtLink to="/"><img src="../assets/img/akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</NuxtLink> 
         </div>
         <div id="navbar">
@@ -55,11 +55,11 @@ nav a {
 }
 
 /* nav a.router-link-exact-active {
-  color: #f7c7c7;
+  color: yellow;
 } */
 
-#logo {
-  margin-left: 42.5%;
+#akipop_logo {
+  margin-left: 895px;
 }
 
 #navbar {
