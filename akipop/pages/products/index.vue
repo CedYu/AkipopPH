@@ -2,7 +2,8 @@
   <br><br><br><br><br><br><br><br><br><br>
   <h1>Products</h1>
   <!--WITH SCRIPT-->
-  <div v-for="product in products"
+  <div class = "container">
+    <div v-for="product in products"
       :key="product.id" 
       class="mainProduct">
   
@@ -16,7 +17,13 @@
     <p><button>Add to Cart</button></p>
     <p><button><router-link to="/products">See More Details</router-link></button></p>
   </div>
-  </template>
+  </div>
+  
+</template>
+
+<style scoped>
+
+</style>
 
 <script>
 export default{

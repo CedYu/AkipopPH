@@ -21,15 +21,16 @@ const login = async() =>{
 	<form @submit.prevent="login()">
 		<label for="email">Email</label><br>
 	
-		<input type = text name = "email" id = "email" placeholder="Email" v-model="email" size = 25><br>
+		<input type = text name = "email" id = "email" placeholder="Email" v-model="email" size = 25 required><br>
 
 		<label for="password">Password</label>
 
-		<input type = password name = "password" id = "password" placeholder="Password" v-model="password" size = 25><br>
+		<input type = password name = "password" id = "password" placeholder="Password" v-model="password" size = 25 required><br>
 
 		<div class="login_submit">
 			<input type = submit value = "Log In">
 		</div>
+		<p>Don't have an account? <NuxtLink to="/account/register"> Sign Up</NuxtLink></p>
 		<div id="extra">
 		</div>
 	</form>
@@ -78,7 +79,11 @@ const login = async() =>{
         border: none;
         width: 200px;
 	}
-
+	p {
+		font-size: 82%;
+		text-align: center;
+		font-weight: bold;
+	}
 	.login_submit input[type="submit"]:hover {
 		background-color: #8E77F8;
 		color: black;
@@ -89,7 +94,9 @@ const login = async() =>{
 		text-align: center;
 		font-weight: bold;
 	}
-
+	a{
+		color : #E95A85;
+	}
 	form {
 		text-align: left; 
 		margin-left: auto; 

@@ -2,7 +2,7 @@
     <div>
         <br><br><br><br><br><br><br><br><br><br>
         <h1>{{category}}</h1>
-        <p>So ayown yung category nato and2 bahaha</p>
+        <p></p>
     </div>
 </template>
 
