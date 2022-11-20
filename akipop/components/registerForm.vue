@@ -76,31 +76,22 @@ export default{
 				alert('Please make sure your passwords match')
 				return
 			}
-			console.log("Inside method")
-			console.log("Username:" + this.username + "\n" +
-						"Firstname:" + this.firstname + "\n" +
-						"Lastname:" + this.lastname + "\n" +
-						"Email:" + this.email + "\n" + 	
-						"Password:" + this.password + "\n" +
-						"Password2:" + this.password2 + "\n")
 
-			// const {data, error} = await supabase
-			// .from('User')
-			// .insert([{email:this.email, username:this.username, password:this.password, firstname:this.firstname, lastname:this.lastname, role:this.role}])
-			// .select()
-			console.log(this.email)
+
+			console.log(typeof(metadata))
 			const {data2, error2} = await supabase.auth.signUp({
 				email:this.email,
-				password:this.password
+				password:this.password,
+				options:{
+					data:{
+						"username": this.username,
+						"lastname": this.lastname,
+						"firstname": this.firstname
+					}
+				}
 			})
 			console.log(error2)
 			console.log(data2)
-			// if (error){
-			// 	console.log(error)
-			// }
-			// if (data){
-			// 	console.log(data)
-			// }
 			if (error2){
 				console.log(error2)
 			}

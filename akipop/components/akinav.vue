@@ -18,13 +18,17 @@
         <div id="dropdown_account">
           <DropdownMenuAccount title="Account"/> 
         </div>
-        
+        <div>
+          <button @click="logout">Log Out</button>
+        </div>
       </nav>
     </header>
   </div>
 </template>
 
 <script setup>
+  const supabase = useSupabaseClient()
+  const logout = async() =>{const {error} = await supabase.auth.signOut()}
 
 </script>
 

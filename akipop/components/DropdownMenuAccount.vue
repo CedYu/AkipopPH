@@ -21,6 +21,8 @@ export default {
     return {
       isOpen: false,
       }
+    },
+    method(){
     }
 }
 </script>
