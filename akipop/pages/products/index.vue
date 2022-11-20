@@ -11,7 +11,7 @@
     <p>{{product.name}}</p>
     <p class="price">{{product.price}}</p>
     <p>{{product.description}}</p>
-    <p>{{product.price}}</p>
+    <p>{{product.id}}</p>
     <p>{{product.quantity}}</p>
     <p><button>Add to Cart</button></p>
     <p><button><router-link to="/products">See More Details</router-link></button></p>
