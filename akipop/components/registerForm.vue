@@ -88,10 +88,18 @@ export default{
 			// .from('User')
 			// .insert([{email:this.email, username:this.username, password:this.password, firstname:this.firstname, lastname:this.lastname, role:this.role}])
 			// .select()
-			console.log(this.email)
+			// const jsondata = JSON.parse(metadata)
+			console.log(typeof(metadata))
 			const {data2, error2} = await supabase.auth.signUp({
 				email:this.email,
-				password:this.password
+				password:this.password,
+				options:{
+					data:{
+						"username": this.username,
+						"lastname": this.lastname,
+						"firstname": this.firstname
+					}
+				}
 			})
 			console.log(error2)
 			console.log(data2)
