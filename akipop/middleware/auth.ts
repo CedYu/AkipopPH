@@ -5,7 +5,7 @@ export default defineNuxtRouteMiddleware((to) => {
   if (user.value && to.path==='/account/login'){
     return navigateTo('/')
   }
-  if (user.value && to.path==='/accounts/register.vue'){
+  if (user.value && to.path==='/account/register'){
     return navigateTo('/')
   }
   if (user.value) {
