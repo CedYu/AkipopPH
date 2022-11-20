@@ -78,8 +78,6 @@ export default{
 				return
 			}
 
-
-			console.log(typeof(metadata))
 			const {data2, error2} = await supabase.auth.signUp({
 				email:this.email,
 				password:this.password,
