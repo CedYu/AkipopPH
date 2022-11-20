@@ -1,88 +1,87 @@
 <template>
-  <div class="home">
-        <br><br><br><br><br><br>
-        <h1 class="homeh1">HOME</h1>
-        <div class="banner1">
-            <img v-bind:src="'../banner1.png'" width="1200" height="680" alt="banner1"/>
+<div class="home">
+    <br><br><br><br><br><br>
+    <h1 class="homeh1">HOME</h1>
+    <div class="banner1">
+        <img v-bind:src="'../banner1.png'" width="1200" height="680" alt="banner1"/>
+    </div>
+
+    <div class="boxed">
+        <div class = "request_section">
+            <div class="request">
+                <img src="../assets/img/request.png" width="80" height="80" alt="request"/>
+            </div>
+            <div class="maintext_request">
+                GOT REQUESTS?
+            </div>
+            <div class="subtext_request">
+                Want merch of a specific anime?
+                <br>We will make it work for you, send
+                <br>us your requests <a href="https://tinyurl.com/akipoprequest">here</a>!
+            </div>
         </div>
 
-        <div class="boxed">
-            <div class = "request_section">
-                <div class="request">
-                    <img src="../assets/img/request.png" width="80" height="80" alt="request"/>
-                </div>
-                <div class="maintext_request">
-                    GOT REQUESTS?
-                </div>
-                <div class="subtext_request">
-                    Want merch of a specific anime?
-                    <br>We will make it work for you, send
-                    <br>us your requests <a href="https://tinyurl.com/akipoprequest">here</a>!
-                </div>
+        <div class = "delivery_section">
+            <div class="delivery">
+                <img src="../assets/img/delivery.png" width="80" height="80" alt="delivery"/>
             </div>
 
-            <div class = "delivery_section">
-                <div class="delivery">
-                    <img src="../assets/img/delivery.png" width="80" height="80" alt="delivery"/>
-                </div>
-
-                <div class="maintext_delivery">
-                    DELIVERY
-                </div>
-                <div class="subtext_delivery">
-                    We ship nationwide via J&T
-                    <br>every Wednesday, Saturday,
-                    <br>and Sunday
-                </div>
+            <div class="maintext_delivery">
+                DELIVERY
             </div>
-
-            <div class = "payment_section">
-                <div class="payment">
-                    <img src="../assets/img/payment.png" width="80" height="80" alt="payment"/>
-                </div>
-
-                <div class="maintext_payment">
-                    PAYMENT
-                </div>
-                <div class="subtext_payment">
-                    Pay directly via GCash or
-                    <br>through bank transfers
-                </div>
-            </div>      
+            <div class="subtext_delivery">
+                We ship nationwide via J&T
+                <br>every Wednesday, Saturday,
+                <br>and Sunday
+            </div>
         </div>
 
-        <h2>PRODUCTS</h2>
-        <!--SAMPLE WITHOUT SCRIPT-->
-        <div class="mainProduct">
-            <img src="../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
-            <p>Anya Stationary</p>
-            <p class="price">$13.66</p>
-            <p>a very very amazing stationary</p>
-            <p>10</p>
-            <p><button>Add to Cart</button></p>
-            <p><button><NuxtLink to="/product">See More Details</NuxtLink></button></p>
+        <div class = "payment_section">
+            <div class="payment">
+                <img src="../assets/img/payment.png" width="80" height="80" alt="payment"/>
+            </div>
+
+            <div class="maintext_payment">
+                PAYMENT
+            </div>
+            <div class="subtext_payment">
+                Pay directly via GCash or
+                <br>through bank transfers
+            </div>
+        </div>      
+    </div>
+
+    <h2>PRODUCTS</h2>
+    <!--SAMPLE WITHOUT SCRIPT-->
+    <div class="mainProduct">
+        <img src="../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
+        <p>Anya Stationary</p>
+        <p class="price">$13.66</p>
+        <p>a very very amazing stationary</p>
+        <p>10</p>
+        <p><button>Add to Cart</button></p>
+        <p><button><NuxtLink to="/products">See More Details</NuxtLink></button></p>
+    </div>
+
+    <div class="boxed2">
+        <h2>CONNECT WITH US</h2>
+        <div class = "facebook">
+            <a href="https://www.facebook.com/akipopph" target="_blank"><img src="../assets/img/facebook.png" width="80" height="80" alt="facebook"/></a>
         </div>
 
-        <div class="boxed2">
-            <h2>CONNECT WITH US</h2>
-            <div class = "facebook">
-                <a href="https://www.facebook.com/akipopph" target="_blank"><img src="../assets/img/facebook.png" width="80" height="80" alt="facebook"/></a>
-            </div>
+        <div class = "instagram">
+            <a href="https://www.instagram.com/akipopph/" target="_blank"><img src="../assets/img/instagram.png" width="75" height="75" alt="instagram"/></a>
+        </div>
 
-            <div class = "instagram">
-                <a href="https://www.instagram.com/akipopph/" target="_blank"><img src="../assets/img/instagram.png" width="75" height="75" alt="instagram"/></a>
-            </div>
+        <div class = "tiktok">
+            <a href="https://www.tiktok.com/@akipopph" target="_blank"><img src="../assets/img/tiktok.png" width="75" height="75" alt="tiktok"/></a>
+        </div>
 
-            <div class = "tiktok">
-                <a href="https://www.tiktok.com/@akipopph" target="_blank"><img src="../assets/img/tiktok.png" width="75" height="75" alt="tiktok"/></a>
-            </div>
-
-            <div class = "shopee">
-                <a href="https://shopee.ph/akipopph" target="_blank"><img src="../assets/img/shopee.png" width="85" height="85" alt="shopee"/></a>
-            </div>
+        <div class = "shopee">
+            <a href="https://shopee.ph/akipopph" target="_blank"><img src="../assets/img/shopee.png" width="85" height="85" alt="shopee"/></a>
         </div>
     </div>
-  
+</div>
 </template>
 
 <script>
@@ -99,7 +98,7 @@
     }
     @font-face {
 		font-family: "lemonmilk";
-    	src: url("../assets/LEMONMILK-Bold.otf");
+        src: url("../assets/LEMONMILK-Bold.otf");
 	}
 
 	@font-face {
@@ -114,30 +113,29 @@
 		letter-spacing: -3px;
 	}
     .mainProduct {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      max-width: 190px;
-      margin: 80px;
-      text-align: center;
-      font-family: arial;
-      float: left;
-      background-color: #FFFBEC;
-      
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 190px;
+        margin: 80px;
+        text-align: center;
+        font-family: arial;
+        float: left;
+        background-color: #FFFBEC;
     }
     .price {
-      color: #e95a85;
-      font-size: 22px;
+        color: #e95a85;
+        font-size: 22px;
     }
     
     .mainProduct button {
-      border: none;
-      outline: 0;
-      padding: 12px;
-      color: white;
-      background-color: #e95a85;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-      font-size: 18px;
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #e95a85;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
     }
     body {
         background-color: #FFFBEC; 
@@ -253,10 +251,10 @@
     h2 {
         color: #2C3E50;
         font-family: lemonmilk;
-		  font-size: 300%;
-		  text-align: center;
-		  letter-spacing: -3px;
-		  margin: 50px;
+        font-size: 300%;
+        text-align: center;
+        letter-spacing: -3px;
+        margin: 50px;
     }
 
     .subtext_request a{

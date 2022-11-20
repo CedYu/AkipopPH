@@ -1,29 +1,34 @@
 <template>
   <div id="app">
-  <header>
-  <nav>
-    <div id="logo">
-        <NuxtLink to="/"><img src="../assets/img/akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</NuxtLink> 
-    </div>
-    <div id="navbar">
-        <NuxtLink to="/">HOME &emsp; &emsp; &emsp; &emsp;</NuxtLink>    
-        <NuxtLink to="/about">ABOUT &emsp; &emsp; &emsp; &emsp;</NuxtLink> 
-    </div>
-    <div id="dropdown_product">
-      <DropDownMenuProduct title="Product"/>
-    </div>       
-    <div id="navbar_cart">
-      <NuxtLink to="/cart">CART &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-    </div>
-    <div id="dropdown_account">
-      <DropdownMenuAccount title="Account"/> 
-    </div>
-  </nav>
-  </header>
+    <header>
+      <nav>
+        <div id="akipop_logo">
+            <NuxtLink to="/"><img src="../assets/img/akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</NuxtLink> 
+        </div>
+        <div id="navbar">
+          <NuxtLink to="/">HOME &emsp; &emsp; &emsp; &emsp;</NuxtLink>    
+          <NuxtLink to="/about">ABOUT &emsp; &emsp; &emsp; &emsp;</NuxtLink> 
+        </div>
+        <div id="dropdown_product">
+          <DropDownMenuProduct title="Product"/>
+        </div>       
+        <div id="navbar_cart">
+          <NuxtLink to="/user/cart">CART &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+        </div>
+        <div id="dropdown_account">
+          <DropdownMenuAccount title="Account"/> 
+        </div>
+        <div>
+          <button @click="logout">Log Out</button>
+        </div>
+      </nav>
+    </header>
   </div>
 </template>
 
 <script setup>
+  const supabase = useSupabaseClient()
+  const logout = async() =>{const {error} = await supabase.auth.signOut()}
 
 </script>
 
@@ -49,33 +54,34 @@ nav a {
   text-decoration: none;
 }
 
-nav a.router-link-exact-active {
-  color: #f7c7c7;
-}
+/* nav a.router-link-exact-active {
+  color: yellow;
+} */
 
-#logo {
-  margin: 0 0 0 50px;
+#akipop_logo {
+  margin-left: 895px;
 }
 
 #navbar {
-  margin:-23px 0 0 260px;
+  margin:-23px 0 0 600px;
   font-size: 110%;
 }
 
 #navbar_cart {
-  margin:-23px 0 0 730px;
+  margin:-23px 0 0 1200px;
   font-size: 110%;
 }
 
 #dropdown_account {
   font-size: 110%;
-  margin: -23px 0 0 870px;
+  margin: -23px 0 0 1300px;
   position: fixed;
 }
 
 #dropdown_product {
   font-size: 110%;
-  margin: -23px 0 0 550px;
+  margin: -23px 0 0 1050px;
   position: fixed;
+  
 }
 </style>

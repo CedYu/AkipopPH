@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>Yes plushies</h1>
+        <br><br><br><br><br>
+        <p>Putanginang Cart Eto</p>
     </div>
 </template>
 

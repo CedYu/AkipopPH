@@ -8,7 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/supabase": "^0.2.5",
     "animate.css": "^4.1.1",
-    "nuxt": "^3.0.0-rc.14"
+    "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@supabase/supabase-js": "^2.1.0"
   }
 }
