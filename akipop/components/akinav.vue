@@ -3,7 +3,7 @@
     <header>
       <nav>
         <div id="akipop_logo">
-            <NuxtLink to="/"><img src="../assets/img/akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</NuxtLink> 
+            <NuxtLink to="/"><img src="../assets/img/logo.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</NuxtLink> 
         </div>
         <div id="navbar">
           <NuxtLink to="/">HOME &emsp; &emsp; &emsp; &emsp;</NuxtLink>    
