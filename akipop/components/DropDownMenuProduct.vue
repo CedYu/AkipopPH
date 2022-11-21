@@ -34,7 +34,6 @@ export default {
 
 <style>
     .submenu_product {
-        font-size:92%;
         border: 10px solid lightpink;
         background-color: lightpink;
         width: 130px;
@@ -46,17 +45,11 @@ export default {
         color: white;
         font-weight: bold;
         text-decoration: none;
-        align-content: center;
-        text-align:center;
-        font-size: 92%;
     }
 
     #title{
         color: white;
         font-weight: bold;
         text-decoration: none;
-        align-content: center;
-        text-align:center;
-        /* font-size: 110%; */
     }
 </style>

@@ -12,7 +12,7 @@
             <NuxtLink to="/"><img src="../assets/img/logo.jpg" width="96" alt="brand-logo" /></NuxtLink>
           </div>
           <div class="cart-button" id="right-side">
-            <NuxtLink to="/user/cart" id="nav-image"><img src="../assets/img/cart_image.png" width="40" height="40" alt="cart image"></NuxtLink>
+            <NuxtLink to="/user/cart"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
           </div>
           <div class="dropdown" id="right-side">
             <DropdownMenuAccount title="Account"/>
@@ -65,13 +65,13 @@
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding: 20px;
-  font-size: 110%;
+  padding: 30px;
+  font-size: 130%;
   position: relative;
-  left: 25%;
+  left: 15%;
 }
 .logo{
-  margin-left: 32%;
+  margin-left: 24%;
 }
 
 .dropdown{
@@ -79,8 +79,15 @@
   padding: 5px;
 }
 
+#nav-image{
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
 #right-side{
   position: relative;
-  left: 35%;
+  left: 20%;
+  padding: 10px;
 }
 </style>

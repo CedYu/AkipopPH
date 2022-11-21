@@ -3,7 +3,7 @@
     <br><br><br><br><br><br>
     <h1 class="homeh1">HOME</h1>
     <div class="banner1">
-        <img v-bind:src="'../banner1.png'" width="1200" height="680" alt="banner1"/>
+        <img v-bind:src="'../banner1.png'" alt="banner1" id="main-banner"/>
     </div>
 
     <div class="boxed">
@@ -112,6 +112,10 @@
 		text-align: center;
 		letter-spacing: -3px;
 	}
+    #main-banner{
+        width: 100%; 
+        height: 1200px;
+    }
     .mainProduct {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         max-width: 190px;
@@ -145,7 +149,8 @@
     .homeh1 {
         color: #2C3E50;
         animation: fadeInDown; 
-        animation-duration: 2s; 
+        animation-duration: 2s;
+        margin-bottom: 12px; 
     }
 
     .banner1 {
