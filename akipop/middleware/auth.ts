@@ -7,6 +7,6 @@ export default defineNuxtRouteMiddleware((to) => {
     return navigateTo('/')
   }
   if (user.value) {
-    return navigateTo('/products')
+    return navigateTo('/')
   }
 })
