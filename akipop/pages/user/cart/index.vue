@@ -8,27 +8,12 @@
                 <!--CART OPTION2-->
                 <div id="app3">
                     <section class="products">
-                    <div v-for="product in products" :key="product.id" class="product">
-                        <!--VUE JS-->
-                        <input type="checkbox" name="select-product">
-                        <h3 class="cart-product-header">{{product.name}}</h3>
-                        <!--FOR IMAGE-->
-                        <!-- <img 
-                            src={{product.image}} style={{ height="120px" }}  
-                            :alt="product.name" 
-                            class="product-image"
-                        > -->
-                        <div class="cart">
-                            <button class="cart-button">-</button>
-                            <span class="cart-quantity">{{product.quantity}}</span>
-                            <button class="cart-button">+</button>
-                        </div>
-                    </div>
+                    <CartItem v-for="product in products" v-bind:key="product.id2" :product="product"/>
                     </section>
         
                     <div class="cart-activity-option">
                         <button class="cart-button2"><NuxtLink to="/user/cart/checkout">Checkout Deals</NuxtLink></button>
-                        <a href="index.html"><img src="../../assets/img/brand.jpg" width="40" alt="brand-logo" ></a>
+                        <a href="../"><img src="../../../assets/img/brand.jpg" width="40" alt="brand-logo" ></a>
                         <button class="cart-button2">Remove Deals</button>
                     </div>
     
@@ -44,6 +29,7 @@
                 return{
                     products:[
                     {
+                        id2:1,
                         image: "../assets/img/product.jpg",
                         id:"19708555531",
                         name: "SPY X FAMILY PILLOW PLUSHIE Anya Yor Loid Anya Heh",
@@ -51,6 +37,15 @@
                         quantity: "15"
                     },
                     {
+                        id2:2,
+                        image: "../assets/img/product2.jpg",
+                        id:"18308562708",
+                        name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
+                        description: "High quality pillow with elegant design",
+                        quantity: "125"
+                    },
+                    {
+                        id2:3,
                         image: "../assets/img/product2.jpg",
                         id:"18308562708",
                         name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
@@ -59,7 +54,8 @@
                     },
                 ],
             }
-        }
+        },
+        
     }
     </script>
     
@@ -91,33 +87,15 @@
         top: -10px;
         width: 2rem;
     }
-
     .products {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-    }
-        
-    .product {
-        border: 1px solid lightgray;
-        border-radius: 10px;
-        margin: 2rem;
-        padding: 1rem;
     }
     
     .cart-product-header {
             font-size: 2rem;
             text-align: center;
-    }
-
-    .product-image {
-            display: block;
-            margin: 1rem auto;
-    }
-
-    .product-description {
-            font-size: 1.3rem;
-            margin-top: 1rem;
     }
 
     .cart {
@@ -153,7 +131,6 @@
         width: 7.5rem;
         font-family: 'Droid Serif',serif;
         border-spacing: 4px;
-        
     }
     
     .cart-button2 a{

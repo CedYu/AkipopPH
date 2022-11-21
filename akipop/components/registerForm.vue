@@ -69,12 +69,12 @@ export default{
 				alert('Your username has to be atleast 4 characters long')
 				return
 			}
-			else if(this.password.length < 4){
-				alert('Your password has to be atleast 4 characters long')
+			else if(this.password.length < 8){
+				alert('Your password has to be atleast 8 characters long')
 				return
 			}
-			else if(this.password!=this.password2){
-				alert('Please make sure your passwords match')
+			else if(this.password!==this.password2){
+				alert('Passwords don\'t match')
 				return
 			}
 
@@ -89,6 +89,7 @@ export default{
 					}
 				}
 			})
+			
 			console.log(error2)
 			console.log(data2)
 			if (error2){
