@@ -1,7 +1,7 @@
 
 <template>
     <div class="product_menu" @mouseover="isOpen=true" @mouseleave="isOpen=false" >
-        <NuxtLink to="/products" id="thing">
+        <NuxtLink to="/products" id="title">
             PRODUCT
         </NuxtLink>
         <svg viewBox="0 0 1030 638" width="10">
@@ -24,7 +24,6 @@ export default {
     data() {
         return {
             isOpen: false,
-            prints:'prints',
         };
     },
     methods:{
@@ -35,16 +34,29 @@ export default {
 
 <style>
     .submenu_product {
-        font-size: 90%;
+        font-size:92%;
         border: 10px solid lightpink;
         background-color: lightpink;
         width: 130px;
         height: 170px;
+        position:fixed;
     }
 
     #thing {
         color: white;
         font-weight: bold;
         text-decoration: none;
+        align-content: center;
+        text-align:center;
+        font-size: 92%;
+    }
+
+    #title{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        align-content: center;
+        text-align:center;
+        /* font-size: 110%; */
     }
 </style>

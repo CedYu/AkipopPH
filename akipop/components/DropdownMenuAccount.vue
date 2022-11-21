@@ -1,7 +1,7 @@
 <template>
     <div class="account_menu" @mouseover="isOpen=true" @mouseleave="isOpen=false" >
         <NuxtLink to="#" id="acc_thing">
-            ACCOUNT
+            <img src="../assets/img/profile_image.png" width="40" height="40" alt="profile image">
         </NuxtLink>
         <svg viewBox="0 0 1030 638" width="10">
             <path d="M1017 68L541 626q-11 12-26 12t-26-12L13 68Q-3 49 6 24.5T39 0h952q24 0 33 24.5t-7 43.5z" fill="#FFF"></path>
@@ -38,6 +38,7 @@ export default {
         background-color: lightpink;
         width: 120px;
         height: 50px;
+        position:fixed
     }
 
     #acc_thing {
