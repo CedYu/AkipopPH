@@ -1,7 +1,7 @@
 <template>
 <div class="home">
     <br><br><br><br><br><br>
-    <h1 class="homeh1">HOME</h1>
+    <h1 id="home1" class="homeh1">HOME</h1>
     <div class="banner1">
         <img v-bind:src="'../banner1.png'" alt="banner1" id="main-banner"/>
     </div>
@@ -62,8 +62,8 @@
         <p><button>Add to Cart</button></p>
         <p><button><NuxtLink to="/products">See More Details</NuxtLink></button></p>
     </div>
-
-    <div class="boxed2">
+    <follow/>
+    <!-- <div class="boxed2">
         <h2>CONNECT WITH US</h2>
         <div class = "facebook">
             <a href="https://www.facebook.com/akipopph" target="_blank"><img src="../assets/img/facebook.png" width="80" height="80" alt="facebook"/></a>
@@ -80,7 +80,7 @@
         <div class = "shopee">
             <a href="https://shopee.ph/akipopph" target="_blank"><img src="../assets/img/shopee.png" width="85" height="85" alt="shopee"/></a>
         </div>
-    </div>
+    </div> -->
 </div>
 </template>
 
@@ -106,7 +106,7 @@
 		src: url("../assets/LEMONMILK-Regular.otf");
 	}
     
-    h1 {
+    #home1 {
 		font-family: "lemonmilk";
 		font-size: 350%;
 		text-align: center;
@@ -270,6 +270,7 @@
     .boxed2 {
         border: 20px solid #2C3E50;
         background-color: #2C3E50;
+        flex-wrap: column;
         width: 100%;
         height: 80px;
         margin-top: 600px;
@@ -277,14 +278,15 @@
 
     .boxed2 h2 {
         color: white;
-        text-align: left;
+        text-align: center;
+        align-content: center;
         margin-left: 5%;
         margin-top: 20px;
         font-family: Arial;
         letter-spacing: 0.4px;
     }
 
-    .facebook {
+    /* .facebook {
         margin-left: 50%;
         margin-top: -120px;
     }
@@ -303,5 +305,5 @@
     .shopee {
         margin-left: 79%;
         margin-top: -84px;
-    }
+    } */
 </style>
