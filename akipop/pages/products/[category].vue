@@ -16,7 +16,7 @@
         <p><button>Add to Cart</button></p>
         <p><button><router-link to="/products">See More Details</router-link></button></p>
     </div>
- </div>    
+  </div>    
 
 </template>
 

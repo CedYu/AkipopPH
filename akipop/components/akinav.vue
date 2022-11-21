@@ -38,6 +38,8 @@
   font-size: 110%;
   width: 1000px;
   height: 10px;
+  position: absolute;
+  z-index: 10;
 }
 
 .aki-nav{
@@ -51,6 +53,7 @@
   width: 100%;
   height: 12%;
   align-content: center;
+  z-index: 10;
 }
 
 .nav-buttons{
@@ -58,6 +61,7 @@
   align-items: center;
   width: 100%;
   position: fixed;
+  z-index: 10;
 }
 
 #nav-text{
@@ -69,25 +73,30 @@
   font-size: 130%;
   position: relative;
   left: 15%;
+  z-index: 10;
 }
 .logo{
   margin-left: 24%;
+  z-index: 10;
 }
 
 .dropdown{
   position: relative;
   padding: 5px;
+  z-index: 10;
 }
 
 #nav-image{
   position: relative;
   width: 40px;
   height: 40px;
+  z-index: 10;
 }
 
 #right-side{
   position: relative;
   left: 20%;
   padding: 10px;
+  z-index: 10;
 }
 </style>

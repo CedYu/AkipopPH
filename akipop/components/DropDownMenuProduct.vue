@@ -9,9 +9,9 @@
         </svg>
         <div class="submenu_product" v-if="isOpen">
             <NuxtLink to="/products" id="thing">All &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><br><NuxtLink to="/products/plushies" id="thing">Plushies &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/plushies" id="thing">Plushies &emsp; &emsp; &emsp; &emsp;</NuxtLink>
             <br><NuxtLink to="/products/prints" id="thing">Prints &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><br><NuxtLink to="/products/stationery" id="thing">Stationery &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/stationery" id="thing">Stationery &emsp; &emsp; &emsp; &emsp;</NuxtLink>
             <br><NuxtLink to="/products/photocards" id="thing">Photocards &emsp; &emsp; &emsp; &emsp;</NuxtLink>
         </div>
     </div>
@@ -37,7 +37,7 @@ export default {
         border: 10px solid lightpink;
         background-color: lightpink;
         width: 130px;
-        height: 170px;
+        height: auto;
         position:fixed;
     }
 
