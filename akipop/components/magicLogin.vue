@@ -25,7 +25,7 @@ const login = async() =>{
 			<input type = submit value = "Log In">
 		</div>
 		<p>Don't have an account? <NuxtLink to="/account/register"> Sign Up</NuxtLink></p>
-    <p>Login with email and password?<NuxtLink to="/account/login"> Log In</NuxtLink></p>
+    <!-- <p>Login with email and password?<NuxtLink to="/account/login"> Log In</NuxtLink></p> -->
 		<div id="extra">
 		</div>
 	</form>

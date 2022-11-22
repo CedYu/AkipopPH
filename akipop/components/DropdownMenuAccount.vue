@@ -24,7 +24,6 @@ export default {
     name: 'account_drop',
     props: ['title'],
     data () {
-        console.log(useSupabaseUser().value)
     return {
         isOpen: false,
         loggedOut:true,
