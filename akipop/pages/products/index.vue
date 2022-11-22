@@ -2,7 +2,7 @@
   <br><br><br><br><br><br><br><br><br><br>
   <h1>Products</h1>
   <div class="container">
-    <ProductCard v-for="product in products" v-bind:key="product.id" :product="product"/>
+    <productcard v-for="product in products" v-bind:key="product.id" :product="product"/>
   </div>
 </template>
 

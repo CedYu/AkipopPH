@@ -54,7 +54,7 @@
     <h2>PRODUCTS</h2>
     <!--SAMPLE WITHOUT SCRIPT-->
     <div class="home-container">
-        <ProductCard v-for="product in products" v-bind:key="product.id" :product="product"/>
+        <productcard v-for="product in products" v-bind:key="product.id" :product="product"/>
     </div>
     <br><br><br><br><br><br><br>
     <Follow/>
@@ -63,13 +63,13 @@
 
 <script>
 export default{
-    // async created() {
-    //     const supabase = useSupabaseClient()
-    //     const { data , error } = await supabase
-    //         .from('products')
-    //         .select()
-    //     this.products = data
-    // },
+     async created() {
+         const supabase = useSupabaseClient()
+         const { data , error } = await supabase
+             .from('products')
+             .select()
+         this.products = data
+     },
     data(){
         return{
             products:[],

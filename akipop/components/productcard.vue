@@ -56,7 +56,7 @@ export default {
     background-color: #FFFBEC;
     width: auto;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom:65px;
     padding: 0px;
     z-index: 9;
     position: absolute;
@@ -68,6 +68,7 @@ export default {
   .card-footer{
     background-color: #e95a85;
     margin-top: 5px;
+    margin-bottom: 10px;
     width: 100%;
     height: auto;
     display: inline-flex;
@@ -80,6 +81,8 @@ export default {
     margin: 3px;
     background-color: #FFFBEC;
     z-index: 9;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   #product-name{
@@ -88,7 +91,7 @@ export default {
     font-size: 82%;
 		text-align: center;
 		font-weight: bold;
-    margin: 5px;
+    margin: 10px;
   }
 
   #product-price{
@@ -96,9 +99,11 @@ export default {
     color: #ffffff;
     font-size: 22px;
     font-size: 82%;
-		text-align: center;
 		font-weight: bold;
     margin: 10px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
   }
 
   #like-product{
