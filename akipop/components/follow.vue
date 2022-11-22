@@ -7,9 +7,9 @@
     <a href="https://www.facebook.com/akipopph"><img :src="'../facebook.png'" :alt="facebook" class="follow-image1" /></a>
     <a href="https://www.instagram.com/akipopph/"><img :src="'../instagram.png'" :alt="instagram" class="follow-image2" /></a>
     <a href="https://shopee.ph/akipopph"><img :src="'../shopee.png'" :alt="shopee" class="follow-image3" /></a>
-    <span class="follow-text3">{{ text1 }}</span>
-    <span class="follow-text4">{{ text2 }}</span>
-    <span class="follow-text5">{{ text3 }}</span>
+    <span class="follow-text3">{{ text }}</span>
+    <span class="follow-text4">{{ text }}</span>
+    <span class="follow-text5">{{ text }}</span>
     <h1 class="follow-text6">{{ heading11 }}</h1>
     <h1 class="follow-text7">{{ heading12 }}</h1>
     <h1 class="follow-text8">{{ heading13 }}</h1>
@@ -28,18 +28,18 @@ export default {
       type: String,
       default: '@akipopph',
     },
-    text1: {
-      type: String,
-      default: '@akipopph',
-    },
-    text2: {
-      type: String,
-      default: '@akipopph',
-    },
-    text3: {
-      type: String,
-      default: '@akipopph',
-    },
+    // text1: {
+    //   type: String,
+    //   default: '@akipopph',
+    // },
+    // text2: {
+    //   type: String,
+    //   default: '@akipopph',
+    // },
+    // text3: {
+    //   type: String,
+    //   default: '@akipopph',
+    // },
     heading1: {
       type: String,
       default: 'FACEBOOK',
@@ -86,6 +86,7 @@ export default {
   top: 104px;
   left: 301px;
   position: absolute;
+  color: #e95a85;
 }
 .follow-text2 {
   top: 154px;
@@ -106,11 +107,11 @@ export default {
   z-index: 100;
   position: absolute;
   align-self: flex-start;
-  box-shadow: 5px 5px 10px 0px #d4d4d4;
   object-fit: cover;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius4);
+  /* box-shadow: 5px 5px 10px 0px #d4d4d4; */
+  /* border-color: var(--dl-color-gray-black); */
+  /* border-width: 1px; */
+  /* border-radius: var(--dl-radius-radius-radius4); */
 }
 .follow-image2 {
   top: 88px;
@@ -147,15 +148,18 @@ export default {
   top: 311px;
   left: 301px;
   position: absolute;
+  color: #e95a85;
 }
 .follow-text7 {
   top: 105px;
   left: 812px;
   position: absolute;
+  color: #e95a85;
 }
 .follow-text8 {
   top: 312px;
   left: 814px;
   position: absolute;
+  color: #e95a85;
 }
 </style>
