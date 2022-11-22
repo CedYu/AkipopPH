@@ -56,6 +56,7 @@
     <div class="container">
         <ProductCard v-for="product in products" v-bind:key="product.id" :product="product"/>
     </div>
+    <br><br><br><br><br><br><br>
     <Follow/>
 </div>
 </template>
@@ -101,7 +102,7 @@ export default{
         justify-content: space-around;
         position: relative;
         width: 100%;
-        height: 1000px;
+        height: 500px;
         overflow: scroll;
     }
 
