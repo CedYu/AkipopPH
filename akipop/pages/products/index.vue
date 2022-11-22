@@ -9,7 +9,7 @@
         <span class="card-buttons"> 
           <button class="box-btn"><NuxtLink to="/"><img src="../../assets/img/viewproduct.png" alt="deets" id="view-details"/></NuxtLink></button>
           <button class="box-btn"><img src="../../assets/img/likeproduct.png" alt="like" id="like-product"/></button>
-      </span>
+        </span>
       </div>
       <div class="card-footer">
         <div id="product-name">{{product.name}}</div>
@@ -47,9 +47,9 @@
   }
 
   .picture{
-    width: auto;
-    height: auto;
-    position: relative;
+    width: 100%;
+    height: 200px;
+    position: static;
   }
 
   #prod-img{
@@ -73,8 +73,7 @@
   }
 
   .card-footer{
-    /* background-color: #e95a85; */
-    background-color: #000;
+    background-color: #e95a85;
     margin-top: 5px;
     width: 100%;
     height: auto;

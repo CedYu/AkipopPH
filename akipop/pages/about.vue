@@ -20,6 +20,7 @@
             <br><br>Please be patient with us because only one hand makes and packs your orders!
             <br>Shipping through J&T will be on every Wednesday, Saturday and Sunday. </p>
             <a href="product.html" class="shop-button">Shop now</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </section>
 
         <div class="soda-left">
