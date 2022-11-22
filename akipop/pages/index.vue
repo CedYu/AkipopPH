@@ -17,7 +17,7 @@
             <div class="subtext_request">
                 Want merch of a specific anime?
                 <br>We will make it work for you, send
-                <br>us your requests <a href="https://tinyurl.com/akipoprequest">here</a>!
+                <br>us your requests <a href="https://tinyurl.com/akipoprequest">HERE</a>
             </div>
         </div>
 
@@ -53,39 +53,28 @@
 
     <h2>PRODUCTS</h2>
     <!--SAMPLE WITHOUT SCRIPT-->
-    <div class="mainProduct">
-        <img src="../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
-        <p>Anya Stationary</p>
-        <p class="price">$13.66</p>
-        <p>a very very amazing stationary</p>
-        <p>10</p>
-        <p><button>Add to Cart</button></p>
-        <p><button><NuxtLink to="/products">See More Details</NuxtLink></button></p>
+    <div class="container">
+        <ProductCard v-for="product in products" v-bind:key="product.id" :product="product"/>
     </div>
     <Follow/>
-    <!-- <div class="boxed2">
-        <h2>CONNECT WITH US</h2>
-        <div class = "facebook">
-            <a href="https://www.facebook.com/akipopph" target="_blank"><img src="../assets/img/facebook.png" width="80" height="80" alt="facebook"/></a>
-        </div>
-
-        <div class = "instagram">
-            <a href="https://www.instagram.com/akipopph/" target="_blank"><img src="../assets/img/instagram.png" width="75" height="75" alt="instagram"/></a>
-        </div>
-
-        <div class = "tiktok">
-            <a href="https://www.tiktok.com/@akipopph" target="_blank"><img src="../assets/img/tiktok.png" width="75" height="75" alt="tiktok"/></a>
-        </div>
-
-        <div class = "shopee">
-            <a href="https://shopee.ph/akipopph" target="_blank"><img src="../assets/img/shopee.png" width="85" height="85" alt="shopee"/></a>
-        </div>
-    </div> -->
 </div>
 </template>
 
 <script>
-
+export default{
+    async created() {
+        const supabase = useSupabaseClient()
+        const { data , error } = await supabase
+            .from('products')
+            .select()
+        this.products = data
+    },
+    data(){
+        return{
+            products:[],
+        }
+    },
+}
 </script>
 
 <style>
@@ -105,42 +94,29 @@
 		font-family: "lemonmilkreg";
 		src: url("../assets/LEMONMILK-Regular.otf");
 	}
-    
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        overflow: scroll;
+    }
+
     #home1 {
 		font-family: "lemonmilk";
 		font-size: 350%;
 		text-align: center;
 		letter-spacing: -3px;
 	}
+
     #main-banner{
         width: 100%; 
         height: 1200px;
     }
-    .mainProduct {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 190px;
-        margin: 80px;
-        text-align: center;
-        font-family: arial;
-        float: left;
-        background-color: #FFFBEC;
-    }
-    .price {
-        color: #e95a85;
-        font-size: 22px;
-    }
-    
-    .mainProduct button {
-        border: none;
-        outline: 0;
-        padding: 12px;
-        color: white;
-        background-color: #e95a85;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        font-size: 18px;
-    }
+
     body {
         background-color: #FFFBEC; 
         min-width: 100%;
@@ -151,6 +127,12 @@
         animation: fadeInDown; 
         animation-duration: 2s;
         margin-bottom: 12px; 
+    }
+
+    a:link, a:visited{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
     }
 
     .banner1 {
