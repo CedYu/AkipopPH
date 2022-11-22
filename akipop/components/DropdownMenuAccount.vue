@@ -13,7 +13,7 @@
             </div>
             <div v-else>
                 <NuxtLink to="/account/login" id="acc_thing">Wishlist &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-                <br><NuxtLink @click="useSupabaseClient().auth.signOut()" to="/" id="acc_thing">Log Out &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+                <br><NuxtLink @click="logout" to="/" id="acc_thing">Log Out &emsp; &emsp; &emsp; &emsp;</NuxtLink>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ export default {
 </script>
 <script setup>
   const supabase = useSupabaseClient()
-  const logout = async() =>{const {error} = await supabase.auth.signOut()}
+  const logout = async() =>{const {error} = await supabase.auth.signOut(); localStorage.clear()}
 </script>
 <style>
     #acc_thing:link { text-decoration: none; }

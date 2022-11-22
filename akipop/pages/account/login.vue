@@ -1,6 +1,6 @@
 <template>
   <div>
-  <MagicLogin/>
+  <LoginForm/>
   </div>
 </template>
 
