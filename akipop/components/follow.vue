@@ -95,7 +95,7 @@ export default {
 .connect{
   font-family: lemonmilk;
   font-size: 40px;
-  color: #e95a85;
+  color: #2C3E50;
 }
 .fb-head {
   top: 120px;
