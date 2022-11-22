@@ -2,20 +2,7 @@
  <br><br><br><br><br><br><br><br><br><br>
  <h1>{{category}}</h1>
  <div class = "container">
-    <div v-for="product in products"
-      :key="product.id" 
-      class="mainProduct">
-  
-        <img src="../../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
-    
-        <p>{{product.name}}</p>
-        <p class="price">{{product.price}}</p>
-        <p>{{product.description}}</p>
-        <p>{{product.id}}</p>
-        <p>{{product.quantity}}</p>
-        <p><button>Add to Cart</button></p>
-        <p><button><router-link to="/products">See More Details</router-link></button></p>
-    </div>
+    <productcard v-for="product in products" v-bind:key="product.id" :product="product"/>
   </div>    
 
 </template>
@@ -41,5 +28,10 @@ export default{
 </script>
 
 <style scoped>
-
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+  }
 </style>

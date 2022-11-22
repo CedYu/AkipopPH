@@ -9,10 +9,10 @@
         </svg>
         <div class="submenu_product" v-if="isOpen">
             <NuxtLink to="/products" id="thing">All &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><NuxtLink to="/products/plushies" id="thing">Plushies &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><NuxtLink to="/products/prints" id="thing">Prints &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><NuxtLink to="/products/stationery" id="thing">Stationery &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><NuxtLink to="/products/photocards" id="thing">Photocards &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Plushies" id="thing">Plushies &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Prints" id="thing">Prints &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Ptationery" id="thing">Stationery &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Photocards" id="thing">Photocards &emsp; &emsp; &emsp; &emsp;</NuxtLink>
         </div>
     </div>
 </template>
