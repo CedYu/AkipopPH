@@ -31,7 +31,18 @@ export default{
   .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
+  }
+
+  h1{
+    font-family: lemonmilk;
+		font-size: 350%;
+		text-align: center;
+		letter-spacing: -3px;
+		margin: 50px;
+    margin-top: 0px;
+		animation: fadeInDown;
+		animation-duration: 1s;
   }
 </style>

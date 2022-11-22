@@ -36,7 +36,7 @@ export default {
     .submenu_product {
         border: 10px solid lightpink;
         background-color: lightpink;
-        width: 130px;
+        width: 125px;
         height: auto;
         position:fixed;
     }

@@ -31,12 +31,13 @@ export default {
     /* padding: 5px; */
     color: white;
     background-color: #FFFBEC;
-    text-align: center;
     cursor: pointer;
     width: auto;
     height: auto;
     font-size: 18px;
     position: relative;
+    margin: 10px;
+    box-shadow: 1px 4px 6px #b0b0b0;
   }
 
   .picture{
@@ -79,10 +80,11 @@ export default {
     height: 25px;
     padding: 0px;
     margin: 3px;
+    color:black;
     background-color: #FFFBEC;
-    z-index: 9;
     margin-top: 0px;
     margin-bottom: 0px;
+    border: none;
   }
 
   #product-name{
@@ -107,12 +109,12 @@ export default {
   }
 
   #like-product{
-    width: 25px;
-    height: 25px;
+    width: 100%;
+    height: 100%;
   }
 
   #view-details{
-    width: 25px;
-    height: 25px;
+    width: 100%;
+    height: 100%;
   }
 </style>
