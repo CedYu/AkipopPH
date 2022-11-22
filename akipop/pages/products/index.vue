@@ -23,6 +23,7 @@ export default{
       .from('products')
       .select()
     this.products = data
+    console.log(data)
   },
   data(){
     return{
