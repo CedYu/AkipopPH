@@ -53,7 +53,7 @@
 
     <h2>PRODUCTS</h2>
     <!--SAMPLE WITHOUT SCRIPT-->
-    <div class="container">
+    <div class="home-container">
         <ProductCard v-for="product in products" v-bind:key="product.id" :product="product"/>
     </div>
     <br><br><br><br><br><br><br>
@@ -96,7 +96,7 @@ export default{
 		src: url("../assets/LEMONMILK-Regular.otf");
 	}
 
-    .container{
+    .home-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
