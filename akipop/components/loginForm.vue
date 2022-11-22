@@ -13,6 +13,7 @@ const login = async() =>{
 	console.log('user',user)
 	console.log('error',error)
 }
+
 </script>
 
 <template>
