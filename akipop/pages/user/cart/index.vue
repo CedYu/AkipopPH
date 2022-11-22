@@ -23,41 +23,40 @@
     </section>
 </template>
     
-    <script> 
-        export default{
-            data(){
-                return{
-                    products:[
-                    {
-                        id2:1,
-                        image: "../assets/img/product.jpg",
-                        id:"19708555531",
-                        name: "SPY X FAMILY PILLOW PLUSHIE Anya Yor Loid Anya Heh",
-                        description: "High quality pillow with Anya design",
-                        quantity: "15"
-                    },
-                    {
-                        id2:2,
-                        image: "../assets/img/product2.jpg",
-                        id:"18308562708",
-                        name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
-                        description: "High quality pillow with elegant design",
-                        quantity: "125"
-                    },
-                    {
-                        id2:3,
-                        image: "../assets/img/product2.jpg",
-                        id:"18308562708",
-                        name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
-                        description: "High quality pillow with elegant design",
-                        quantity: "125"
-                    },
-                ],
-            }
-        },
-        
-    }
-    </script>
+<script> 
+export default{
+    data(){
+        return{
+            products:[
+            {
+                id2:1,
+                image: "../assets/img/product.jpg",
+                id:"19708555531",
+                name: "SPY X FAMILY PILLOW PLUSHIE Anya Yor Loid Anya Heh",
+                description: "High quality pillow with Anya design",
+                quantity: "15"
+            },
+            {
+                id2:2,
+                image: "../assets/img/product2.jpg",
+                id:"18308562708",
+                name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
+                description: "High quality pillow with elegant design",
+                quantity: "125"
+            },
+            {
+                id2:3,
+                image: "../assets/img/product2.jpg",
+                id:"18308562708",
+                name: "MY DRESS UP DARLING PILLOW PLUSHIE Marin",
+                description: "High quality pillow with elegant design",
+                quantity: "125"
+            },
+            ],
+        }
+    },
+}
+</script>
     
     
 <style>
