@@ -1,18 +1,18 @@
 <template>
   <div class="follow-container">
     <h1>{{ heading }}</h1>
-    <h1 class="follow-text1" id="sitename">{{ heading1 }}</h1>
-    <span class="follow-text2" id="handle">{{ text }}</span>
-    <a href="https://www.tiktok.com/@akipopph"><img :src="'../tiktok.png'" :alt="tiktok" class="follow-image" /></a>
-    <a href="https://www.facebook.com/akipopph"><img :src="'../facebook.png'" :alt="facebook" class="follow-image1" /></a>
-    <a href="https://www.instagram.com/akipopph/"><img :src="'../instagram.png'" :alt="instagram" class="follow-image2" /></a>
-    <a href="https://shopee.ph/akipopph"><img :src="'../shopee.png'" :alt="shopee" class="follow-image3" /></a>
-    <span class="follow-text3" id="handle">{{ text }}</span>
-    <span class="follow-text4" id="handle">{{ text }}</span>
-    <span class="follow-text5" id="handle">{{ text }}</span>
-    <h1 class="follow-text6" id="sitename">{{ heading11 }}</h1>
-    <h1 class="follow-text7" id="sitename">{{ heading12 }}</h1>
-    <h1 class="follow-text8" id="sitename">{{ heading13 }}</h1>
+    <h1 class="fb-head" id="sitename">{{ heading1 }}</h1>
+    <h1 class="tk-head" id="sitename">{{ heading2 }}</h1>
+    <h1 class="ig-head" id="sitename">{{ heading3 }}</h1>
+    <h1 class="sh-head" id="sitename">{{ heading4 }}</h1>
+    <a href="https://www.facebook.com/akipopph"><img :src="'../facebook.png'" :alt="facebook" class="fb-image" /></a>
+    <a href="https://www.tiktok.com/@akipopph"><img :src="'../tiktok.png'" :alt="tiktok" class="tk-image" /></a>
+    <a href="https://www.instagram.com/akipopph/"><img :src="'../instagram.png'" :alt="instagram" class="ig-image" /></a>
+    <a href="https://shopee.ph/akipopph"><img :src="'../shopee.png'" :alt="shopee" class="sh-image" /></a>
+    <span class="fb-text" id="handle">{{ text }}</span>
+    <span class="tk-text" id="handle">{{ text1 }}</span>
+    <span class="ig-text" id="handle">{{ text2 }}</span>
+    <span class="sh-text" id="handle">{{ text3 }}</span>
   </div>
 </template>
 
@@ -28,31 +28,31 @@ export default {
       type: String,
       default: '@akipopph',
     },
-    // text1: {
-    //   type: String,
-    //   default: '@akipopph',
-    // },
-    // text2: {
-    //   type: String,
-    //   default: '@akipopph',
-    // },
-    // text3: {
-    //   type: String,
-    //   default: '@akipopph',
-    // },
+    text1: {
+      type: String,
+      default: '@akipopph',
+    },
+    text2: {
+      type: String,
+      default: '@akipopph',
+    },
+    text3: {
+      type: String,
+      default: '@akipopph',
+    },
     heading1: {
       type: String,
       default: 'FACEBOOK',
     },
-    heading11: {
+    heading2: {
       type: String,
       default: 'TIKTOK',
     },
-    heading12: {
+    heading3: {
       type: String,
       default: 'INSTAGRAM',
     },
-    heading13: {
+    heading4: {
       type: String,
       default: 'SHOPEE',
     },
@@ -92,24 +92,19 @@ export default {
   font-family: lemonmilk;
   margin-top: 10px;
 }
-.follow-text1 {
+.fb-head {
   top: 104px;
   left: 301px;
   position: absolute;
 }
-.follow-text2 {
-  top: 154px;
-  left: 310px;
-  position: absolute;
-}
-.follow-image {
+.tk-image {
   top: 296px;
   left: 188px;
   width: 100px;
   position: absolute;
   object-fit: cover;
 }
-.follow-image1 {
+.fb-image {
   top: 91px;
   left: 190px;
   width: 100px;
@@ -122,7 +117,7 @@ export default {
   /* border-width: 1px; */
   /* border-radius: var(--dl-radius-radius-radius4); */
 }
-.follow-image2 {
+.ig-image {
   top: 88px;
   left: 699px;
   width: 100px;
@@ -130,7 +125,7 @@ export default {
   align-self: flex-start;
   object-fit: cover;
 }
-.follow-image3 {
+.sh-image {
   top: 297px;
   left: 699px;
   width: 100px;
@@ -138,32 +133,37 @@ export default {
   align-self: flex-start;
   object-fit: cover;
 }
-.follow-text3 {
+.fb-text {
+  top: 154px;
+  left: 310px;
+  position: absolute;
+}
+.tk-text {
   top: 362px;
   left: 310px;
   position: absolute;
 }
-.follow-text4 {
+.ig-text {
   top: 155px;
   left: 833px;
   position: absolute;
 }
-.follow-text5 {
+.sh-text {
   top: 363px;
   left: 833px;
   position: absolute;
 }
-.follow-text6 {
+.tk-head {
   top: 311px;
   left: 301px;
   position: absolute;
 }
-.follow-text7 {
+.ig-head {
   top: 105px;
   left: 812px;
   position: absolute;
 }
-.follow-text8 {
+.sh-head {
   top: 312px;
   left: 814px;
   position: absolute;

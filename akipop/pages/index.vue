@@ -62,7 +62,7 @@
         <p><button>Add to Cart</button></p>
         <p><button><NuxtLink to="/products">See More Details</NuxtLink></button></p>
     </div>
-    <follow/>
+    <Follow/>
     <!-- <div class="boxed2">
         <h2>CONNECT WITH US</h2>
         <div class = "facebook">
