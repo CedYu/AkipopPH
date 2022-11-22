@@ -1,18 +1,18 @@
 <template>
   <div class="follow-container">
     <h1>{{ heading }}</h1>
-    <h1 class="follow-text1">{{ heading1 }}</h1>
-    <span class="follow-text2">{{ text }}</span>
+    <h1 class="follow-text1" id="sitename">{{ heading1 }}</h1>
+    <span class="follow-text2" id="handle">{{ text }}</span>
     <a href="https://www.tiktok.com/@akipopph"><img :src="'../tiktok.png'" :alt="tiktok" class="follow-image" /></a>
     <a href="https://www.facebook.com/akipopph"><img :src="'../facebook.png'" :alt="facebook" class="follow-image1" /></a>
     <a href="https://www.instagram.com/akipopph/"><img :src="'../instagram.png'" :alt="instagram" class="follow-image2" /></a>
     <a href="https://shopee.ph/akipopph"><img :src="'../shopee.png'" :alt="shopee" class="follow-image3" /></a>
-    <span class="follow-text3">{{ text }}</span>
-    <span class="follow-text4">{{ text }}</span>
-    <span class="follow-text5">{{ text }}</span>
-    <h1 class="follow-text6">{{ heading11 }}</h1>
-    <h1 class="follow-text7">{{ heading12 }}</h1>
-    <h1 class="follow-text8">{{ heading13 }}</h1>
+    <span class="follow-text3" id="handle">{{ text }}</span>
+    <span class="follow-text4" id="handle">{{ text }}</span>
+    <span class="follow-text5" id="handle">{{ text }}</span>
+    <h1 class="follow-text6" id="sitename">{{ heading11 }}</h1>
+    <h1 class="follow-text7" id="sitename">{{ heading12 }}</h1>
+    <h1 class="follow-text8" id="sitename">{{ heading13 }}</h1>
   </div>
 </template>
 
@@ -82,11 +82,20 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
 }
+
+#sitename{
+  font-family: lemonmilk;
+  color: #e95a85;
+}
+
+#handle{
+  font-family: lemonmilk;
+  margin-top: 10px;
+}
 .follow-text1 {
   top: 104px;
   left: 301px;
   position: absolute;
-  color: #e95a85;
 }
 .follow-text2 {
   top: 154px;
@@ -148,18 +157,15 @@ export default {
   top: 311px;
   left: 301px;
   position: absolute;
-  color: #e95a85;
 }
 .follow-text7 {
   top: 105px;
   left: 812px;
   position: absolute;
-  color: #e95a85;
 }
 .follow-text8 {
   top: 312px;
   left: 814px;
   position: absolute;
-  color: #e95a85;
 }
 </style>
