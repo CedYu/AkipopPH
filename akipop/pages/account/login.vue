@@ -1,6 +1,6 @@
 <template>
   <div>
-  <LoginForm/>
+  <MagicLogin/>
   </div>
 </template>
 
@@ -11,7 +11,6 @@ definePageMeta({
   middleware:['auth']
 })
 const user=useSupabaseUser()
-console.log(user)
 onMounted(() =>{
   watchEffect(() => {
     if(user.value){
