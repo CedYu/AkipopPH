@@ -45,7 +45,8 @@ export default {
         color: white;
         font-weight: bold;
         text-decoration: none;
-        font-size: 100%;
+        font-size: 80%;
+        font-family: lemonmilkreg;
     }
 
     #page-title{
