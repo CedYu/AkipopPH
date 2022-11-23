@@ -4,12 +4,12 @@
  <div class="filter-container">
   <select id="list" v-on:change="getAnimeName()">
     <option value='all'>-- Select Anime --</option>
-    <option value='Spy X Family'>Spy X Family</option>
+    <!-- <option value='Spy X Family'>Spy X Family</option>
     <option value='Naruto'>Naruto</option>
     <option value='Kuroko no Basket'>Kuroko no Basket</option>
     <option value='Genshin Impact'>Genshin Impact</option>
-    <option value='Chainsaw Man'>Chainsaw Man</option>
-    <!-- <option v-for="anime in animes" v-bind:key="anime.id" value =${{anime.name}}>{{anime.name}}</option > -->
+    <option value='Chainsaw Man'>Chainsaw Man</option> -->
+    <option v-for="anime in animes" v-bind:key="anime.id" >{{anime.name}}</option >
   </select>
  </div>
  <div class = "container">
@@ -44,9 +44,11 @@ export default{
     },
     methods:{
       async getAnimeName(){
-          this.anime = document.getElementById("list").value;
+          var e = document.getElementById("list");
+          this.anime = e.options[e.selectedIndex].text
+          console.log(this.anime)
           const supabase = useSupabaseClient()
-          if(this.anime=='all'){
+          if(this.anime=='-- Select Anime --'){
             const { data , error } = await supabase
               .from('products')
               .select()
