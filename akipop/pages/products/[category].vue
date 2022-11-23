@@ -45,7 +45,6 @@ export default{
     methods:{
       async getAnimeName(){
           this.anime = document.getElementById("list").value;
-          console.log(this.anime)
           const supabase = useSupabaseClient()
           if(this.anime=='all'){
             const { data , error } = await supabase
