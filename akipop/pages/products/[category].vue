@@ -46,7 +46,6 @@ export default{
       async getAnimeName(){
           var e = document.getElementById("list");
           this.anime = e.options[e.selectedIndex].text
-          console.log(this.anime)
           const supabase = useSupabaseClient()
           if(this.anime=='-- Select Anime --'){
             const { data , error } = await supabase
