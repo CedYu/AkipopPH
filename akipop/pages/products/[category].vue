@@ -3,7 +3,7 @@
  <h1>{{category}}</h1>
  <div class="filter-container">
   <select id="list" v-on:change="getAnimeName()">
-    <option value=''>-- Select Anime --</option>
+    <option value='all'>-- Select Anime --</option>
     <option value='Spy X Family'>Spy X Family</option>
     <option value='Naruto'>Naruto</option>
     <option value='Kuroko no Basket'>Kuroko no Basket</option>
@@ -45,14 +45,25 @@ export default{
     methods:{
       async getAnimeName(){
           this.anime = document.getElementById("list").value;
+          console.log(this.anime)
           const supabase = useSupabaseClient()
-          const { data , error } = await supabase
+          if(this.anime=='all'){
+            const { data , error } = await supabase
+              .from('products')
+              .select()
+              .eq('category',this.category)
+              .order('id', { ascending: true })
+            this.products = data
+          }
+          else{
+            const { data , error } = await supabase
             .from('products')
             .select()
             .eq('category',this.category)
-            .eq('anime',this.anime)
             .order('id', { ascending: true })
+            .eq('anime',this.anime)
           this.products = data
+          }
       }
     }
 
