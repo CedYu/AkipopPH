@@ -1,7 +1,7 @@
 <template>
   <div class="mainProduct">
     <div class="picture">
-      <img src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img">
+      <img v-if="product.quantity>0"  src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img"> <img v-else src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img"/>
       <span class="card-buttons"> 
         <button class="box-btn"><NuxtLink to="/"><img src="../assets/img/viewproduct.png" alt="deets" id="view-details"/></NuxtLink></button>
         <button class="box-btn"><img src="../assets/img/likeproduct.png" alt="like" id="like-product"/></button>
