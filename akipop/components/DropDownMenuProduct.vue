@@ -37,7 +37,7 @@ export default {
         border: 8px solid lightpink;
         background-color: lightpink;
         width: 125px;
-        height: 250px;
+        height: 240px;
         position:fixed;
     }
 

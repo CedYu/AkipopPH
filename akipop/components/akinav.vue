@@ -3,19 +3,23 @@
     <header>
       <nav class="aki-nav">
         <div class="nav-buttons">
-          <NuxtLink to="/" id="nav-text">HOME</NuxtLink>
-          <NuxtLink to="/about" id="nav-text">ABOUT</NuxtLink>
-          <div class="dropdown" id="nav-text">
-            <DropDownMenuProduct title="Product"/>
-          </div> 
+          <div class="left-side">
+            <NuxtLink to="/" id="nav-text">HOME</NuxtLink>
+            <NuxtLink to="/about" id="nav-text">ABOUT</NuxtLink>
+            <div class="dropdown" id="nav-text">
+              <DropDownMenuProduct title="Product"/>
+            </div>
+          </div>
           <div class="logo">
             <NuxtLink to="/"><img src="../assets/img/logo.jpg" width="96" alt="brand-logo" /></NuxtLink>
           </div>
-          <div class="cart-button" id="right-side">
-            <NuxtLink to="/user/cart"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
-          </div>
-          <div class="dropdown" id="right-side">
-            <DropdownMenuAccount title="Account"/>
+          <div class="right-side">
+            <div class="cart-button" id="right-side">
+              <NuxtLink to="/user/cart"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
+            </div>
+            <div class="dropdown" id="right-side">
+              <DropdownMenuAccount title="Account"/>
+            </div>
           </div>
         </div>
       </nav>
@@ -57,7 +61,7 @@
 }
 
 .nav-buttons{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -76,7 +80,8 @@
   z-index: 10;
 }
 .logo{
-  margin-left: 24%;
+  position:absolute;
+  left:46%;
   z-index: 10;
 }
 
@@ -86,17 +91,25 @@
   z-index: 10;
 }
 
+.left-side{
+  position:relative;
+  display: inline-flex;
+  left: 2%;
+}
+
+.right-side{
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  right: 7%;
+  padding: 10px;
+  z-index: 10;
+}
+
 #nav-image{
   position: relative;
   width: 40px;
   height: 40px;
-  z-index: 10;
-}
-
-#right-side{
-  position: relative;
-  left: 20%;
-  padding: 10px;
   z-index: 10;
 }
 </style>
