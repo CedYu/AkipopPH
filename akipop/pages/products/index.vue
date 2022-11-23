@@ -33,6 +33,7 @@ export default{
     const { data , error } = await supabase
       .from('products')
       .select()
+      .order('id', { ascending: true })
     this.products = data
     console.log(data)
   },

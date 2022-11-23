@@ -15,6 +15,7 @@ export default{
       .from('products')
       .select()
       .eq('category',this.category)
+      .order('id', { ascending: true })
     this.products = data
     },
     data(){
