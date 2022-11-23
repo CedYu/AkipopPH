@@ -81,7 +81,7 @@
 }
 .logo{
   position:absolute;
-  left:46%;
+  left:47%;
   z-index: 10;
 }
 
