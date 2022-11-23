@@ -99,48 +99,48 @@ export default {
 }
 .fb-head {
   top: 120px;
-  left: 700px;
+  left: 500px;
   position: absolute;
 }
 .fb-image {
   top: 115px;
-  left: 550px;
+  left: 350px;
   width: 100px;
   position: absolute;
   object-fit: cover;
 }
 .fb-text {
   top: 170px;
-  left: 700px;
+  left: 500px;
   position: absolute;
 }
 
 .tk-head {
   top: 311px;
-  left: 700px;
+  left: 500px;
   position: absolute;
 }
 .tk-image {
   top: 305px;
-  left: 550px;
+  left: 350px;
   width: 100px;
   position: absolute;
   object-fit: cover;
 }
 .tk-text {
   top: 362px;
-  left: 700px;
+  left: 500px;
   position: absolute;
 }
 
 .ig-head {
   top: 115px;
-  left: 1150px;
+  left: 950px;
   position: absolute;
 }
 .ig-image {
   top: 112px;
-  left: 1000px;
+  left: 800px;
   width: 100px;
   position: absolute;
   align-self: flex-start;
@@ -148,18 +148,18 @@ export default {
 }
 .ig-text {
   top: 165px;
-  left: 1150px;
+  left: 950px;
   position: absolute;
 }
 
 .sh-head {
   top: 312px;
-  left: 1150px;
+  left: 950px;
   position: absolute;
 }
 .sh-image {
   top: 297px;
-  left: 1000px;
+  left: 800px;
   width: 100px;
   position: absolute;
   align-self: flex-start;
@@ -167,7 +167,7 @@ export default {
 }
 .sh-text {
   top: 363px;
-  left: 1150px;
+  left: 950px;
   position: absolute;
 }
 </style>
