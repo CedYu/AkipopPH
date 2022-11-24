@@ -35,7 +35,7 @@ export default {
 </script>
 <script setup>
   const supabase = useSupabaseClient()
-  const logout = async() =>{const {error} = await supabase.auth.signOut(); localStorage.clear()}
+  const logout = async() =>{localStorage.clear(); const {error} = await supabase.auth.signOut(); location.reload()}
 </script>
 <style>
     #acc_thing:link { text-decoration: none; }

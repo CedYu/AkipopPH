@@ -5,15 +5,25 @@ const password=ref('')
 const client= useSupabaseClient()
 
 const login = async() =>{
-	console.log(email.value)
-	const {user, error} = await client.auth.signInWithPassword({
-		email: email.value,
-		password: password.value
-	})
-	console.log('user',user)
-	console.log('error',error)
+	try{
+		console.log(email.value)
+		const {user, error} = await client.auth.signInWithPassword({
+			email: email.value,
+			password: password.value
+		})
+		if(error){
+			alert("Error logging in: "+ error.message)
+		} 
+		if(!error && !user){
+		alert("Login Successful")
+		}
+	} 
+	 catch(error){
+		console.log("Error thrown: ", error.message)
+		alert(error.error_description || error)
+	}
+	
 }
-
 </script>
 
 <template>
