@@ -1,7 +1,7 @@
 
 <template>
     <div class="product_menu" @mouseover="isOpen=true" @mouseleave="isOpen=false" >
-        <NuxtLink to="/products" id="thing">
+        <NuxtLink to="/products" id="page-title">
             PRODUCT
         </NuxtLink>
         <svg viewBox="0 0 1030 638" width="10">
@@ -9,10 +9,10 @@
         </svg>
         <div class="submenu_product" v-if="isOpen">
             <NuxtLink to="/products" id="thing">All &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><br><NuxtLink to="/products/plushies" id="thing">Plushies &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><NuxtLink to="/products/prints" id="thing">Prints &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><br><NuxtLink to="/products/stationery" id="thing">Stationery &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-            <br><NuxtLink to="/products/photocards" id="thing">Photocards &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Plushies" id="thing">Plushies &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Prints" id="thing">Prints &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Stationery" id="thing">Stationery &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+            <br><NuxtLink to="/products/Photocards" id="thing">Photocards &emsp; &emsp; &emsp; &emsp;</NuxtLink>
         </div>
     </div>
 </template>
@@ -24,7 +24,6 @@ export default {
     data() {
         return {
             isOpen: false,
-            prints:'prints',
         };
     },
     methods:{
@@ -35,16 +34,25 @@ export default {
 
 <style>
     .submenu_product {
-        font-size: 90%;
-        border: 10px solid lightpink;
+        border: 8px solid lightpink;
         background-color: lightpink;
-        width: 130px;
-        height: 170px;
+        width: 125px;
+        height: 240px;
+        position:fixed;
     }
 
     #thing {
         color: white;
         font-weight: bold;
         text-decoration: none;
+        font-size: 80%;
+        font-family: lemonmilkreg;
+    }
+
+    #page-title{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 105%;
     }
 </style>

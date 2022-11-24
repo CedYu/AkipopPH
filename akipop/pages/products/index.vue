@@ -1,28 +1,43 @@
 <template>
   <br><br><br><br><br><br><br><br><br><br>
   <h1>Products</h1>
-  <!--WITH SCRIPT-->
-  <div class = "container">
-    <div v-for="product in products"
-      :key="product.id" 
-      class="mainProduct">
-  
-    <img src="../../assets/img/product.jpg" alt="Denim Jeans" style="width:100%">
-  
-    <p>{{product.name}}</p>
-    <p class="price">{{product.price}}</p>
-    <p>{{product.description}}</p>
-    <p>{{product.id}}</p>
-    <p>{{product.quantity}}</p>
-    <p><button>Add to Cart</button></p>
-    <p><button><router-link to="/products">See More Details</router-link></button></p>
+  <div class="filter-container">
+  <select id="list" v-on:change="getAnimeName()">
+    <option id="option-font">-- Select Anime --</option>
+    <option id="option-font" v-for="anime in animes" v-bind:key="anime.id">{{anime.name}}</option>
+  </select>
   </div>
+  <div class="container">
+    <productcard v-for="product in products" v-bind:key="product.id" :product="product"/>
   </div>
-  
 </template>
 
 <style scoped>
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: relative;
+  }
 
+  h1{
+    font-family: lemonmilk;
+		font-size: 350%;
+		text-align: center;
+		letter-spacing: -3px;
+		margin: 50px;
+    margin-top: 0px;
+		animation: fadeInDown;
+		animation-duration: 1s;
+  }
+
+  #list{
+    border-radius: 10px;
+  }
+
+  #option-font{
+    font-family: lemonmilkreg;
+  }
 </style>
 
 <script>
@@ -32,13 +47,42 @@ export default{
     const { data , error } = await supabase
       .from('products')
       .select()
+      .order('id', { ascending: true })
     this.products = data
+    
+    const { data:animes} = await supabase
+      .from('animes')
+      .select()
+    this.animes = animes
   },
   data(){
-      return{
-          products:[],
-      }
+    return{
+      products:[],
+      animes:[],
+      anime:[]
+    }
   },
+  methods:{
+    async getAnimeName(){
+      var e = document.getElementById("list");
+      this.anime = e.options[e.selectedIndex].text
+      const supabase = useSupabaseClient()
+      if(this.anime=='-- Select Anime --'){
+        const { data , error } = await supabase
+          .from('products')
+          .select()
+          .order('id', { ascending: true })
+        this.products = data
+      }
+      else{
+        const { data , error } = await supabase
+        .from('products')
+        .select()
+        .order('id', { ascending: true })
+        .eq('anime',this.anime)
+        this.products = data
+      }
+    }
+  }
 }
-
 </script>

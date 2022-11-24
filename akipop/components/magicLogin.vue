@@ -1,19 +1,16 @@
 <script setup>
 const email=ref('')
-const password=ref('')
 
 const client= useSupabaseClient()
 
 const login = async() =>{
 	console.log(email.value)
-	const {user, error} = await client.auth.signInWithPassword({
+	const {user, error} = await client.auth.signInWithOtp({
 		email: email.value,
-		password: password.value
 	})
 	console.log('user',user)
 	console.log('error',error)
 }
-
 </script>
 
 <template>
@@ -24,19 +21,15 @@ const login = async() =>{
 	
 		<input type = text name = "email" id = "email" placeholder="Email" v-model="email" size = 25 required><br>
 
-		<label for="password">Password</label>
-
-		<input type = password name = "password" id = "password" placeholder="Password" v-model="password" size = 25 required><br>
-
 		<div class="login_submit">
 			<input type = submit value = "Log In">
 		</div>
 		<p>Don't have an account? <NuxtLink to="/account/register"> Sign Up</NuxtLink></p>
-		<!-- <p>Login with email?<NuxtLink to="/account/emaillogin"> Log In with Email</NuxtLink></p> -->
+    <!-- <p>Login with email and password?<NuxtLink to="/account/login"> Log In</NuxtLink></p> -->
 		<div id="extra">
 		</div>
 	</form>
-</div>
+  </div>
 </template>
 
 <style scoped>
@@ -76,10 +69,10 @@ const login = async() =>{
 		color: white;
 		font-weight: bold;
 		cursor:pointer;
-    margin: auto;
-    border-radius: 20px;
-    border: none;
-    width: 200px;
+        margin: auto;
+        border-radius: 20px;
+        border: none;
+        width: 200px;
 	}
 	p {
 		font-size: 82%;

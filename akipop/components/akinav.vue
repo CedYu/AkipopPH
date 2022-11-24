@@ -1,25 +1,26 @@
 <template>
-  <div id="app">
+  <div class="nav-container">
     <header>
-      <nav>
-        <div id="akipop_logo">
-            <NuxtLink to="/"><img src="../assets/img/akipop.jpg" width="96" alt="brand-logo"> &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;</NuxtLink> 
-        </div>
-        <div id="navbar">
-          <NuxtLink to="/">HOME &emsp; &emsp; &emsp; &emsp;</NuxtLink>    
-          <NuxtLink to="/about">ABOUT &emsp; &emsp; &emsp; &emsp;</NuxtLink> 
-        </div>
-        <div id="dropdown_product">
-          <DropDownMenuProduct title="Product"/>
-        </div>       
-        <div id="navbar_cart">
-          <NuxtLink to="/user/cart">CART &emsp; &emsp; &emsp; &emsp;</NuxtLink>
-        </div>
-        <div id="dropdown_account">
-          <DropdownMenuAccount title="Account"/> 
-        </div>
-        <div>
-          <button @click="logout">Log Out</button>
+      <nav class="aki-nav">
+        <div class="nav-buttons">
+          <div class="left-side">
+            <NuxtLink to="/" id="nav-text">HOME</NuxtLink>
+            <NuxtLink to="/about" id="nav-text">ABOUT</NuxtLink>
+            <div class="dropdown" id="nav-text">
+              <DropDownMenuProduct title="Product"/>
+            </div>
+          </div>
+          <div class="logo">
+            <NuxtLink to="/"><img src="../assets/img/logo.jpg" width="96" alt="brand-logo" /></NuxtLink>
+          </div>
+          <div class="right-side">
+            <div class="cart-button" id="right-side">
+              <NuxtLink to="/user/cart"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
+            </div>
+            <div class="dropdown" id="right-side">
+              <DropdownMenuAccount title="Account"/>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -29,59 +30,86 @@
 <script setup>
   const supabase = useSupabaseClient()
   const logout = async() =>{const {error} = await supabase.auth.signOut()}
-
 </script>
 
 <style scoped>
-#app {
+.nav-container{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
   margin: -10px -10px;
+  font-size: 110%;
+  width: 1000px;
+  height: 10px;
+  position: absolute;
+  z-index: 10;
 }
-nav {
-  padding: 20px;
+
+.aki-nav{
+  display: flex;
+  align-items: center;
+  padding: 10px;
   background-color: #e95a85;
+  top: 0%;
   position: fixed;
-  top: 0;
-  width: 110%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 12%;
+  align-content: center;
+  z-index: 10;
 }
 
-nav a {
-  font-weight: bold;
-  color: #ffffff;
+.nav-buttons{
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#nav-text{
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 30px;
+  font-size: 130%;
+  position: relative;
+  left: 15%;
+  z-index: 10;
+}
+.logo{
+  position:absolute;
+  left:47%;
+  z-index: 10;
 }
 
-/* nav a.router-link-exact-active {
-  color: yellow;
-} */
-
-#akipop_logo {
-  margin-left: 895px;
+.dropdown{
+  position: relative;
+  padding: 5px;
+  z-index: 10;
 }
 
-#navbar {
-  margin:-23px 0 0 600px;
-  font-size: 110%;
+.left-side{
+  position:relative;
+  display: inline-flex;
+  left: 2%;
 }
 
-#navbar_cart {
-  margin:-23px 0 0 1200px;
-  font-size: 110%;
+.right-side{
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  right: 7%;
+  padding: 10px;
+  z-index: 10;
 }
 
-#dropdown_account {
-  font-size: 110%;
-  margin: -23px 0 0 1300px;
-  position: fixed;
-}
-
-#dropdown_product {
-  font-size: 110%;
-  margin: -23px 0 0 1050px;
-  position: fixed;
-  
+#nav-image{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
 }
 </style>
