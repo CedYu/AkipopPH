@@ -15,7 +15,7 @@
           </div>
           <div class="right-side">
             <div class="cart-button" id="right-side">
-              <NuxtLink to="/user/cart"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
+              <NuxtLink to="/user/wishlist"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
             </div>
             <div class="dropdown" id="right-side">
               <DropdownMenuAccount title="Account"/>
