@@ -1,17 +1,12 @@
 <template>
  <br><br><br><br><br><br><br><br><br><br>
- <h1>{{category}}</h1>
+ <h1 class="category-header">{{category}}</h1>
  <div class="filter-container">
   <select id="list" v-on:change="getAnimeName()">
-    <option value='all'>-- Select Anime --</option>
-    <!-- <option value='Spy X Family'>Spy X Family</option>
-    <option value='Naruto'>Naruto</option>
-    <option value='Kuroko no Basket'>Kuroko no Basket</option>
-    <option value='Genshin Impact'>Genshin Impact</option>
-    <option value='Chainsaw Man'>Chainsaw Man</option> -->
-    <option v-for="anime in animes" v-bind:key="anime.id" >{{anime.name}}</option >
+    <option id="option-font">-- Select Anime --</option>
+    <option id="option-font" v-for="anime in animes" v-bind:key="anime.id">{{anime.name}}</option >
   </select>
- </div>
+ </div><br>
  <div class = "container">
     <productcard v-for="product in products" v-bind:key="product.id" :product="product"/>
   </div>    
@@ -79,7 +74,7 @@ export default{
     position: relative;
   }
 
-  h1{
+  .category-header{
     font-family: lemonmilk;
 		font-size: 350%;
 		text-align: center;
@@ -88,5 +83,13 @@ export default{
     margin-top: 0px;
 		animation: fadeInDown;
 		animation-duration: 1s;
+  }
+
+  #list{
+    border-radius: 10px;
+  }
+
+  #option-font{
+    font-family: lemonmilkreg;
   }
 </style>
