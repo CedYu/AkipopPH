@@ -1,8 +1,8 @@
 <template>
-  <div class="mainProduct">
+  <div class="mainProduct" @mouseover="showIt=true" @mouseleave="showIt=false">
     <div class="picture">
-      <img v-if="product.quantity>0"  src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img"> <img v-else src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img"/>
-      <span class="card-buttons"> 
+      <img v-if="product.quantity>0"  src="../assets/img/product.jpg" alt="Product Image" id="prod-img"> <img v-else src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img"/>
+      <span class="card-buttons" v-if="showIt"> 
         <button class="box-btn"><NuxtLink to="/"><img src="../assets/img/viewproduct.png" alt="deets" id="view-details"/></NuxtLink></button>
         <button class="box-btn"><img src="../assets/img/likeproduct.png" alt="like" id="like-product"/></button>
       </span>
@@ -19,6 +19,11 @@ export default {
   props:{
     product:{
       type:Object,
+    }
+  },
+  data(){
+    return{
+      showIt: false,
     }
   }
 }

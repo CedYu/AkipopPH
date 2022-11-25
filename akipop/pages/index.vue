@@ -63,13 +63,13 @@
 
 <script>
 export default{
-     async created() {
-         const supabase = useSupabaseClient()
-         const { data , error } = await supabase
-             .from('products')
-             .select()
-         this.products = data
-     },
+    async created() {
+        const supabase = useSupabaseClient()
+        const { data , error } = await supabase
+            .from('products')
+            .select()
+        this.products = data
+    },
     data(){
         return{
             products:[],

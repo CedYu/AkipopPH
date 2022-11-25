@@ -1,6 +1,6 @@
 <template>
   <br><br><br><br><br><br><br><br><br><br>
-  <h1>Products</h1>
+  <h1 class="products-header">Products</h1>
   <div class="filter-container">
   <select id="list" v-on:change="getAnimeName()">
     <option id="option-font">-- Select Anime --</option>
@@ -20,7 +20,7 @@
     position: relative;
   }
 
-  h1{
+  .products-header{
     font-family: lemonmilk;
 		font-size: 350%;
 		text-align: center;
