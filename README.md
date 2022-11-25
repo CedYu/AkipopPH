@@ -1,10 +1,10 @@
 <img src="akipop.jpg" alt="Logo" width=200/><br>
 # Akipop-PH
-welcome to akipop! ⚡💗 a handmade craft store made with love just for you and your fandom cravings! 
+welcome to akipop! ⚡💗 a handmade craft store made with love just for you and your fandom cravings!
 🥤High-Quality Prints
 🥤Photocards
 🥤Stickers 
-🥤Accessories, 
+🥤Accessories
 👀and more awaits!
 
 ### Links
