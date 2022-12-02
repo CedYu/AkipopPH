@@ -5,10 +5,10 @@
     <h1 class="tk-head" id="sitename">{{ heading2 }}</h1>
     <h1 class="ig-head" id="sitename">{{ heading3 }}</h1>
     <h1 class="sh-head" id="sitename">{{ heading4 }}</h1>
-    <a href="https://www.facebook.com/akipopph"><img :src="'../facebook.png'" :alt="facebook" class="fb-image" /></a>
-    <a href="https://www.tiktok.com/@akipopph"><img :src="'../tiktok.png'" :alt="tiktok" class="tk-image" /></a>
-    <a href="https://www.instagram.com/akipopph/"><img :src="'../instagram.png'" :alt="instagram" class="ig-image" /></a>
-    <a href="https://shopee.ph/akipopph"><img :src="'../shopee.png'" :alt="shopee" class="sh-image" /></a>
+    <a href="https://www.facebook.com/akipopph" target="_blank"><img :src="'../facebook.png'" :alt="facebook" class="fb-image" /></a>
+    <a href="https://www.tiktok.com/@akipopph" target="_blank"><img :src="'../tiktok.png'" :alt="tiktok" class="tk-image" /></a>
+    <a href="https://www.instagram.com/akipopph/" target="_blank"><img :src="'../instagram.png'" :alt="instagram" class="ig-image" /></a>
+    <a href="https://shopee.ph/akipopph" target="_blank"><img :src="'../shopee.png'" :alt="shopee" class="sh-image" /></a>
     <span class="fb-text" id="handle">{{ text }}</span>
     <span class="tk-text" id="handle">{{ text1 }}</span>
     <span class="ig-text" id="handle">{{ text2 }}</span>
