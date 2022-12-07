@@ -2,10 +2,10 @@
   <div class="mainProduct" @mouseover="showIt=true" @mouseleave="showIt=false">
     <div class="picture">
       <img v-if="product.quantity>0"  src="../assets/img/product.jpg" alt="Product Image" id="prod-img"> <img v-else src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img"/>
-      <div class="card-buttons" v-if="showIt"> 
+      <span class="card-buttons" v-if="showIt"> 
         <button class="box-btn"><NuxtLink to="/"><img src="../assets/img/viewproduct.png" alt="deets" id="view-details"/></NuxtLink></button>
-        <button class="box-btn" id="like-button"><NuxtLink to="/"><img src="../assets/img/likeproduct.png" alt="like" id="like-product"/></NuxtLink></button>
-      </div>
+        <button class="box-btn"><img src="../assets/img/likeproduct.png" alt="like" id="like-product"/></button>
+      </span>
     </div>
     <div class="card-footer">
       <div id="product-name">{{product.name}}</div>
@@ -58,12 +58,12 @@ export default {
   }
 
   .card-buttons{
+    /* background-color: #e95a85; */
+    background-color: #FFFBEC;
     width: auto;
     height: auto;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom:19%;
-    padding: 0%;
+    margin-bottom:65px;
+    padding: 0px;
     z-index: 9;
     position: absolute;
     right:0;
@@ -81,19 +81,15 @@ export default {
   }
 
   .box-btn{
-    width: 27px;
-    height: 27px;
+    width: 25px;
+    height: 25px;
     padding: 0px;
+    margin: 3px;
     color:black;
-    border-radius: 50%;
     background-color: #FFFBEC;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border: none;
-  }
-
-  .box-btn:hover{
-    opacity: 70%;
   }
 
   #product-name{
@@ -115,13 +111,6 @@ export default {
     position: absolute;
     right: 0;
     z-index: 1;
-  }
-
-  #like-button{
-    position: absolute;
-    right: 0;
-    padding:1%;
-    padding-bottom: .5%;
   }
 
   #like-product{
