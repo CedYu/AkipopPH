@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   css: ['animate.css/animate.min.css'],
   modules:['@nuxtjs/supabase'],
+  plugins: [
+    { src: '@/plugins/vue-fb-customer-chat.js', ssr: false, mode:'client' }
+  ],
   app:{
     head:{
       charset:'utf-8', viewport:'width=500 initial-scale=1',
