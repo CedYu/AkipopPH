@@ -1,6 +1,5 @@
 <template>
-  <div id="fb-root"></div>
-  <div id="fb-customer-chat" class="fb-customerchat" attribution="biz_inbox" v-bind="config"></div>
+  <div id="fb-customer-chat" class="fb-customerchat" attribution="biz_inbox" v-bind="config"/>
 </template>
 
 <script>
@@ -51,6 +50,7 @@ export default {
         xfbml : true,
         version : 'v12.0' // in this case v12.0
       });
+      console.log('fb init')
     },
     script (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
