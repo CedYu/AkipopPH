@@ -1,5 +1,8 @@
 <template>
   <div id="fb-customer-chat" class="fb-customerchat" attribution="biz_inbox" v-bind="config"/>
+  <fb-customer-chat greeting-dialog-display="hide"
+    :logged-in-greeting="$t('fb.greetings.in')"
+    :logged-out-greeting="$t('fb.greetings.out')" />
 </template>
 
 <script>
@@ -34,7 +37,7 @@ export default {
   computed : {
     config () {
       return {
-        page_id : '104359522522243', // FB prop imported from .env
+        page_id : '100088565915218', // FB prop imported from .env
         theme_color : 'blue',
         logged_in_greeting : this.loggedInGreeting,
         logged_out_greeting : this.loggedOutGreeting,
@@ -46,7 +49,7 @@ export default {
   methods : {
     fbAsyncInit () {
       FB.init({
-        page_id: '104359522522243',
+        page_id: '100088565915218',
         xfbml : true,
         version : 'v12.0' // in this case v12.0
       });
