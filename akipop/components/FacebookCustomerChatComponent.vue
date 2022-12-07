@@ -1,5 +1,8 @@
 <template>
   <div id="fb-customer-chat" class="fb-customerchat" attribution="biz_inbox" v-bind="config"/>
+  <fb-customer-chat greeting-dialog-display="hide"
+    :logged-in-greeting="$t('fb.greetings.in')"
+    :logged-out-greeting="$t('fb.greetings.out')" />
 </template>
 
 <script>
