@@ -1,6 +1,7 @@
 <template>
     <br><br><br><br><br><br><br><br><br><br>
-    <!-- <h1 class="wishlist-header">Wishlist</h1> -->
+    <h1 class="wishlist-header">Wishlist</h1>
+
 </template>
 
 <script>

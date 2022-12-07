@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
-    "@supabase/supabase-js": "^2.1.0",
-    "vue-fb-customer-chat": "^0.2.2"
+    "@supabase/supabase-js": "^2.1.0"
   }
 }
