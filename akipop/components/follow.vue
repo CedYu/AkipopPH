@@ -1,18 +1,26 @@
 <template>
   <div class="follow-container">
     <h1 class="connect">{{ heading }}</h1>
-    <h1 class="fb-head" id="sitename">{{ heading1 }}</h1>
-    <h1 class="tk-head" id="sitename">{{ heading2 }}</h1>
-    <h1 class="ig-head" id="sitename">{{ heading3 }}</h1>
-    <h1 class="sh-head" id="sitename">{{ heading4 }}</h1>
-    <a href="https://www.facebook.com/akipopph" target="_blank"><img :src="'../facebook.png'" :alt="facebook" class="fb-image" /></a>
-    <a href="https://www.tiktok.com/@akipopph" target="_blank"><img :src="'../tiktok.png'" :alt="tiktok" class="tk-image" /></a>
-    <a href="https://www.instagram.com/akipopph/" target="_blank"><img :src="'../instagram.png'" :alt="instagram" class="ig-image" /></a>
-    <a href="https://shopee.ph/akipopph" target="_blank"><img :src="'../shopee.png'" :alt="shopee" class="sh-image" /></a>
-    <span class="fb-text" id="handle">{{ text }}</span>
-    <span class="tk-text" id="handle">{{ text1 }}</span>
-    <span class="ig-text" id="handle">{{ text2 }}</span>
-    <span class="sh-text" id="handle">{{ text3 }}</span>
+    <div class="fb-div">
+      <h1 class="fb-head" id="sitename">{{ heading1 }}</h1>
+      <a href="https://www.facebook.com/akipopph" target="_blank"><img :src="'../facebook.png'" :alt="facebook" class="fb-image" /></a>
+      <span class="fb-text" id="handle">{{ text }}</span>
+    </div>
+    <div class="tk-div">
+      <h1 class="tk-head" id="sitename">{{ heading2 }}</h1>
+      <a href="https://www.tiktok.com/@akipopph" target="_blank"><img :src="'../tiktok.png'" :alt="tiktok" class="tk-image" /></a>
+      <span class="tk-text" id="handle">{{ text1 }}</span>
+    </div>
+    <div class="ig-div">
+      <h1 class="ig-head" id="sitename">{{ heading3 }}</h1>
+      <a href="https://www.instagram.com/akipopph/" target="_blank"><img :src="'../instagram.png'" :alt="instagram" class="ig-image" /></a>
+      <span class="ig-text" id="handle">{{ text2 }}</span>
+    </div>
+    <div class="sh-div">
+      <h1 class="sh-head" id="sitename">{{ heading4 }}</h1>
+      <a href="https://shopee.ph/akipopph" target="_blank"><img :src="'../shopee.png'" :alt="shopee" class="sh-image" /></a>
+      <span class="sh-text" id="handle">{{ text3 }}</span>
+    </div>
   </div>
 </template>
 
@@ -97,77 +105,113 @@ export default {
   font-size: 40px;
   color: #2C3E50;
 }
+.fb-div{
+  width: 100%;
+  height: 200px;
+  margin-left:55%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.tk-div{
+  width: 100%;
+  height: 100px;
+  margin-left: 55%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.ig-div{
+  width: 100%;
+  height: 100px;
+  margin-left: 110%;
+  margin-top: -13.5%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.sh-div{
+  width: 100%;
+  height: 100px;
+  margin-left: 110%;
+  margin-top: 2.2%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 .fb-head {
-  top: 120px;
-  left: 500px;
+  margin-left: 8%;
+  margin-top: 4%;
   position: absolute;
 }
 .fb-image {
-  top: 115px;
-  left: 350px;
   width: 100px;
   position: absolute;
   object-fit: cover;
 }
 .fb-text {
-  top: 170px;
-  left: 500px;
+  margin-left: 8%;
+  margin-bottom: -6%;
   position: absolute;
 }
 
 .tk-head {
-  top: 311px;
-  left: 500px;
+  margin-left: 8%;
+  margin-top: 12%;
   position: absolute;
 }
 .tk-image {
-  top: 305px;
-  left: 350px;
+  margin-top: 4%;
   width: 100px;
   position: absolute;
   object-fit: cover;
 }
 .tk-text {
-  top: 362px;
-  left: 500px;
+  margin-left: 8%;
+  margin-bottom: -14%;
   position: absolute;
 }
 
 .ig-head {
-  top: 115px;
-  left: 950px;
+  margin-left: 8%;
+  margin-top: 4.7%;
   position: absolute;
 }
 .ig-image {
-  top: 112px;
-  left: 800px;
   width: 100px;
   position: absolute;
   align-self: flex-start;
   object-fit: cover;
 }
 .ig-text {
-  top: 165px;
-  left: 950px;
+  margin-left: 8%;
+  margin-bottom: -6.4%;
   position: absolute;
 }
 
 .sh-head {
-  top: 312px;
-  left: 950px;
+  margin-left: 8%;
+  margin-top: 13.7%;
   position: absolute;
 }
 .sh-image {
-  top: 297px;
-  left: 800px;
+  margin-top: 4%;
   width: 100px;
   position: absolute;
   align-self: flex-start;
   object-fit: cover;
 }
 .sh-text {
-  top: 363px;
-  left: 950px;
+  margin-left: 8%;
+  margin-bottom: -15.5%;
   position: absolute;
 }
 </style>

@@ -12,7 +12,7 @@
             <br><NuxtLink to="/account/register" id="acc_thing">Register &emsp; &emsp; &emsp; &emsp;</NuxtLink>
             </div>
             <div v-else>
-                <NuxtLink to="/account/login" id="acc_thing">Wishlist &emsp; &emsp; &emsp; &emsp;</NuxtLink>
+                <NuxtLink to="/user/wishlist" id="acc_thing">Wishlist &emsp; &emsp; &emsp; &emsp;</NuxtLink>
                 <br><NuxtLink @click="logout" to="/" id="acc_thing">Log Out &emsp; &emsp; &emsp; &emsp;</NuxtLink>
             </div>
         </div>
