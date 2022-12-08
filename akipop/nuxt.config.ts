@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   css: ['animate.css/animate.min.css', '/assets/styles.css'],
   components: true,
-  modules:['@nuxtjs/supabase', '@nuxtjs/dotenv'],
+  modules:['@nuxtjs/supabase'],
   app:{
     head:{
       charset:'utf-8', viewport:'width=500 initial-scale=1',
