@@ -3,7 +3,7 @@
     <div class="picture">
       <img v-if="product.quantity>0"  src="../assets/img/product.jpg" alt="Product Image" id="prod-img"> <img v-else src="../assets/img/product.jpg" alt="Denim Jeans" id="prod-img"/>
       <div class="card-buttons" v-if="showIt"> 
-        <button class="box-btn"><NuxtLink to="/product/{{product}}"><img src="../assets/img/viewproduct.png" alt="deets" id="view-details"/></NuxtLink></button>
+        <button class="box-btn"><nuxt-link :to="`/products/product/${product.id}`"><img src="../assets/img/viewproduct.png" alt="deets" id="view-details"/></nuxt-link></button>
         <button class="box-btn" id="like-button"><NuxtLink to="/"><img src="../assets/img/likeproduct.png" alt="like" id="like-product"/></NuxtLink></button>
       </div>
     </div>

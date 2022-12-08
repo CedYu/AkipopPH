@@ -24,9 +24,18 @@
 
 <script>
 export default{
-    props:{
-        product: {
-            type: Object,
+    async created(){
+        const supabase = useSupabaseClient()
+        const { data , error } = await supabase
+            .from('products')
+            .select()
+            .eq('id',this.id)
+            this.product = data
+    },
+    data(){
+        return{
+            id:useRoute().params.id,
+            product:Object,
         }
     }
 }
@@ -41,6 +50,7 @@ export default{
     width: 100%;
     height: 100%;
     padding: 0 10%;
+    margin-top: 10%;
 }
 .images{
     display: flex;
