@@ -102,13 +102,13 @@ export default {
 }
 .connect{
   font-family: lemonmilk;
-  font-size: 40px;
+  font-size: 300%;
   color: #2C3E50;
 }
 .fb-div{
   width: 100%;
   height: 200px;
-  margin-left:55%;
+  margin-left:53%;
   display: flex;
   position: relative;
   align-items: center;
@@ -118,7 +118,7 @@ export default {
 .tk-div{
   width: 100%;
   height: 100px;
-  margin-left: 55%;
+  margin-left: 53%;
   display: flex;
   position: relative;
   align-items: center;
@@ -128,7 +128,7 @@ export default {
 .ig-div{
   width: 100%;
   height: 100px;
-  margin-left: 110%;
+  margin-left: 107%;
   margin-top: -13.5%;
   display: flex;
   position: relative;
@@ -139,7 +139,7 @@ export default {
 .sh-div{
   width: 100%;
   height: 100px;
-  margin-left: 110%;
+  margin-left: 107%;
   margin-top: 2.2%;
   display: flex;
   position: relative;

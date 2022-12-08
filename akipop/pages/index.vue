@@ -101,9 +101,10 @@ export default{
         flex-wrap: wrap;
         justify-content: space-around;
         position: relative;
-        width: 100%;
+        width: 99%;
         height: 500px;
         overflow: scroll;
+        overflow-x: hidden;
     }
 
     #home1 {
@@ -141,25 +142,26 @@ export default{
     }
 
     .boxed {
-        border: 20px solid #E86187;
+        /* border: 5px solid #E86187; */
         background-color: #E86187;
         width: 100%;
-        height: 200px;
-        margin-top: 50px;
+        height: 240px;
+        margin-top: 2.5%;
     }
 
     .request_section {
-        margin-left: 6%;
+        margin-left: 11%;
         text-align: left;
     }
 
     .request {
-        margin-top: 10px;
+        margin-bottom: 0.5%;
+        margin-left: 1%;
     }
 
     .maintext_request {
-        margin-top: -50px;
-        margin-left: 100px;
+        margin-left: 7%;
+        margin-top: -3%;
         font-size: 150%;
         font-family: "lemonmilk";
         color: white;
@@ -177,7 +179,8 @@ export default{
     }
 
     .delivery_section {
-        margin-left: 39.3%;
+        margin-left: 43.4%;
+        margin-top: 0.2%;
         display: block;
     }
 
@@ -204,7 +207,8 @@ export default{
     }
 
     .payment_section {
-        margin-left: 66.5%;
+        margin-left: 72%;
+        margin-top: 0.5%;
         display: block;
     }
 
@@ -268,25 +272,4 @@ export default{
         font-family: Arial;
         letter-spacing: 0.4px;
     }
-
-    /* .facebook {
-        margin-left: 50%;
-        margin-top: -120px;
-    }
-
-
-    .instagram {
-        margin-left: 60%;
-        margin-top: -82px;
-    }
-
-    .tiktok {
-        margin-left: 70%;
-        margin-top: -78px;
-    }
-
-    .shopee {
-        margin-left: 79%;
-        margin-top: -84px;
-    } */
 </style>
