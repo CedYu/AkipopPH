@@ -36,12 +36,10 @@
 		<div class="reg_submit">
 		<input type=submit value="Register" >
 		</div>
-		<p>Have an account? <NuxtLink to="/account/login"> Log In</NuxtLink></p>
+		<p>Have an account? <NuxtLink to="/account/login" id="redirector"> Log In</NuxtLink></p>
 	</form>
 </div>
 </template>
-
-
 
 <script>
 export default{
@@ -89,21 +87,10 @@ export default{
 					}
 				}
 			})
-			
-			console.log(error2)
-			console.log(data2)
-			if (error2){
-				console.log(error2)
-			}
-			if (data2){
-				console.log(data2)
-			}
-
+			alert("Check your email for a verification link!")
 		}
 	}
 }
-
-
 </script>
 
 <style>
@@ -157,7 +144,7 @@ export default{
 	}
 
 	.reg_submit input[type="submit"] {
-		background-color: #004AAD;
+		background-color: #E95A85;
 		color: white;
 		font-weight: bold;
 		cursor:pointer;
@@ -168,12 +155,16 @@ export default{
 	}
 
 	.reg_submit input[type="submit"]:hover {
-		background-color: #9ED149;
+		background-color: #8E77F8;
 		color: black;
 	}
-	a{
-		color: #E95A85
+
+	#redirector{
+		color: #E95A85;
+		text-decoration: none;
+		font-size: 115%;
 	}
+
 	p {
 		font-size: 82%;
 		text-align: center;

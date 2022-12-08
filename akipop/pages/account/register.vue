@@ -12,7 +12,7 @@ console.log(user)
 onMounted(() =>{
   watchEffect(() => {
     if(user.value){
-      navigateTo('/products')
+      navigateTo('/account/login')
     }
   })
 })
