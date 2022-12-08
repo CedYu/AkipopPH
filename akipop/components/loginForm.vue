@@ -108,6 +108,7 @@ const login = async() =>{
 	}
 	a{
 		color : #E95A85;
+		font-size: 115%;
 	}
 	form {
 		text-align: left; 
