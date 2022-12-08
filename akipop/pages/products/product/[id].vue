@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="buttons">
-            <button class="like-btn"><img src="../../assets/img/likeproduct.png" alt="like" id="like-product"/></button>
+            <button class="like-btn"><img alt="like" id="like-product"/></button>
             <button class="chat-btn">
                 <span class="chat-icon"><!-- Insert chat image here --></span>
                 <span class="chat-text">Have questions? Chat with us</span>
