@@ -2,7 +2,7 @@
     <div class="product-container">
         <div class="images">
             <div class="main-image">
-                <img :src="product.image" alt="product image">
+                <img src="../../../assets/img/product.jpg" alt="product image">
             </div>
             <div class="mini-images">
             </div>
@@ -14,10 +14,10 @@
                 <span class="chat-text">Have questions? Chat with us</span>
             </button>
         </div>
-        <div class="product-info">
-            <h1 id="prod-name">{{ product.name }}</h1>
-            <p id="prod-desc">{{ product.description }}</p>
-            <p id="prod-price">{{ product.price }}</p>
+        <div class="product-info" v-for="detail in details" v-bind:key="detail.id">
+            <h1 id="prod-name">{{ detail.name }}</h1>
+            <p id="prod-desc">{{ detail.description }}</p>
+            <p id="prod-price">{{ detail.price }}</p>
         </div>
     </div>
 </template>
@@ -26,16 +26,17 @@
 export default{
     async created(){
         const supabase = useSupabaseClient()
-        const { data , error } = await supabase
+        const { data:details , error } = await supabase
             .from('products')
             .select()
             .eq('id',this.id)
-            this.product = data
+        this.details = details
     },
     data(){
         return{
+            details:[],
             id:useRoute().params.id,
-            product:Object,
+            
         }
     }
 }
