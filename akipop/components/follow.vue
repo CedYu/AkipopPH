@@ -83,9 +83,9 @@ export default {
 <style scoped>
 .follow-container {
   width: 100%;
-  height: 536px;
+  height: 600px;
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -108,7 +108,7 @@ export default {
 .fb-div{
   width: 100%;
   height: 200px;
-  margin-left:53%;
+  margin-left: 50%;
   display: flex;
   position: relative;
   align-items: center;
@@ -117,8 +117,8 @@ export default {
 }
 .tk-div{
   width: 100%;
-  height: 100px;
-  margin-left: 53%;
+  height: 200px;
+  margin-left: 50%;
   display: flex;
   position: relative;
   align-items: center;
@@ -127,9 +127,9 @@ export default {
 }
 .ig-div{
   width: 100%;
-  height: 100px;
-  margin-left: 107%;
-  margin-top: -13.5%;
+  height: 200px;
+  margin-left: 105%;
+  margin-top: -25%;
   display: flex;
   position: relative;
   align-items: center;
@@ -138,9 +138,9 @@ export default {
 }
 .sh-div{
   width: 100%;
-  height: 100px;
-  margin-left: 107%;
-  margin-top: 2.2%;
+  height: 200px;
+  margin-left: 105%;
+  margin-top: -2%;
   display: flex;
   position: relative;
   align-items: center;
@@ -165,45 +165,46 @@ export default {
 
 .tk-head {
   margin-left: 8%;
-  margin-top: 12%;
+  margin-top: 8%;
   position: absolute;
 }
 .tk-image {
-  margin-top: 4%;
+  margin-top: 1%;
   width: 100px;
   position: absolute;
   object-fit: cover;
 }
 .tk-text {
   margin-left: 8%;
-  margin-bottom: -14%;
+  margin-bottom: -10%;
   position: absolute;
 }
 
 .ig-head {
   margin-left: 8%;
-  margin-top: 4.7%;
+  margin-top: 2%;
   position: absolute;
 }
 .ig-image {
   width: 100px;
+  margin-top: -1.5%;
   position: absolute;
   align-self: flex-start;
   object-fit: cover;
 }
 .ig-text {
   margin-left: 8%;
-  margin-bottom: -6.4%;
+  margin-bottom: -3.5%;
   position: absolute;
 }
 
 .sh-head {
   margin-left: 8%;
-  margin-top: 13.7%;
+  margin-top: 9.5%;
   position: absolute;
 }
 .sh-image {
-  margin-top: 4%;
+  margin-top: 1.5%;
   width: 100px;
   position: absolute;
   align-self: flex-start;
@@ -211,7 +212,7 @@ export default {
 }
 .sh-text {
   margin-left: 8%;
-  margin-bottom: -15.5%;
+  margin-bottom: -11.5%;
   position: absolute;
 }
 </style>
