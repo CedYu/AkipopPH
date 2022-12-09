@@ -2,7 +2,7 @@
     <div class="product-container">
         <div class="images">
             <div class="main-image">
-                <img src="../assets/img/product.jpg" alt="product image">
+                <img src="../../../assets/img/product.jpg" alt="product image">
             </div>
             <div class="mini-images">
             </div>
