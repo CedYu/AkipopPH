@@ -1,16 +1,6 @@
 <template>
-    <div class="admin-header">
-        <div class="admin-header-left">
-            <h1>Admin</h1>
-        </div>
-        <div class="admin-header-right">
-            <div class="admin-header-right-top">
-                <h1>Hi, {{user.email}}</h1>
-            </div>
-            <div class="admin-header-right-bottom">
-                <button @click="logout">Logout</button>
-            </div>
-        </div>
+    <div class="container">
+        <h1 class="admin-header">Admin</h1>
     </div>
 </template>
 
@@ -19,14 +9,14 @@
 </script>
 
 <style scoped>
+.container{
+    margin-top: 8%;
+    border: 3px solid black;
+    width: 98.5%;
+}
 .admin-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 0 10%;
-    margin-top: 10%;
+    text-align: center;
+    width: 50%;
+    margin: auto;
 }
 </style>

@@ -14,10 +14,13 @@
             <NuxtLink to="/"><img src="../assets/img/logo.jpg" width="96" alt="brand-logo" /></NuxtLink>
           </div>
           <div class="right-side">
-            <div class="cart-button" id="right-side">
+            <div class="admin-button">
+              <NuxtLink to="/admin"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
+            </div>
+            <div class="wishlist-button">
               <NuxtLink to="/user/wishlist"><img src="../assets/img/cart_image.png" alt="cart image" id="nav-image"></NuxtLink>
             </div>
-            <div class="dropdown" id="right-side">
+            <div class="dropdown">
               <DropdownMenuAccount title="Account"/>
             </div>
           </div>
@@ -43,7 +46,6 @@
   width: 1000px;
   height: 10px;
   position: absolute;
-  z-index: 10;
 }
 
 .aki-nav{
@@ -57,7 +59,6 @@
   width: 100%;
   height: 12%;
   align-content: center;
-  z-index: 10;
 }
 
 .nav-buttons{
@@ -65,7 +66,6 @@
   align-items: center;
   width: 100%;
   position: fixed;
-  z-index: 10;
 }
 
 #nav-text{
@@ -77,18 +77,16 @@
   font-size: 130%;
   position: relative;
   left: 15%;
-  z-index: 10;
 }
+
 .logo{
   position:absolute;
   left:47%;
-  z-index: 10;
 }
 
 .dropdown{
   position: relative;
   padding: 5px;
-  z-index: 10;
 }
 
 .left-side{
@@ -103,13 +101,16 @@
   position: absolute;
   right: 7%;
   padding: 10px;
-  z-index: 10;
 }
 
 #nav-image{
   position: relative;
   width: 40px;
   height: 40px;
-  z-index: 10;
+}
+
+.wishlist-button{
+  position: relative;
+  padding: 10px;
 }
 </style>
